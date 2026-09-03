@@ -568,7 +568,11 @@
     .then(data => {
       document.getElementById('sales-value').textContent =
         data.sales.toLocaleString('ru-RU') + ' ₽';
-    });
+    document.getElementById('margin-value').textContent =
+  data.margin.toLocaleString('ru-RU') + ' ₽'
+      document.getElementById('profitability-value').textContent =
+  data.profitability + '%';
+});
 </script>
 
 </body>
