@@ -4,11 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дашборд продаж</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .card-title {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .card-value {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Дашборд продаж</h1>
-  <p>Веб-версия работает</p>
+  <div class="container">
+    <h1>Дашборд продаж — сентябрь 2026</h1>
+    <div class="subtitle">Текущая статистика продаж</div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-title">Продажи за месяц</div>
+        <div class="card-value">29 540 ₽</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Маржа</div>
+        <div class="card-value">15 525 ₽</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Маржинальность</div>
+        <div class="card-value">53%</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Количество продаж</div>
+        <div class="card-value">5</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Средний чек</div>
+        <div class="card-value">5 908 ₽</div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
