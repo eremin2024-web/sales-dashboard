@@ -91,7 +91,7 @@
 
       <div class="card">
         <div class="card-title">Количество продаж</div>
-        <div class="card-value">5</div>
+        <div class="card-value" id="sales-count-value">—</div>
       </div>
 
       <div class="card">
@@ -572,6 +572,8 @@
   data.margin.toLocaleString('ru-RU') + ' ₽'
       document.getElementById('profitability-value').textContent =
   data.profitability + '%';
+      document.getElementById('sales-count-value').textContent =
+  data.salesCount;
 });
 </script>
 
