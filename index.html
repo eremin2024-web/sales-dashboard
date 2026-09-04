@@ -518,7 +518,7 @@
       <div style="text-align:right; font-weight:700;" id="last-sale-value">—</div>
 
       <div>Дней без продаж</div>
-      <div style="text-align:right; font-weight:700;">1</div>
+      <div style="text-align:right; font-weight:700;" id="days-without-sales-value">—</div>
 
     </div>
 
@@ -580,6 +580,8 @@
   data.updated;
 document.getElementById('last-sale-value').textContent =
   data.lastSale;
+      document.getElementById('days-without-sales-value').textContent =
+  data.daysWithoutSales;
     });
 </script>
 
