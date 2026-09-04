@@ -96,7 +96,7 @@
 
       <div class="card">
         <div class="card-title">Средний чек</div>
-        <div class="card-value">5 908 ₽</div>
+        <div class="card-value" id="average-check-value">—</div>
       </div>
 
     </div>
@@ -574,6 +574,8 @@
   data.profitability + '%';
       document.getElementById('sales-count-value').textContent =
   data.salesCount;
+      document.getElementById('average-check-value').textContent =
+  data.averageCheck.toLocaleString('ru-RU') + ' ₽';
 });
 </script>
 
