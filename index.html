@@ -512,7 +512,7 @@
     ">
 
       <div>Данные актуальны на</div>
-      <div style="text-align:right; font-weight:700;">02.09.2026</div>
+      <div style="text-align:right; font-weight:700;" id="updated-value">—</div>
 
       <div>Последняя продажа</div>
       <div style="text-align:right; font-weight:700;">01.09.2026</div>
@@ -576,6 +576,8 @@
   data.salesCount;
       document.getElementById('average-check-value').textContent =
   data.averageCheck.toLocaleString('ru-RU') + ' ₽';
+      document.getElementById('updated-value').textContent =
+  data.updated;
 });
 </script>
 
