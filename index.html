@@ -1,704 +1,834 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дашборд продаж</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111417" />
+  <title>Агентство Связи — Дашборд продаж</title>
 
   <style>
-    * {
-      box-sizing: border-box;
+    :root{
+      --bg:#f4f6f5;
+      --card:#ffffff;
+      --dark:#111417;
+      --dark-2:#191d20;
+      --text:#171a1d;
+      --muted:#7b8488;
+      --line:#e5e9e7;
+      --accent:#35d6b4;
+      --accent-soft:#e5fbf5;
+      --accent-dark:#16a989;
+      --good:#1ea672;
+      --bad:#df5a5a;
+      --warning:#d99a2b;
+      --shadow:0 14px 36px rgba(17,20,23,.06);
+      --radius:20px;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
     }
 
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+    .shell{
+      width:min(1440px, calc(100% - 48px));
+      margin:0 auto;
+      padding:28px 0 56px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 32px;
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:var(--dark);
+      color:#fff;
+      border-radius:28px;
+      padding:34px 36px 30px;
+      margin-bottom:22px;
+      box-shadow:var(--shadow);
     }
 
-    h2 {
-      margin: 0 0 18px;
-      font-size: 22px;
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      right:-110px;
+      top:-160px;
+      background:var(--accent);
+      opacity:.18;
+      filter:blur(2px);
     }
 
-    .subtitle {
-      color: #6b7280;
-      margin-top: 8px;
-      margin-bottom: 28px;
+    .hero-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:24px;
+      position:relative;
+      z-index:1;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      margin-bottom: 32px;
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:18px;
     }
 
-    .card,
-    .section-card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    .brand-mark{
+      width:14px;
+      height:14px;
+      border-radius:4px;
+      background:var(--accent);
+      box-shadow:0 0 0 6px rgba(53,214,180,.12);
+      transform:rotate(45deg);
     }
 
-    .card {
-      padding: 20px;
+    .brand-name{
+      font-size:14px;
+      font-weight:750;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#d9dfdc;
     }
 
-    .card-title {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 10px;
+    h1{
+      margin:0;
+      font-size:clamp(28px, 3.1vw, 48px);
+      line-height:1.05;
+      letter-spacing:-.04em;
+      max-width:850px;
     }
 
-    .card-value {
-      font-size: 28px;
-      font-weight: 700;
+    .hero-subtitle{
+      margin-top:12px;
+      color:#aeb7b4;
+      font-size:14px;
     }
 
-    section {
-      margin-top: 32px;
+    .updated-pill{
+      flex:0 0 auto;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);
+      padding:10px 14px;
+      border-radius:999px;
+      color:#d9dfdc;
+      font-size:13px;
+      backdrop-filter:blur(10px);
     }
 
-    .section-card {
-      padding: 20px;
-      overflow-x: auto;
+    .updated-pill b{color:#fff}
+
+    .accent-line{
+      height:4px;
+      width:72px;
+      border-radius:99px;
+      background:var(--accent);
+      margin-top:24px;
     }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
+    .kpi-grid{
+      display:grid;
+      grid-template-columns:repeat(5, minmax(0,1fr));
+      gap:14px;
+      margin-bottom:22px;
     }
 
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
     }
 
-    .metric-list {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px 24px;
-      align-items: center;
+    .kpi{
+      padding:22px 22px 20px;
+      min-height:132px;
+      position:relative;
+      overflow:hidden;
     }
 
-    .metric-value {
-      text-align: right;
-      font-weight: 700;
+    .kpi::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:4px;
+      background:var(--accent);
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 650px;
+    .kpi-label{
+      color:var(--muted);
+      font-size:13px;
+      font-weight:650;
+      margin-bottom:18px;
     }
 
-    th,
-    td {
-      padding: 12px;
-      border-bottom: 1px solid #e5e7eb;
+    .kpi-value{
+      font-size:clamp(24px, 2.2vw, 34px);
+      font-weight:800;
+      letter-spacing:-.04em;
+      white-space:nowrap;
     }
 
-    th {
-      background: #f8fafc;
-      text-align: left;
-      font-size: 13px;
-      color: #4b5563;
+    .section{
+      margin-top:22px;
     }
 
-    th.num,
-    td.num {
-      text-align: right;
+    .section-title{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin:0 0 12px;
+      font-size:18px;
+      font-weight:800;
+      letter-spacing:-.02em;
     }
 
-    tbody tr:last-child td {
-      border-bottom: 0;
+    .section-title::before{
+      content:"";
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 5px var(--accent-soft);
     }
 
-    .partner-value {
-      font-size: 24px;
-      font-weight: 700;
-      margin-top: 8px;
+    .table-card{
+      overflow:hidden;
     }
 
-    .muted {
-      color: #6b7280;
-      font-size: 14px;
+    .table-scroll{overflow-x:auto}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:760px;
     }
 
-    .negative {
-      color: #dc2626;
+    th{
+      background:#fafbfa;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:750;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+      padding:15px 18px;
+      text-align:left;
+      border-bottom:1px solid var(--line);
+      white-space:nowrap;
     }
 
-    .positive {
-      color: #16a34a;
+    td{
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      font-size:14px;
+      vertical-align:middle;
+      white-space:nowrap;
     }
 
-    @media (max-width: 1000px) {
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    tbody tr:last-child td{border-bottom:none}
+    tbody tr:hover{background:#fbfdfc}
 
-      .grid-2,
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
+    .name-cell{
+      font-weight:760;
+      color:var(--text);
     }
 
-    @media (max-width: 520px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
+    .progress{
+      width:100%;
+      min-width:130px;
+      height:8px;
+      background:#edf1ef;
+      border-radius:99px;
+      overflow:hidden;
+    }
 
-      h1 {
-        font-size: 26px;
-      }
+    .progress > span{
+      display:block;
+      height:100%;
+      border-radius:99px;
+      background:var(--accent);
+      min-width:2px;
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .best-card{
+      padding:24px;
+      background:linear-gradient(135deg, var(--dark), var(--dark-2));
+      color:#fff;
+      min-height:180px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .best-card::after{
+      content:"";
+      position:absolute;
+      right:-55px;
+      bottom:-85px;
+      width:210px;
+      height:210px;
+      border-radius:50%;
+      background:var(--accent);
+      opacity:.12;
+    }
+
+    .eyebrow{
+      color:#94a19c;
+      font-size:12px;
+      font-weight:750;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      margin-bottom:14px;
+    }
+
+    .best-name{
+      font-size:34px;
+      font-weight:820;
+      letter-spacing:-.04em;
+      margin-bottom:20px;
+      position:relative;
+      z-index:1;
+    }
+
+    .best-stats{
+      display:flex;
+      gap:26px;
+      position:relative;
+      z-index:1;
+    }
+
+    .best-stat span{
+      display:block;
+      color:#9eaaa6;
+      font-size:12px;
+      margin-bottom:5px;
+    }
+
+    .best-stat b{font-size:18px}
+
+    .rank{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:28px;
+      height:28px;
+      border-radius:9px;
+      background:var(--accent-soft);
+      color:var(--accent-dark);
+      font-weight:800;
+      font-size:12px;
+    }
+
+    .metrics-grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:14px;
+    }
+
+    .metric-card{
+      padding:20px;
+      min-height:120px;
+    }
+
+    .metric-label{
+      color:var(--muted);
+      font-size:12px;
+      font-weight:650;
+      margin-bottom:14px;
+      line-height:1.35;
+    }
+
+    .metric-value{
+      font-size:24px;
+      font-weight:820;
+      letter-spacing:-.035em;
+    }
+
+    .metric-note{
+      margin-top:7px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .good{color:var(--good)!important}
+    .bad{color:var(--bad)!important}
+    .warning{color:var(--warning)!important}
+    .accent{color:var(--accent-dark)!important}
+
+    .status-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .status{
+      padding:22px;
+    }
+
+    .status-label{
+      color:var(--muted);
+      font-size:12px;
+      font-weight:650;
+      margin-bottom:10px;
+    }
+
+    .status-value{
+      font-size:21px;
+      font-weight:800;
+      letter-spacing:-.03em;
+    }
+
+    .footer{
+      margin-top:26px;
+      text-align:center;
+      color:#9aa29f;
+      font-size:12px;
+    }
+
+    .empty{
+      color:#a0a8a5;
+      font-style:italic;
+    }
+
+    @media (max-width:1180px){
+      .kpi-grid{grid-template-columns:repeat(3,1fr)}
+      .metrics-grid{grid-template-columns:repeat(3,1fr)}
+    }
+
+    @media (max-width:860px){
+      .shell{width:min(100% - 24px, 1440px);padding-top:14px}
+      .hero{padding:26px 22px;border-radius:22px}
+      .hero-top{flex-direction:column}
+      .kpi-grid{grid-template-columns:repeat(2,1fr)}
+      .split{grid-template-columns:1fr}
+      .metrics-grid{grid-template-columns:repeat(2,1fr)}
+      .status-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:560px){
+      .kpi-grid,.metrics-grid{grid-template-columns:1fr}
+      .kpi{min-height:auto}
+      h1{font-size:31px}
+      .updated-pill{width:100%;text-align:center}
     }
   </style>
 </head>
 
 <body>
+  <main class="shell">
 
-<div class="container">
-
-  <h1 id="dashboard-title">Дашборд продаж</h1>
-  <div class="subtitle">Текущая статистика продаж</div>
-
-  <!-- ГЛАВНЫЕ ПОКАЗАТЕЛИ -->
-  <div class="cards">
-
-    <div class="card">
-      <div class="card-title">Продажи за месяц</div>
-      <div class="card-value" id="sales-value">—</div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Маржа</div>
-      <div class="card-value" id="margin-value">—</div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Маржинальность</div>
-      <div class="card-value" id="profitability-value">—</div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Количество продаж</div>
-      <div class="card-value" id="sales-count-value">—</div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Средний чек</div>
-      <div class="card-value" id="average-check-value">—</div>
-    </div>
-
-  </div>
-
-
-  <!-- ПЛАН / ФАКТ -->
-  <section>
-    <h2>План и факт по направлениям</h2>
-    <div class="section-card">
-      <table>
-        <thead>
-          <tr>
-            <th>Направление</th>
-            <th class="num">План</th>
-            <th class="num">Факт</th>
-            <th class="num">% выполнения</th>
-            <th class="num">Осталось</th>
-          </tr>
-        </thead>
-        <tbody id="plan-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <!-- ПРОДАЖИ ПО НАПРАВЛЕНИЯМ -->
-  <section>
-    <h2>Продажи по направлениям</h2>
-    <div class="section-card">
-      <table>
-        <thead>
-          <tr>
-            <th>Направление</th>
-            <th class="num">Факт</th>
-            <th class="num">Маржа</th>
-            <th class="num">Кол-во продаж</th>
-            <th class="num">Маржинальность</th>
-            <th class="num">Средний чек</th>
-            <th class="num">Доля продаж</th>
-          </tr>
-        </thead>
-        <tbody id="directions-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <!-- ЛУЧШИЙ ПАРТНЕР -->
-  <section>
-    <h2>Лучший партнёр / дилер</h2>
-    <div class="section-card">
-      <div class="grid-3">
-
+    <section class="hero">
+      <div class="hero-top">
         <div>
-          <div class="muted">Партнёр / дилер</div>
-          <div class="partner-value" id="best-partner-name">—</div>
+          <div class="brand">
+            <div class="brand-mark"></div>
+            <div class="brand-name">Агентство Связи</div>
+          </div>
+          <h1 id="dashboard-title">Дашборд продаж</h1>
+          <div class="hero-subtitle">Оперативная статистика отдела продаж</div>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="updated-pill">
+          Обновлено: <b id="updated-value">—</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="kpi-grid">
+      <article class="card kpi">
+        <div class="kpi-label">Продажи</div>
+        <div class="kpi-value" id="sales-value">—</div>
+      </article>
+      <article class="card kpi">
+        <div class="kpi-label">Маржа</div>
+        <div class="kpi-value" id="margin-value">—</div>
+      </article>
+      <article class="card kpi">
+        <div class="kpi-label">Рентабельность</div>
+        <div class="kpi-value" id="profitability-value">—</div>
+      </article>
+      <article class="card kpi">
+        <div class="kpi-label">Количество продаж</div>
+        <div class="kpi-value" id="sales-count-value">—</div>
+      </article>
+      <article class="card kpi">
+        <div class="kpi-label">Средний чек</div>
+        <div class="kpi-value" id="average-check-value">—</div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">План и факт по направлениям</h2>
+      <div class="card table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Направление</th>
+                <th>План</th>
+                <th>Факт</th>
+                <th>Выполнение</th>
+                <th>Осталось</th>
+                <th>Прогресс</th>
+              </tr>
+            </thead>
+            <tbody id="plan-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Продажи по направлениям</h2>
+      <div class="card table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Направление</th>
+                <th>Продажи</th>
+                <th>Маржа</th>
+                <th>Кол-во</th>
+                <th>Рентабельность</th>
+                <th>Средний чек</th>
+                <th>Доля</th>
+              </tr>
+            </thead>
+            <tbody id="directions-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div>
+          <h2 class="section-title">Лучший партнёр / дилер</h2>
+          <article class="card best-card">
+            <div class="eyebrow">Лидер месяца</div>
+            <div class="best-name" id="best-partner-name">—</div>
+            <div class="best-stats">
+              <div class="best-stat">
+                <span>Продаж</span>
+                <b id="best-partner-count">—</b>
+              </div>
+              <div class="best-stat">
+                <span>Сумма</span>
+                <b id="best-partner-sales">—</b>
+              </div>
+            </div>
+          </article>
         </div>
 
         <div>
-          <div class="muted">Количество номеров</div>
-          <div class="partner-value" id="best-partner-count">—</div>
+          <h2 class="section-title">Топ-3 партнёров</h2>
+          <div class="card table-card">
+            <div class="table-scroll">
+              <table style="min-width:520px">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Партнёр</th>
+                    <th>Продаж</th>
+                    <th>Сумма</th>
+                  </tr>
+                </thead>
+                <tbody id="partners-table"></tbody>
+              </table>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div>
-          <div class="muted">Сумма продаж</div>
-          <div class="partner-value" id="best-partner-sales">—</div>
+    <section class="section">
+      <h2 class="section-title">Топ-10 масок</h2>
+      <div class="card table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Маска</th>
+                <th>Количество</th>
+                <th>Продажи</th>
+              </tr>
+            </thead>
+            <tbody id="masks-table"></tbody>
+          </table>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ТОП 3 ПАРТНЕРОВ -->
-  <section>
-    <h2>Топ-3 партнёров / дилеров</h2>
-    <div class="section-card">
-      <table>
-        <thead>
-          <tr>
-            <th>Место</th>
-            <th>Партнёр / дилер</th>
-            <th class="num">Количество номеров</th>
-            <th class="num">Сумма продаж</th>
-          </tr>
-        </thead>
-        <tbody id="partners-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <!-- ТОП 10 МАСОК -->
-  <section>
-    <h2>Топ-10 масок продаж за месяц</h2>
-    <div class="section-card">
-      <table>
-        <thead>
-          <tr>
-            <th>Место</th>
-            <th>Маска</th>
-            <th class="num">Количество продаж</th>
-            <th class="num">Сумма продаж</th>
-          </tr>
-        </thead>
-        <tbody id="masks-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <!-- ДНИ НЕДЕЛИ -->
-  <section>
-    <h2>Продажи по дням недели</h2>
-    <div class="section-card">
-      <table>
-        <thead>
-          <tr>
-            <th>День недели</th>
-            <th class="num">Сумма продаж</th>
-            <th class="num">Количество продаж</th>
-            <th class="num">Средний чек</th>
-          </tr>
-        </thead>
-        <tbody id="weekdays-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <div class="grid-2">
-
-    <!-- КЛЮЧЕВЫЕ ПОКАЗАТЕЛИ -->
-    <section>
-      <h2>Ключевые показатели дня</h2>
-
-      <div class="section-card metric-list">
-
-        <div>Продажи сегодня</div>
-        <div class="metric-value" id="today-sales">—</div>
-
-        <div>Продажи вчера</div>
-        <div class="metric-value" id="yesterday-sales">—</div>
-
-        <div>Изменение к вчера</div>
-        <div class="metric-value" id="sales-change">—</div>
-
-        <div>Средние продажи в день</div>
-        <div class="metric-value" id="average-daily-sales">—</div>
-
-        <div>Лучший день</div>
-        <div class="metric-value" id="best-day-sales">—</div>
-
-        <div>Дата лучшего дня</div>
-        <div class="metric-value" id="best-day-date">—</div>
-
-        <div>Нужно продавать в день</div>
-        <div class="metric-value" id="needed-per-day">—</div>
-
-        <div>Дней осталось</div>
-        <div class="metric-value" id="days-left">—</div>
-
-        <div>Выполнение общего плана</div>
-        <div class="metric-value" id="plan-completion">—</div>
-
-        <div>Осталось до общего плана</div>
-        <div class="metric-value" id="plan-remaining">—</div>
-
       </div>
     </section>
 
-
-    <!-- ПРОГНОЗ -->
-    <section>
-      <h2>Прогноз и темп</h2>
-
-      <div class="section-card metric-list">
-
-        <div>Прогноз на месяц</div>
-        <div class="metric-value" id="forecast-month">—</div>
-
-        <div>Прогноз выполнения плана</div>
-        <div class="metric-value" id="forecast-completion">—</div>
-
-        <div>Темп выполнения плана</div>
-        <div class="metric-value" id="forecast-pace">—</div>
-
-        <div>Отклонение от нужного темпа</div>
-        <div class="metric-value" id="forecast-deviation">—</div>
-
-        <div>Прогноз к плану</div>
-        <div class="metric-value" id="forecast-gap">—</div>
-
+    <section class="section">
+      <h2 class="section-title">Продажи по дням недели</h2>
+      <div class="card table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>День недели</th>
+                <th>Продажи</th>
+                <th>Количество</th>
+                <th>Средний чек</th>
+              </tr>
+            </thead>
+            <tbody id="weekdays-table"></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
-  </div>
-
-
-  <div class="grid-2">
-
-    <!-- АКТУАЛЬНОСТЬ -->
-    <section>
-      <h2>Актуальность данных</h2>
-
-      <div class="section-card metric-list">
-
-        <div>Данные актуальны на</div>
-        <div class="metric-value" id="updated-value">—</div>
-
-        <div>Последняя продажа</div>
-        <div class="metric-value" id="last-sale-value">—</div>
-
-        <div>Дней без продаж</div>
-        <div class="metric-value" id="days-without-sales-value">—</div>
-
+    <section class="section">
+      <h2 class="section-title">Ключевые показатели дня</h2>
+      <div class="metrics-grid">
+        <article class="card metric-card"><div class="metric-label">Продажи сегодня</div><div class="metric-value" id="today-sales">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Продажи вчера</div><div class="metric-value" id="yesterday-sales">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Изменение к вчера</div><div class="metric-value" id="sales-change">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Средние продажи в день</div><div class="metric-value" id="average-daily-sales">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Лучший день</div><div class="metric-value" id="best-day-sales">—</div><div class="metric-note" id="best-day-date">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Нужно продавать в день</div><div class="metric-value accent" id="needed-per-day">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Дней осталось</div><div class="metric-value" id="days-left">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Выполнение общего плана</div><div class="metric-value" id="plan-completion">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Осталось до плана</div><div class="metric-value" id="plan-remaining">—</div></article>
       </div>
     </section>
 
-
-    <!-- СРЕДНИЙ ЧЕК -->
-    <section>
-      <h2>Средний чек и количество продаж</h2>
-
-      <div class="section-card metric-list">
-
-        <div>Средний чек сегодня</div>
-        <div class="metric-value" id="check-today">—</div>
-
-        <div>Средний чек вчера</div>
-        <div class="metric-value" id="check-yesterday">—</div>
-
-        <div>Изменение среднего чека к вчера</div>
-        <div class="metric-value" id="check-change">—</div>
-
-        <div>Количество продаж сегодня</div>
-        <div class="metric-value" id="count-today">—</div>
-
-        <div>Количество продаж вчера</div>
-        <div class="metric-value" id="count-yesterday">—</div>
-
-        <div>Изменение количества продаж к вчера</div>
-        <div class="metric-value" id="count-change">—</div>
-
+    <section class="section">
+      <h2 class="section-title">Прогноз и темп</h2>
+      <div class="metrics-grid">
+        <article class="card metric-card"><div class="metric-label">Прогноз продаж на месяц</div><div class="metric-value" id="forecast-month">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Прогноз выполнения плана</div><div class="metric-value" id="forecast-completion">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Текущий темп</div><div class="metric-value" id="forecast-pace">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Отклонение от нужного темпа</div><div class="metric-value" id="forecast-deviation">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Прогнозный разрыв до плана</div><div class="metric-value" id="forecast-gap">—</div></article>
       </div>
     </section>
 
-  </div>
+    <section class="section">
+      <h2 class="section-title">Актуальность данных</h2>
+      <div class="status-grid">
+        <article class="card status">
+          <div class="status-label">Последнее обновление</div>
+          <div class="status-value" id="updated-status">—</div>
+        </article>
+        <article class="card status">
+          <div class="status-label">Последняя продажа</div>
+          <div class="status-value" id="last-sale-value">—</div>
+        </article>
+        <article class="card status">
+          <div class="status-label">Дней без продаж</div>
+          <div class="status-value" id="days-without-sales-value">—</div>
+        </article>
+      </div>
+    </section>
 
-</div>
+    <section class="section">
+      <h2 class="section-title">Средний чек и количество продаж</h2>
+      <div class="metrics-grid">
+        <article class="card metric-card"><div class="metric-label">Средний чек сегодня</div><div class="metric-value" id="check-today">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Средний чек вчера</div><div class="metric-value" id="check-yesterday">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Изменение среднего чека</div><div class="metric-value" id="check-change">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Продаж сегодня</div><div class="metric-value" id="count-today">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Продаж вчера</div><div class="metric-value" id="count-yesterday">—</div></article>
+        <article class="card metric-card"><div class="metric-label">Изменение количества</div><div class="metric-value" id="count-change">—</div></article>
+      </div>
+    </section>
 
+    <div class="footer">Агентство Связи · Дашборд отдела продаж</div>
+  </main>
 
-<script>
+  <script>
+    const el = id => document.getElementById(id);
 
-  const rub = value =>
-    Number(value || 0).toLocaleString('ru-RU') + ' ₽';
-
-  const pct = value =>
-    Number(value || 0).toLocaleString('ru-RU', {
-      maximumFractionDigits: 1
-    }) + '%';
-
-  function colorPercent(element, value) {
-    element.classList.remove('negative', 'positive');
-
-    if (value < 0) {
-      element.classList.add('negative');
-    } else if (value > 0) {
-      element.classList.add('positive');
+    function num(value){
+      return Number(value || 0);
     }
-  }
 
-  function dashboardTitle(date) {
-    const parts = date.split('.');
-    if (parts.length !== 3) return 'Дашборд продаж';
+    function rub(value){
+      return num(value).toLocaleString('ru-RU') + ' ₽';
+    }
 
-    const months = [
-      'январь',
-      'февраль',
-      'март',
-      'апрель',
-      'май',
-      'июнь',
-      'июль',
-      'август',
-      'сентябрь',
-      'октябрь',
-      'ноябрь',
-      'декабрь'
-    ];
+    function pct(value){
+      return num(value).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + '%';
+    }
 
-    return `Дашборд продаж — ${months[Number(parts[1]) - 1]} ${parts[2]}`;
-  }
+    function signPct(value){
+      const n = num(value);
+      return (n > 0 ? '+' : '') + n.toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + '%';
+    }
 
+    function set(id, value){
+      const node = el(id);
+      if(node) node.textContent = value;
+    }
 
-  fetch('data.json?v=' + Date.now())
-    .then(response => response.json())
-    .then(data => {
+    function paintChange(id, value){
+      const node = el(id);
+      if(!node) return;
+      node.classList.remove('good','bad','warning');
+      const n = num(value);
+      if(n > 0) node.classList.add('good');
+      if(n < 0) node.classList.add('bad');
+    }
 
-      document.getElementById('dashboard-title').textContent =
-        dashboardTitle(data.updated);
-
-      document.getElementById('sales-value').textContent =
-        rub(data.sales);
-
-      document.getElementById('margin-value').textContent =
-        rub(data.margin);
-
-      document.getElementById('profitability-value').textContent =
-        pct(data.profitability);
-
-      document.getElementById('sales-count-value').textContent =
-        data.salesCount;
-
-      document.getElementById('average-check-value').textContent =
-        rub(data.averageCheck);
-
-
-      // НАПРАВЛЕНИЯ
-
-      document.getElementById('plan-table').innerHTML =
-        data.directions.map(item => `
-          <tr>
-            <td>${item.name}</td>
-            <td class="num">${rub(item.plan)}</td>
-            <td class="num">${rub(item.fact)}</td>
-            <td class="num">${pct(item.completion)}</td>
-            <td class="num">${rub(item.remaining)}</td>
-          </tr>
-        `).join('');
-
-
-      document.getElementById('directions-table').innerHTML =
-        data.directions.map(item => `
-          <tr>
-            <td>${item.name}</td>
-            <td class="num">${rub(item.fact)}</td>
-            <td class="num">${rub(item.margin)}</td>
-            <td class="num">${item.count}</td>
-            <td class="num">${pct(item.profitability)}</td>
-            <td class="num">${rub(item.averageCheck)}</td>
-            <td class="num">${pct(item.share)}</td>
-          </tr>
-        `).join('');
-
-
-      // ПАРТНЕРЫ
-
-      document.getElementById('best-partner-name').textContent =
-        data.bestPartner.name;
-
-      document.getElementById('best-partner-count').textContent =
-        data.bestPartner.count;
-
-      document.getElementById('best-partner-sales').textContent =
-        rub(data.bestPartner.sales);
-
-
-      document.getElementById('partners-table').innerHTML =
-        data.topPartners.map((item, index) => `
-          <tr>
-            <td>${index + 1}</td>
-            <td>${item.name}</td>
-            <td class="num">${item.count}</td>
-            <td class="num">${rub(item.sales)}</td>
-          </tr>
-        `).join('');
-
-
-      // МАСКИ
-
-      document.getElementById('masks-table').innerHTML =
-        data.topMasks.map((item, index) => `
-          <tr>
-            <td>${index + 1}</td>
-            <td>${item.mask}</td>
-            <td class="num">${item.count}</td>
-            <td class="num">${rub(item.sales)}</td>
-          </tr>
-        `).join('');
-
-
-      // ДНИ НЕДЕЛИ
-
-      document.getElementById('weekdays-table').innerHTML =
-        data.weekdays.map(item => `
-          <tr>
-            <td>${item.day}</td>
-            <td class="num">${rub(item.sales)}</td>
-            <td class="num">${item.count}</td>
-            <td class="num">${rub(item.averageCheck)}</td>
-          </tr>
-        `).join('');
-
-
-      // ДНЕВНАЯ СТАТИСТИКА
-
-      document.getElementById('today-sales').textContent =
-        rub(data.daily.todaySales);
-
-      document.getElementById('yesterday-sales').textContent =
-        rub(data.daily.yesterdaySales);
-
-      const changeEl = document.getElementById('sales-change');
-      changeEl.textContent = pct(data.daily.change);
-      colorPercent(changeEl, data.daily.change);
-
-      document.getElementById('average-daily-sales').textContent =
-        rub(data.daily.averageDaily);
-
-      document.getElementById('best-day-sales').textContent =
-        rub(data.daily.bestDaySales);
-
-      document.getElementById('best-day-date').textContent =
-        data.daily.bestDayDate;
-
-      document.getElementById('needed-per-day').textContent =
-        rub(data.daily.neededPerDay);
-
-      document.getElementById('days-left').textContent =
-        data.daily.daysLeft;
-
-      document.getElementById('plan-completion').textContent =
-        pct(data.daily.planCompletion);
-
-      document.getElementById('plan-remaining').textContent =
-        rub(data.daily.remaining);
-
-
-      // ПРОГНОЗ
-
-      document.getElementById('forecast-month').textContent =
-        rub(data.forecast.month);
-
-      document.getElementById('forecast-completion').textContent =
-        pct(data.forecast.completion);
-
-      document.getElementById('forecast-pace').textContent =
-        pct(data.forecast.pace);
-
-      const devEl = document.getElementById('forecast-deviation');
-      devEl.textContent = pct(data.forecast.deviation);
-      colorPercent(devEl, data.forecast.deviation);
-
-      const gapEl = document.getElementById('forecast-gap');
-      gapEl.textContent = rub(data.forecast.gap);
-
-      if (data.forecast.gap < 0) {
-        gapEl.classList.add('negative');
-      } else if (data.forecast.gap > 0) {
-        gapEl.classList.add('positive');
+    function dashboardTitle(date){
+      const months = [
+        'январь','февраль','март','апрель','май','июнь',
+        'июль','август','сентябрь','октябрь','ноябрь','декабрь'
+      ];
+      const parts = String(date || '').split('.');
+      if(parts.length === 3){
+        const month = months[Number(parts[1]) - 1];
+        if(month) return `Продажи · ${month} ${parts[2]}`;
       }
+      return 'Дашборд продаж';
+    }
 
+    fetch('data.json?v=' + Date.now())
+      .then(response => {
+        if(!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then(data => {
+        set('dashboard-title', dashboardTitle(data.updated));
+        set('updated-value', data.updated || '—');
 
-      // АКТУАЛЬНОСТЬ
+        set('sales-value', rub(data.sales));
+        set('margin-value', rub(data.margin));
+        set('profitability-value', pct(data.profitability));
+        set('sales-count-value', num(data.salesCount).toLocaleString('ru-RU'));
+        set('average-check-value', rub(data.averageCheck));
 
-      document.getElementById('updated-value').textContent =
-        data.updated;
+        const directions = Array.isArray(data.directions) ? data.directions : [];
 
-      document.getElementById('last-sale-value').textContent =
-        data.lastSale;
+        el('plan-table').innerHTML = directions.length
+          ? directions.map(item => `
+              <tr>
+                <td class="name-cell">${item.name ?? '—'}</td>
+                <td>${rub(item.plan)}</td>
+                <td>${rub(item.fact)}</td>
+                <td>${pct(item.completion)}</td>
+                <td>${rub(item.remaining)}</td>
+                <td>
+                  <div class="progress">
+                    <span style="width:${Math.max(0, Math.min(100, num(item.completion)))}%"></span>
+                  </div>
+                </td>
+              </tr>
+            `).join('')
+          : `<tr><td colspan="6" class="empty">Нет данных</td></tr>`;
 
-      document.getElementById('days-without-sales-value').textContent =
-        data.daysWithoutSales;
+        el('directions-table').innerHTML = directions.length
+          ? directions.map(item => `
+              <tr>
+                <td class="name-cell">${item.name ?? '—'}</td>
+                <td>${rub(item.fact)}</td>
+                <td>${rub(item.margin)}</td>
+                <td>${num(item.count).toLocaleString('ru-RU')}</td>
+                <td>${pct(item.profitability)}</td>
+                <td>${rub(item.averageCheck)}</td>
+                <td>${pct(item.share)}</td>
+              </tr>
+            `).join('')
+          : `<tr><td colspan="7" class="empty">Нет данных</td></tr>`;
 
+        const best = data.bestPartner || {};
+        set('best-partner-name', best.name || '—');
+        set('best-partner-count', num(best.count).toLocaleString('ru-RU'));
+        set('best-partner-sales', rub(best.sales));
 
-      // СРЕДНИЙ ЧЕК / КОЛИЧЕСТВО
+        const partners = Array.isArray(data.topPartners) ? data.topPartners : [];
+        el('partners-table').innerHTML = partners.length
+          ? partners.map((item, index) => `
+              <tr>
+                <td><span class="rank">${index + 1}</span></td>
+                <td class="name-cell">${item.name ?? '—'}</td>
+                <td>${num(item.count).toLocaleString('ru-RU')}</td>
+                <td>${rub(item.sales)}</td>
+              </tr>
+            `).join('')
+          : `<tr><td colspan="4" class="empty">Нет данных</td></tr>`;
 
-      document.getElementById('check-today').textContent =
-        rub(data.checks.today);
+        const masks = Array.isArray(data.topMasks) ? data.topMasks : [];
+        el('masks-table').innerHTML = masks.length
+          ? masks.map((item, index) => `
+              <tr>
+                <td><span class="rank">${index + 1}</span></td>
+                <td class="name-cell">${item.mask ?? '—'}</td>
+                <td>${num(item.count).toLocaleString('ru-RU')}</td>
+                <td>${rub(item.sales)}</td>
+              </tr>
+            `).join('')
+          : `<tr><td colspan="4" class="empty">Нет данных</td></tr>`;
 
-      document.getElementById('check-yesterday').textContent =
-        rub(data.checks.yesterday);
+        const weekdays = Array.isArray(data.weekdays) ? data.weekdays : [];
+        el('weekdays-table').innerHTML = weekdays.length
+          ? weekdays.map(item => `
+              <tr>
+                <td class="name-cell">${item.day ?? '—'}</td>
+                <td>${rub(item.sales)}</td>
+                <td>${num(item.count).toLocaleString('ru-RU')}</td>
+                <td>${rub(item.averageCheck)}</td>
+              </tr>
+            `).join('')
+          : `<tr><td colspan="4" class="empty">Нет данных</td></tr>`;
 
-      const checkChange = document.getElementById('check-change');
-      checkChange.textContent = pct(data.checks.change);
-      colorPercent(checkChange, data.checks.change);
+        const d = data.daily || {};
+        set('today-sales', rub(d.todaySales));
+        set('yesterday-sales', rub(d.yesterdaySales));
+        set('sales-change', signPct(d.change));
+        paintChange('sales-change', d.change);
+        set('average-daily-sales', rub(d.averageDaily));
+        set('best-day-sales', rub(d.bestDaySales));
+        set('best-day-date', d.bestDayDate || '—');
+        set('needed-per-day', rub(d.neededPerDay));
+        set('days-left', num(d.daysLeft).toLocaleString('ru-RU'));
+        set('plan-completion', pct(d.planCompletion));
+        set('plan-remaining', rub(d.remaining));
 
-      document.getElementById('count-today').textContent =
-        data.checks.countToday;
+        const f = data.forecast || {};
+        set('forecast-month', rub(f.month));
+        set('forecast-completion', pct(f.completion));
+        set('forecast-pace', pct(f.pace));
+        set('forecast-deviation', signPct(f.deviation));
+        paintChange('forecast-deviation', f.deviation);
+        set('forecast-gap', rub(f.gap));
+        paintChange('forecast-gap', f.gap);
 
-      document.getElementById('count-yesterday').textContent =
-        data.checks.countYesterday;
+        set('updated-status', data.updated || '—');
+        set('last-sale-value', data.lastSale || '—');
+        set('days-without-sales-value', num(data.daysWithoutSales).toLocaleString('ru-RU'));
 
-      const countChange = document.getElementById('count-change');
-      countChange.textContent = pct(data.checks.countChange);
-      colorPercent(countChange, data.checks.countChange);
-
-    })
-
-    .catch(error => {
-      console.error('Ошибка загрузки data.json:', error);
-    });
-
-</script>
-
+        const c = data.checks || {};
+        set('check-today', rub(c.today));
+        set('check-yesterday', rub(c.yesterday));
+        set('check-change', signPct(c.change));
+        paintChange('check-change', c.change);
+        set('count-today', num(c.countToday).toLocaleString('ru-RU'));
+        set('count-yesterday', num(c.countYesterday).toLocaleString('ru-RU'));
+        set('count-change', signPct(c.countChange));
+        paintChange('count-change', c.countChange);
+      })
+      .catch(error => {
+        console.error('Ошибка загрузки data.json:', error);
+        set('dashboard-title', 'Ошибка загрузки данных');
+      });
+  </script>
 </body>
 </html>
