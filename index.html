@@ -6,25 +6,36 @@
   <title>Дашборд продаж</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f6f8;
+      background: #f4f6f8;
       color: #1f2937;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 32px 20px;
+      padding: 32px 20px 60px;
     }
 
     h1 {
-      margin-bottom: 8px;
+      margin: 0;
+      font-size: 32px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 22px;
     }
 
     .subtitle {
       color: #6b7280;
+      margin-top: 8px;
       margin-bottom: 28px;
     }
 
@@ -32,19 +43,24 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .card,
+    .section-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
 
     .card {
-      background: white;
-      border-radius: 14px;
       padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     .card-title {
       font-size: 14px;
       color: #6b7280;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .card-value {
@@ -52,9 +68,94 @@
       font-weight: 700;
     }
 
-    @media (max-width: 900px) {
+    section {
+      margin-top: 32px;
+    }
+
+    .section-card {
+      padding: 20px;
+      overflow-x: auto;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .metric-list {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px 24px;
+      align-items: center;
+    }
+
+    .metric-value {
+      text-align: right;
+      font-weight: 700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 650px;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    th {
+      background: #f8fafc;
+      text-align: left;
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    th.num,
+    td.num {
+      text-align: right;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .partner-value {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .muted {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .negative {
+      color: #dc2626;
+    }
+
+    .positive {
+      color: #16a34a;
+    }
+
+    @media (max-width: 1000px) {
       .cards {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -62,527 +163,541 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
+      h1 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Дашборд продаж — сентябрь 2026</h1>
-    <div class="subtitle">Текущая статистика продаж</div>
+<div class="container">
 
-    <div class="cards">
+  <h1 id="dashboard-title">Дашборд продаж</h1>
+  <div class="subtitle">Текущая статистика продаж</div>
 
-      <div class="card">
-        <div class="card-title">Продажи за месяц</div>
-        <div class="card-value" id="sales-value">—</div>
-      </div>
+  <!-- ГЛАВНЫЕ ПОКАЗАТЕЛИ -->
+  <div class="cards">
 
-      <div class="card">
-        <div class="card-title">Маржа</div>
-        <div class="card-value" id="margin-value">—</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Маржинальность</div>
-        <div class="card-value" id="profitability-value">—</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Количество продаж</div>
-        <div class="card-value" id="sales-count-value">—</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Средний чек</div>
-        <div class="card-value" id="average-check-value">—</div>
-      </div>
-
+    <div class="card">
+      <div class="card-title">Продажи за месяц</div>
+      <div class="card-value" id="sales-value">—</div>
     </div>
-    <section style="margin-top: 32px;">
-  <h2>План и факт по направлениям</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow-x: auto;
-  ">
+    <div class="card">
+      <div class="card-title">Маржа</div>
+      <div class="card-value" id="margin-value">—</div>
+    </div>
 
-    <table style="
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    ">
-      <thead>
-        <tr>
-          <th style="text-align:left; padding:12px;">Направление</th>
-          <th style="text-align:right; padding:12px;">План</th>
-          <th style="text-align:right; padding:12px;">Факт</th>
-          <th style="text-align:right; padding:12px;">% выполнения</th>
-          <th style="text-align:right; padding:12px;">Осталось</th>
-        </tr>
-      </thead>
+    <div class="card">
+      <div class="card-title">Маржинальность</div>
+      <div class="card-value" id="profitability-value">—</div>
+    </div>
 
-      <tbody>
-        <tr>
-          <td style="padding:12px;">Личные продажи</td>
-          <td style="text-align:right; padding:12px;">3 295 081 ₽</td>
-          <td style="text-align:right; padding:12px;">27 140 ₽</td>
-          <td style="text-align:right; padding:12px;">0,8%</td>
-          <td style="text-align:right; padding:12px;">3 267 941 ₽</td>
-        </tr>
+    <div class="card">
+      <div class="card-title">Количество продаж</div>
+      <div class="card-value" id="sales-count-value">—</div>
+    </div>
 
-        <tr>
-          <td style="padding:12px;">ЦПО</td>
-          <td style="text-align:right; padding:12px;">641 568 ₽</td>
-          <td style="text-align:right; padding:12px;">0 ₽</td>
-          <td style="text-align:right; padding:12px;">0%</td>
-          <td style="text-align:right; padding:12px;">641 568 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">Приложение</td>
-          <td style="text-align:right; padding:12px;">257 939 ₽</td>
-          <td style="text-align:right; padding:12px;">2 400 ₽</td>
-          <td style="text-align:right; padding:12px;">0,9%</td>
-          <td style="text-align:right; padding:12px;">255 539 ₽</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Продажи по направлениям</h2>
-
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow-x: auto;
-  ">
-
-    <table style="
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    ">
-      <thead>
-        <tr>
-          <th style="text-align:left; padding:12px;">Направление</th>
-          <th style="text-align:right; padding:12px;">Факт</th>
-          <th style="text-align:right; padding:12px;">Маржа</th>
-          <th style="text-align:right; padding:12px;">Кол-во продаж</th>
-          <th style="text-align:right; padding:12px;">Маржинальность</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td style="padding:12px;">Личные продажи</td>
-          <td style="text-align:right; padding:12px;">27 140 ₽</td>
-          <td style="text-align:right; padding:12px;">14 125 ₽</td>
-          <td style="text-align:right; padding:12px;">4</td>
-          <td style="text-align:right; padding:12px;">52%</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">ЦПО</td>
-          <td style="text-align:right; padding:12px;">0 ₽</td>
-          <td style="text-align:right; padding:12px;">0 ₽</td>
-          <td style="text-align:right; padding:12px;">0</td>
-          <td style="text-align:right; padding:12px;">0%</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">Приложение</td>
-          <td style="text-align:right; padding:12px;">2 400 ₽</td>
-          <td style="text-align:right; padding:12px;">1 400 ₽</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">58%</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Лучший партнёр / дилер</h2>
-
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
-
-    <div style="
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    ">
-
-      <div>
-        <div style="font-size:14px; color:#6b7280;">Партнёр / дилер</div>
-        <div style="font-size:24px; font-weight:700; margin-top:8px;">Осипян</div>
-      </div>
-
-      <div>
-        <div style="font-size:14px; color:#6b7280;">Количество номеров</div>
-        <div style="font-size:24px; font-weight:700; margin-top:8px;">2</div>
-      </div>
-
-      <div>
-        <div style="font-size:14px; color:#6b7280;">Сумма продаж</div>
-        <div style="font-size:24px; font-weight:700; margin-top:8px;">19 500 ₽</div>
-      </div>
-
+    <div class="card">
+      <div class="card-title">Средний чек</div>
+      <div class="card-value" id="average-check-value">—</div>
     </div>
 
   </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Топ-3 партнёров / дилеров</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow-x: auto;
-  ">
 
-    <table style="
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 650px;
-    ">
-      <thead>
-        <tr>
-          <th style="text-align:left; padding:12px;">Место</th>
-          <th style="text-align:left; padding:12px;">Партнёр / дилер</th>
-          <th style="text-align:right; padding:12px;">Количество номеров</th>
-          <th style="text-align:right; padding:12px;">Сумма продаж</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td style="padding:12px;">1</td>
-          <td style="padding:12px;">Осипян</td>
-          <td style="text-align:right; padding:12px;">2</td>
-          <td style="text-align:right; padding:12px;">19 500 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">2</td>
-          <td style="padding:12px;">Мезенцев</td>
-          <td style="text-align:right; padding:12px;">2</td>
-          <td style="text-align:right; padding:12px;">7 640 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">3</td>
-          <td style="padding:12px;">АГАМЕДОВ</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">2 400 ₽</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Топ-10 масок продаж за месяц</h2>
-
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow-x: auto;
-  ">
-
-    <table style="
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    ">
-      <thead>
-        <tr>
-          <th style="text-align:left; padding:12px;">Место</th>
-          <th style="text-align:left; padding:12px;">Маска</th>
-          <th style="text-align:right; padding:12px;">Количество продаж</th>
-          <th style="text-align:right; padding:12px;">Сумма продаж</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td style="padding:12px;">1</td>
-          <td style="padding:12px;">***aaaa**</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">2 000 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">2</td>
-          <td style="padding:12px;">******aaaa</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">17 500 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">3</td>
-          <td style="padding:12px;">****aabba*</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">2 640 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">4</td>
-          <td style="padding:12px;">******ABAB</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">2 400 ₽</td>
-        </tr>
-
-        <tr>
-          <td style="padding:12px;">5</td>
-          <td style="padding:12px;">***AABABBA</td>
-          <td style="text-align:right; padding:12px;">1</td>
-          <td style="text-align:right; padding:12px;">5 000 ₽</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Ключевые показатели дня</h2>
-
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
-
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:12px 24px;
-    ">
-
-      <div>Продажи сегодня</div>
-      <div style="text-align:right; font-weight:700;">0 ₽</div>
-
-      <div>Продажи вчера</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Изменение к вчера</div>
-      <div style="text-align:right; font-weight:700;">-100%</div>
-
-      <div>Средние продажи в день</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Лучший день</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Дата лучшего дня</div>
-      <div style="text-align:right; font-weight:700;">01.09.2026</div>
-
-      <div>Нужно продавать в день</div>
-      <div style="text-align:right; font-weight:700;">148 752 ₽</div>
-
-      <div>Дней осталось</div>
-      <div style="text-align:right; font-weight:700;">28</div>
-
-      <div>Выполнение общего плана</div>
-      <div style="text-align:right; font-weight:700;">0,7%</div>
-
-      <div>Осталось до общего плана</div>
-      <div style="text-align:right; font-weight:700;">4 165 048 ₽</div>
-
+  <!-- ПЛАН / ФАКТ -->
+  <section>
+    <h2>План и факт по направлениям</h2>
+    <div class="section-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Направление</th>
+            <th class="num">План</th>
+            <th class="num">Факт</th>
+            <th class="num">% выполнения</th>
+            <th class="num">Осталось</th>
+          </tr>
+        </thead>
+        <tbody id="plan-table"></tbody>
+      </table>
     </div>
+  </section>
 
-  </div>
-</section>
-    <section style="margin-top: 32px;">
-  <h2>Ключевые показатели дня</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
-
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:12px 24px;
-    ">
-
-      <div>Продажи сегодня</div>
-      <div style="text-align:right; font-weight:700;">0 ₽</div>
-
-      <div>Продажи вчера</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Изменение к вчера</div>
-      <div style="text-align:right; font-weight:700;">-100%</div>
-
-      <div>Средние продажи в день</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Лучший день</div>
-      <div style="text-align:right; font-weight:700;">29 540 ₽</div>
-
-      <div>Дата лучшего дня</div>
-      <div style="text-align:right; font-weight:700;">01.09.2026</div>
-
-      <div>Нужно продавать в день</div>
-      <div style="text-align:right; font-weight:700;">148 752 ₽</div>
-
-      <div>Дней осталось</div>
-      <div style="text-align:right; font-weight:700;">28</div>
-
-      <div>Выполнение общего плана</div>
-      <div style="text-align:right; font-weight:700;">0,7%</div>
-
-      <div>Осталось до общего плана</div>
-      <div style="text-align:right; font-weight:700;">4 165 048 ₽</div>
-
+  <!-- ПРОДАЖИ ПО НАПРАВЛЕНИЯМ -->
+  <section>
+    <h2>Продажи по направлениям</h2>
+    <div class="section-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Направление</th>
+            <th class="num">Факт</th>
+            <th class="num">Маржа</th>
+            <th class="num">Кол-во продаж</th>
+            <th class="num">Маржинальность</th>
+            <th class="num">Средний чек</th>
+            <th class="num">Доля продаж</th>
+          </tr>
+        </thead>
+        <tbody id="directions-table"></tbody>
+      </table>
     </div>
+  </section>
 
-  </div>
-</section>
- <section style="margin-top: 32px;">
-  <h2>Прогноз и темп</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
+  <!-- ЛУЧШИЙ ПАРТНЕР -->
+  <section>
+    <h2>Лучший партнёр / дилер</h2>
+    <div class="section-card">
+      <div class="grid-3">
 
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:12px 24px;
-    ">
+        <div>
+          <div class="muted">Партнёр / дилер</div>
+          <div class="partner-value" id="best-partner-name">—</div>
+        </div>
 
-      <div>Прогноз на месяц</div>
-      <div style="text-align:right; font-weight:700;">443 100 ₽</div>
+        <div>
+          <div class="muted">Количество номеров</div>
+          <div class="partner-value" id="best-partner-count">—</div>
+        </div>
 
-      <div>Прогноз выполнения плана</div>
-      <div style="text-align:right; font-weight:700;">10,6%</div>
+        <div>
+          <div class="muted">Сумма продаж</div>
+          <div class="partner-value" id="best-partner-sales">—</div>
+        </div>
 
-      <div>Темп выполнения плана</div>
-      <div style="text-align:right; font-weight:700;">10,6%</div>
-
-      <div>Отклонение от нужного темпа</div>
-      <div style="text-align:right; font-weight:700;">-80%</div>
-
-      <div>Прогноз к плану</div>
-      <div style="text-align:right; font-weight:700;">-3 751 488 ₽</div>
-
+      </div>
     </div>
+  </section>
 
-  </div>
-<section style="margin-top: 32px;">
-  <h2>Актуальность данных</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
-
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:12px 24px;
-    ">
-
-      <div>Данные актуальны на</div>
-      <div style="text-align:right; font-weight:700;" id="updated-value">—</div>
-
-      <div>Последняя продажа</div>
-      <div style="text-align:right; font-weight:700;" id="last-sale-value">—</div>
-
-      <div>Дней без продаж</div>
-      <div style="text-align:right; font-weight:700;" id="days-without-sales-value">—</div>
-
+  <!-- ТОП 3 ПАРТНЕРОВ -->
+  <section>
+    <h2>Топ-3 партнёров / дилеров</h2>
+    <div class="section-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Место</th>
+            <th>Партнёр / дилер</th>
+            <th class="num">Количество номеров</th>
+            <th class="num">Сумма продаж</th>
+          </tr>
+        </thead>
+        <tbody id="partners-table"></tbody>
+      </table>
     </div>
+  </section>
 
-  </div>
-</section>
-<section style="margin-top: 32px;">
-  <h2>Средний чек и количество продаж</h2>
 
-  <div style="
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  ">
-
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:12px 24px;
-    ">
-
-      <div>Средний чек сегодня</div>
-      <div style="text-align:right; font-weight:700;">0 ₽</div>
-
-      <div>Средний чек вчера</div>
-      <div style="text-align:right; font-weight:700;">5 908 ₽</div>
-
-      <div>Изменение среднего чека к вчера</div>
-      <div style="text-align:right; font-weight:700;">-100%</div>
-
-      <div>Количество продаж сегодня</div>
-      <div style="text-align:right; font-weight:700;">0</div>
-
-      <div>Количество продаж вчера</div>
-      <div style="text-align:right; font-weight:700;">5</div>
-
-      <div>Изменение количества продаж к вчера</div>
-      <div style="text-align:right; font-weight:700;">-100%</div>
-
+  <!-- ТОП 10 МАСОК -->
+  <section>
+    <h2>Топ-10 масок продаж за месяц</h2>
+    <div class="section-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Место</th>
+            <th>Маска</th>
+            <th class="num">Количество продаж</th>
+            <th class="num">Сумма продаж</th>
+          </tr>
+        </thead>
+        <tbody id="masks-table"></tbody>
+      </table>
     </div>
+  </section>
+
+
+  <!-- ДНИ НЕДЕЛИ -->
+  <section>
+    <h2>Продажи по дням недели</h2>
+    <div class="section-card">
+      <table>
+        <thead>
+          <tr>
+            <th>День недели</th>
+            <th class="num">Сумма продаж</th>
+            <th class="num">Количество продаж</th>
+            <th class="num">Средний чек</th>
+          </tr>
+        </thead>
+        <tbody id="weekdays-table"></tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <div class="grid-2">
+
+    <!-- КЛЮЧЕВЫЕ ПОКАЗАТЕЛИ -->
+    <section>
+      <h2>Ключевые показатели дня</h2>
+
+      <div class="section-card metric-list">
+
+        <div>Продажи сегодня</div>
+        <div class="metric-value" id="today-sales">—</div>
+
+        <div>Продажи вчера</div>
+        <div class="metric-value" id="yesterday-sales">—</div>
+
+        <div>Изменение к вчера</div>
+        <div class="metric-value" id="sales-change">—</div>
+
+        <div>Средние продажи в день</div>
+        <div class="metric-value" id="average-daily-sales">—</div>
+
+        <div>Лучший день</div>
+        <div class="metric-value" id="best-day-sales">—</div>
+
+        <div>Дата лучшего дня</div>
+        <div class="metric-value" id="best-day-date">—</div>
+
+        <div>Нужно продавать в день</div>
+        <div class="metric-value" id="needed-per-day">—</div>
+
+        <div>Дней осталось</div>
+        <div class="metric-value" id="days-left">—</div>
+
+        <div>Выполнение общего плана</div>
+        <div class="metric-value" id="plan-completion">—</div>
+
+        <div>Осталось до общего плана</div>
+        <div class="metric-value" id="plan-remaining">—</div>
+
+      </div>
+    </section>
+
+
+    <!-- ПРОГНОЗ -->
+    <section>
+      <h2>Прогноз и темп</h2>
+
+      <div class="section-card metric-list">
+
+        <div>Прогноз на месяц</div>
+        <div class="metric-value" id="forecast-month">—</div>
+
+        <div>Прогноз выполнения плана</div>
+        <div class="metric-value" id="forecast-completion">—</div>
+
+        <div>Темп выполнения плана</div>
+        <div class="metric-value" id="forecast-pace">—</div>
+
+        <div>Отклонение от нужного темпа</div>
+        <div class="metric-value" id="forecast-deviation">—</div>
+
+        <div>Прогноз к плану</div>
+        <div class="metric-value" id="forecast-gap">—</div>
+
+      </div>
+    </section>
 
   </div>
-</section> </section> </div>
+
+
+  <div class="grid-2">
+
+    <!-- АКТУАЛЬНОСТЬ -->
+    <section>
+      <h2>Актуальность данных</h2>
+
+      <div class="section-card metric-list">
+
+        <div>Данные актуальны на</div>
+        <div class="metric-value" id="updated-value">—</div>
+
+        <div>Последняя продажа</div>
+        <div class="metric-value" id="last-sale-value">—</div>
+
+        <div>Дней без продаж</div>
+        <div class="metric-value" id="days-without-sales-value">—</div>
+
+      </div>
+    </section>
+
+
+    <!-- СРЕДНИЙ ЧЕК -->
+    <section>
+      <h2>Средний чек и количество продаж</h2>
+
+      <div class="section-card metric-list">
+
+        <div>Средний чек сегодня</div>
+        <div class="metric-value" id="check-today">—</div>
+
+        <div>Средний чек вчера</div>
+        <div class="metric-value" id="check-yesterday">—</div>
+
+        <div>Изменение среднего чека к вчера</div>
+        <div class="metric-value" id="check-change">—</div>
+
+        <div>Количество продаж сегодня</div>
+        <div class="metric-value" id="count-today">—</div>
+
+        <div>Количество продаж вчера</div>
+        <div class="metric-value" id="count-yesterday">—</div>
+
+        <div>Изменение количества продаж к вчера</div>
+        <div class="metric-value" id="count-change">—</div>
+
+      </div>
+    </section>
+
+  </div>
+
+</div>
+
+
 <script>
+
+  const rub = value =>
+    Number(value || 0).toLocaleString('ru-RU') + ' ₽';
+
+  const pct = value =>
+    Number(value || 0).toLocaleString('ru-RU', {
+      maximumFractionDigits: 1
+    }) + '%';
+
+  function colorPercent(element, value) {
+    element.classList.remove('negative', 'positive');
+
+    if (value < 0) {
+      element.classList.add('negative');
+    } else if (value > 0) {
+      element.classList.add('positive');
+    }
+  }
+
+  function dashboardTitle(date) {
+    const parts = date.split('.');
+    if (parts.length !== 3) return 'Дашборд продаж';
+
+    const months = [
+      'январь',
+      'февраль',
+      'март',
+      'апрель',
+      'май',
+      'июнь',
+      'июль',
+      'август',
+      'сентябрь',
+      'октябрь',
+      'ноябрь',
+      'декабрь'
+    ];
+
+    return `Дашборд продаж — ${months[Number(parts[1]) - 1]} ${parts[2]}`;
+  }
+
+
   fetch('data.json')
     .then(response => response.json())
     .then(data => {
+
+      document.getElementById('dashboard-title').textContent =
+        dashboardTitle(data.updated);
+
       document.getElementById('sales-value').textContent =
-        data.sales.toLocaleString('ru-RU') + ' ₽';
-    document.getElementById('margin-value').textContent =
-  data.margin.toLocaleString('ru-RU') + ' ₽'
+        rub(data.sales);
+
+      document.getElementById('margin-value').textContent =
+        rub(data.margin);
+
       document.getElementById('profitability-value').textContent =
-  data.profitability + '%';
+        pct(data.profitability);
+
       document.getElementById('sales-count-value').textContent =
-  data.salesCount;
+        data.salesCount;
+
       document.getElementById('average-check-value').textContent =
-  data.averageCheck.toLocaleString('ru-RU') + ' ₽';
+        rub(data.averageCheck);
+
+
+      // НАПРАВЛЕНИЯ
+
+      document.getElementById('plan-table').innerHTML =
+        data.directions.map(item => `
+          <tr>
+            <td>${item.name}</td>
+            <td class="num">${rub(item.plan)}</td>
+            <td class="num">${rub(item.fact)}</td>
+            <td class="num">${pct(item.completion)}</td>
+            <td class="num">${rub(item.remaining)}</td>
+          </tr>
+        `).join('');
+
+
+      document.getElementById('directions-table').innerHTML =
+        data.directions.map(item => `
+          <tr>
+            <td>${item.name}</td>
+            <td class="num">${rub(item.fact)}</td>
+            <td class="num">${rub(item.margin)}</td>
+            <td class="num">${item.count}</td>
+            <td class="num">${pct(item.profitability)}</td>
+            <td class="num">${rub(item.averageCheck)}</td>
+            <td class="num">${pct(item.share)}</td>
+          </tr>
+        `).join('');
+
+
+      // ПАРТНЕРЫ
+
+      document.getElementById('best-partner-name').textContent =
+        data.bestPartner.name;
+
+      document.getElementById('best-partner-count').textContent =
+        data.bestPartner.count;
+
+      document.getElementById('best-partner-sales').textContent =
+        rub(data.bestPartner.sales);
+
+
+      document.getElementById('partners-table').innerHTML =
+        data.topPartners.map((item, index) => `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${item.name}</td>
+            <td class="num">${item.count}</td>
+            <td class="num">${rub(item.sales)}</td>
+          </tr>
+        `).join('');
+
+
+      // МАСКИ
+
+      document.getElementById('masks-table').innerHTML =
+        data.topMasks.map((item, index) => `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${item.mask}</td>
+            <td class="num">${item.count}</td>
+            <td class="num">${rub(item.sales)}</td>
+          </tr>
+        `).join('');
+
+
+      // ДНИ НЕДЕЛИ
+
+      document.getElementById('weekdays-table').innerHTML =
+        data.weekdays.map(item => `
+          <tr>
+            <td>${item.day}</td>
+            <td class="num">${rub(item.sales)}</td>
+            <td class="num">${item.count}</td>
+            <td class="num">${rub(item.averageCheck)}</td>
+          </tr>
+        `).join('');
+
+
+      // ДНЕВНАЯ СТАТИСТИКА
+
+      document.getElementById('today-sales').textContent =
+        rub(data.daily.todaySales);
+
+      document.getElementById('yesterday-sales').textContent =
+        rub(data.daily.yesterdaySales);
+
+      const changeEl = document.getElementById('sales-change');
+      changeEl.textContent = pct(data.daily.change);
+      colorPercent(changeEl, data.daily.change);
+
+      document.getElementById('average-daily-sales').textContent =
+        rub(data.daily.averageDaily);
+
+      document.getElementById('best-day-sales').textContent =
+        rub(data.daily.bestDaySales);
+
+      document.getElementById('best-day-date').textContent =
+        data.daily.bestDayDate;
+
+      document.getElementById('needed-per-day').textContent =
+        rub(data.daily.neededPerDay);
+
+      document.getElementById('days-left').textContent =
+        data.daily.daysLeft;
+
+      document.getElementById('plan-completion').textContent =
+        pct(data.daily.planCompletion);
+
+      document.getElementById('plan-remaining').textContent =
+        rub(data.daily.remaining);
+
+
+      // ПРОГНОЗ
+
+      document.getElementById('forecast-month').textContent =
+        rub(data.forecast.month);
+
+      document.getElementById('forecast-completion').textContent =
+        pct(data.forecast.completion);
+
+      document.getElementById('forecast-pace').textContent =
+        pct(data.forecast.pace);
+
+      const devEl = document.getElementById('forecast-deviation');
+      devEl.textContent = pct(data.forecast.deviation);
+      colorPercent(devEl, data.forecast.deviation);
+
+      const gapEl = document.getElementById('forecast-gap');
+      gapEl.textContent = rub(data.forecast.gap);
+
+      if (data.forecast.gap < 0) {
+        gapEl.classList.add('negative');
+      } else if (data.forecast.gap > 0) {
+        gapEl.classList.add('positive');
+      }
+
+
+      // АКТУАЛЬНОСТЬ
+
       document.getElementById('updated-value').textContent =
-  data.updated;
-document.getElementById('last-sale-value').textContent =
-  data.lastSale;
+        data.updated;
+
+      document.getElementById('last-sale-value').textContent =
+        data.lastSale;
+
       document.getElementById('days-without-sales-value').textContent =
-  data.daysWithoutSales;
+        data.daysWithoutSales;
+
+
+      // СРЕДНИЙ ЧЕК / КОЛИЧЕСТВО
+
+      document.getElementById('check-today').textContent =
+        rub(data.checks.today);
+
+      document.getElementById('check-yesterday').textContent =
+        rub(data.checks.yesterday);
+
+      const checkChange = document.getElementById('check-change');
+      checkChange.textContent = pct(data.checks.change);
+      colorPercent(checkChange, data.checks.change);
+
+      document.getElementById('count-today').textContent =
+        data.checks.countToday;
+
+      document.getElementById('count-yesterday').textContent =
+        data.checks.countYesterday;
+
+      const countChange = document.getElementById('count-change');
+      countChange.textContent = pct(data.checks.countChange);
+      colorPercent(countChange, data.checks.countChange);
+
+    })
+
+    .catch(error => {
+      console.error('Ошибка загрузки data.json:', error);
     });
+
 </script>
 
 </body>
