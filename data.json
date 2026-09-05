@@ -1,44 +1,185 @@
 {
-  "updated":"05.09.2026",
-  "lastSale":"03.09.2026",
-  "daysWithoutSales":2.,
-  "sales":291880.,
-  "margin":194091.84,
-  "profitability":66.497135809237,
-  "salesCount":23.,
-  "averageCheck":12690.4347826087,
+  "updated": "05.09.2026",
+  "lastSale": "03.09.2026",
+  "daysWithoutSales": 2,
+  "sales": 291880,
+  "margin": 194091.84,
+  "profitability": 66.497135809237,
+  "salesCount": 23,
+  "averageCheck": 12690.4347826087,
   "directions": [
-    {"name":"Личные продажи","plan":3295081.,"fact":203640.,"margin":124030.84,"count":15,"profitability":60.906914162247,"averageCheck":13576.,"share":69.768397971769,"completion":6.180121217051,"remaining":3091441.},
-    {"name":"ЦПО","plan":641568.,"fact":48000.,"margin":37985.,"count":2,"profitability":79.135416666667,"averageCheck":24000.,"share":16.445114430588,"completion":7.481669908724,"remaining":593568.},
-    {"name":"Приложение","plan":257939.,"fact":40240.,"margin":32076.,"count":6,"profitability":79.711729622266,"averageCheck":6706.66666666667,"share":13.786487597643,"completion":15.60058773586,"remaining":217699.}
+    {
+      "name": "Личные продажи",
+      "plan": 3295081,
+      "fact": 203640,
+      "margin": 124030.84,
+      "count": 15,
+      "profitability": 60.906914162247,
+      "averageCheck": 13576,
+      "share": 69.768397971769,
+      "completion": 6.180121217051,
+      "remaining": 3091441
+    },
+    {
+      "name": "ЦПО",
+      "plan": 641568,
+      "fact": 48000,
+      "margin": 37985,
+      "count": 2,
+      "profitability": 79.135416666667,
+      "averageCheck": 24000,
+      "share": 16.445114430588,
+      "completion": 7.481669908724,
+      "remaining": 593568
+    },
+    {
+      "name": "Приложение",
+      "plan": 257939,
+      "fact": 40240,
+      "margin": 32076,
+      "count": 6,
+      "profitability": 79.711729622266,
+      "averageCheck": 6706.66666666667,
+      "share": 13.786487597643,
+      "completion": 15.60058773586,
+      "remaining": 217699
+    }
   ],
-  "bestPartner": {"name":"Осипян","count":4,"sales":36500.},
+  "bestPartner": {
+    "name": "Осипян",
+    "count": 4,
+    "sales": 36500
+  },
   "topPartners": [
-    {"name":"Осипян","count":4,"sales":36500.},
-    {"name":"Нерсисян","count":4,"sales":25000.},
-    {"name":"Мезенцев","count":2,"sales":7640.}
+    {
+      "name": "Осипян",
+      "count": 4,
+      "sales": 36500
+    },
+    {
+      "name": "Нерсисян",
+      "count": 4,
+      "sales": 25000
+    },
+    {
+      "name": "Мезенцев",
+      "count": 2,
+      "sales": 7640
+    }
   ],
   "topMasks": [
-    {"mask":"******aaaa","count":3,"sales":51500.},
-    {"mask":"***aaaa***","count":3,"sales":10000.},
-    {"mask":"******abab","count":3,"sales":8000.},
-    {"mask":"***aababba","count":2,"sales":10000.},
-    {"mask":"***aaaaaab","count":1,"sales":120000.},
-    {"mask":"***aa*bbbb","count":1,"sales":45000.},
-    {"mask":"***aaaaabb","count":1,"sales":10000.},
-    {"mask":"***abbabba","count":1,"sales":7000.},
-    {"mask":"***aabaaba","count":1,"sales":5000.},
-    {"mask":"***aabbaab","count":1,"sales":5000.}
+    {
+      "mask": "******aaaa",
+      "count": 3,
+      "sales": 51500
+    },
+    {
+      "mask": "***aaaa***",
+      "count": 3,
+      "sales": 10000
+    },
+    {
+      "mask": "******abab",
+      "count": 3,
+      "sales": 8000
+    },
+    {
+      "mask": "***aababba",
+      "count": 2,
+      "sales": 10000
+    },
+    {
+      "mask": "***aaaaaab",
+      "count": 1,
+      "sales": 120000
+    },
+    {
+      "mask": "***aa*bbbb",
+      "count": 1,
+      "sales": 45000
+    },
+    {
+      "mask": "***aaaaabb",
+      "count": 1,
+      "sales": 10000
+    },
+    {
+      "mask": "***abbabba",
+      "count": 1,
+      "sales": 7000
+    },
+    {
+      "mask": "***aabaaba",
+      "count": 1,
+      "sales": 5000
+    },
+    {
+      "mask": "***aabbaab",
+      "count": 1,
+      "sales": 5000
+    }
   ],
   "weekdays": [
-    {"day":"Понедельник","sales":0.,"count":0,"averageCheck":0.},
-    {"day":"Вторник","sales":29540.,"count":5,"averageCheck":5908.},
-    {"day":"Среда","sales":64440.,"count":6,"averageCheck":10740.},
-    {"day":"Четверг","sales":197900.,"count":12,"averageCheck":16491.6666666667},
-    {"day":"Пятница","sales":0.,"count":0,"averageCheck":0.},
-    {"day":"Суббота","sales":0.,"count":0,"averageCheck":0.},
-    {"day":"Воскресенье","sales":0.,"count":0,"averageCheck":0.}
+    {
+      "day": "Понедельник",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Вторник",
+      "sales": 29540,
+      "count": 5,
+      "averageCheck": 5908
+    },
+    {
+      "day": "Среда",
+      "sales": 64440,
+      "count": 6,
+      "averageCheck": 10740
+    },
+    {
+      "day": "Четверг",
+      "sales": 197900,
+      "count": 12,
+      "averageCheck": 16491.6666666667
+    },
+    {
+      "day": "Пятница",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Суббота",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Воскресенье",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    }
   ],
-  "daily": {"todaySales":0.,"yesterdaySales":0.,"change":0.,"averageDaily":58376.,"bestDaySales":197900.,"bestDayDate":"03.09.2026","neededPerDay":156108.32,"daysLeft":25,"planCompletion":6.958490321338,"remaining":3902708.},
-  "forecast": {"month":1751280.,"completion":41.750941928027,"pace":41.750941928027,"deviation":-58.249058071973,"gap":-2443308.}
+  "daily": {
+    "todaySales": 0,
+    "yesterdaySales": 0,
+    "change": 0,
+    "averageDaily": 58376,
+    "bestDaySales": 197900,
+    "bestDayDate": "03.09.2026",
+    "neededPerDay": 156108.32,
+    "daysLeft": 25,
+    "planCompletion": 6.958490321338,
+    "remaining": 3902708
+  },
+  "forecast": {
+    "month": 1751280,
+    "completion": 41.750941928027,
+    "pace": 41.750941928027,
+    "deviation": -58.249058071973,
+    "gap": -2443308
+  }
 }
