@@ -27,6 +27,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+
     body{
       margin:0;
       font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -62,7 +63,6 @@
       top:-160px;
       background:var(--accent);
       opacity:.18;
-      filter:blur(2px);
     }
 
     .hero-top{
@@ -178,9 +178,7 @@
       white-space:nowrap;
     }
 
-    .section{
-      margin-top:22px;
-    }
+    .section{margin-top:22px}
 
     .section-title{
       display:flex;
@@ -201,10 +199,7 @@
       box-shadow:0 0 0 5px var(--accent-soft);
     }
 
-    .table-card{
-      overflow:hidden;
-    }
-
+    .table-card{overflow:hidden}
     .table-scroll{overflow-x:auto}
 
     table{
@@ -375,9 +370,7 @@
       gap:14px;
     }
 
-    .status{
-      padding:22px;
-    }
+    .status{padding:22px}
 
     .status-label{
       color:var(--muted);
@@ -638,18 +631,6 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="section-title">Средний чек и количество продаж</h2>
-      <div class="metrics-grid">
-        <article class="card metric-card"><div class="metric-label">Средний чек сегодня</div><div class="metric-value" id="check-today">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Средний чек вчера</div><div class="metric-value" id="check-yesterday">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Изменение среднего чека</div><div class="metric-value" id="check-change">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Продаж сегодня</div><div class="metric-value" id="count-today">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Продаж вчера</div><div class="metric-value" id="count-yesterday">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Изменение количества</div><div class="metric-value" id="count-change">—</div></article>
-      </div>
-    </section>
-
     <div class="footer">Агентство Связи · Дашборд отдела продаж</div>
   </main>
 
@@ -660,8 +641,9 @@
       return Number(value || 0);
     }
 
+    // Деньги всегда показываем без копеек.
     function rub(value){
-      return num(value).toLocaleString('ru-RU') + ' ₽';
+      return Math.round(num(value)).toLocaleString('ru-RU') + ' ₽';
     }
 
     function pct(value){
@@ -814,16 +796,6 @@
         set('updated-status', data.updated || '—');
         set('last-sale-value', data.lastSale || '—');
         set('days-without-sales-value', num(data.daysWithoutSales).toLocaleString('ru-RU'));
-
-        const c = data.checks || {};
-        set('check-today', rub(c.today));
-        set('check-yesterday', rub(c.yesterday));
-        set('check-change', signPct(c.change));
-        paintChange('check-change', c.change);
-        set('count-today', num(c.countToday).toLocaleString('ru-RU'));
-        set('count-yesterday', num(c.countYesterday).toLocaleString('ru-RU'));
-        set('count-change', signPct(c.countChange));
-        paintChange('count-change', c.countChange);
       })
       .catch(error => {
         console.error('Ошибка загрузки data.json:', error);
