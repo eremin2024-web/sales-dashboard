@@ -104,7 +104,7 @@
       "sales": 10000.0
     },
     {
-      "mask": "***AAA0000",
+      "mask": "***AAABBBB",
       "count": 1,
       "sales": 240000.0
     },
