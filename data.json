@@ -1,185 +1,185 @@
 {
-  "updated": "05.09.2026",
-  "lastSale": "03.09.2026",
-  "daysWithoutSales": 2,
-  "sales": 291880,
-  "margin": 194091.84,
-  "profitability": 66.497135809237,
-  "salesCount": 23,
-  "averageCheck": 12690.4347826087,
+  "updated": "07.09.2026",
+  "lastSale": "06.09.2026",
+  "daysWithoutSales": 1,
+  "sales": 674120.0,
+  "margin": 495085.67,
+  "profitability": 73.44177149468936,
+  "salesCount": 42,
+  "averageCheck": 16050.47619047619,
   "directions": [
     {
       "name": "Личные продажи",
       "plan": 3295081,
-      "fact": 203640,
-      "margin": 124030.84,
-      "count": 15,
-      "profitability": 60.906914162247,
-      "averageCheck": 13576,
-      "share": 69.768397971769,
-      "completion": 6.180121217051,
-      "remaining": 3091441
+      "fact": 321640.0,
+      "margin": 193630.82,
+      "count": 26,
+      "profitability": 60.201100609376944,
+      "averageCheck": 12370.76923076923,
+      "share": 47.71257342906308,
+      "completion": 9.76121679558105,
+      "remaining": 2973441.0
     },
     {
       "name": "ЦПО",
       "plan": 641568,
-      "fact": 48000,
-      "margin": 37985,
-      "count": 2,
-      "profitability": 79.135416666667,
-      "averageCheck": 24000,
-      "share": 16.445114430588,
-      "completion": 7.481669908724,
-      "remaining": 593568
+      "fact": 300000.0,
+      "margin": 259219.99,
+      "count": 5,
+      "profitability": 86.40666333333333,
+      "averageCheck": 60000.0,
+      "share": 44.50246246958998,
+      "completion": 46.76043692952267,
+      "remaining": 341568.0
     },
     {
       "name": "Приложение",
       "plan": 257939,
-      "fact": 40240,
-      "margin": 32076,
-      "count": 6,
-      "profitability": 79.711729622266,
-      "averageCheck": 6706.66666666667,
-      "share": 13.786487597643,
-      "completion": 15.60058773586,
-      "remaining": 217699
+      "fact": 52480.0,
+      "margin": 42234.86,
+      "count": 11,
+      "profitability": 80.4780106707317,
+      "averageCheck": 4770.909090909091,
+      "share": 7.784964101346942,
+      "completion": 20.34589573503813,
+      "remaining": 205459.0
     }
   ],
   "bestPartner": {
     "name": "Осипян",
-    "count": 4,
-    "sales": 36500
+    "count": 10,
+    "sales": 63500.0
   },
   "topPartners": [
     {
       "name": "Осипян",
-      "count": 4,
-      "sales": 36500
+      "count": 10,
+      "sales": 63500.0
     },
     {
       "name": "Нерсисян",
       "count": 4,
-      "sales": 25000
+      "sales": 25000.0
     },
     {
-      "name": "Мезенцев",
-      "count": 2,
-      "sales": 7640
+      "name": "Норайр",
+      "count": 3,
+      "sales": 6000.0
     }
   ],
   "topMasks": [
     {
       "mask": "******aaaa",
       "count": 3,
-      "sales": 51500
+      "sales": 51500.0
     },
     {
       "mask": "***aaaa***",
       "count": 3,
-      "sales": 10000
+      "sales": 10000.0
     },
     {
       "mask": "******abab",
       "count": 3,
-      "sales": 8000
+      "sales": 8000.0
+    },
+    {
+      "mask": "*****AAAA*",
+      "count": 3,
+      "sales": 6000.0
+    },
+    {
+      "mask": "***ABBBABA",
+      "count": 2,
+      "sales": 19000.0
+    },
+    {
+      "mask": "***AAA****",
+      "count": 2,
+      "sales": 11000.0
     },
     {
       "mask": "***aababba",
       "count": 2,
-      "sales": 10000
+      "sales": 10000.0
+    },
+    {
+      "mask": "***AAA0000",
+      "count": 1,
+      "sales": 240000.0
     },
     {
       "mask": "***aaaaaab",
       "count": 1,
-      "sales": 120000
+      "sales": 120000.0
     },
     {
-      "mask": "***aa*bbbb",
+      "mask": "***888888B",
       "count": 1,
-      "sales": 45000
-    },
-    {
-      "mask": "***aaaaabb",
-      "count": 1,
-      "sales": 10000
-    },
-    {
-      "mask": "***abbabba",
-      "count": 1,
-      "sales": 7000
-    },
-    {
-      "mask": "***aabaaba",
-      "count": 1,
-      "sales": 5000
-    },
-    {
-      "mask": "***aabbaab",
-      "count": 1,
-      "sales": 5000
+      "sales": 80000.0
     }
   ],
   "weekdays": [
     {
       "day": "Понедельник",
-      "sales": 0,
+      "sales": 0.0,
       "count": 0,
       "averageCheck": 0
     },
     {
       "day": "Вторник",
-      "sales": 29540,
+      "sales": 29540.0,
       "count": 5,
-      "averageCheck": 5908
+      "averageCheck": 5908.0
     },
     {
       "day": "Среда",
-      "sales": 64440,
+      "sales": 64440.0,
       "count": 6,
-      "averageCheck": 10740
+      "averageCheck": 10740.0
     },
     {
       "day": "Четверг",
-      "sales": 197900,
+      "sales": 197900.0,
       "count": 12,
-      "averageCheck": 16491.6666666667
+      "averageCheck": 16491.666666666668
     },
     {
       "day": "Пятница",
-      "sales": 0,
-      "count": 0,
-      "averageCheck": 0
+      "sales": 132400.0,
+      "count": 14,
+      "averageCheck": 9457.142857142857
     },
     {
       "day": "Суббота",
-      "sales": 0,
-      "count": 0,
-      "averageCheck": 0
+      "sales": 242640.0,
+      "count": 2,
+      "averageCheck": 121320.0
     },
     {
       "day": "Воскресенье",
-      "sales": 0,
-      "count": 0,
-      "averageCheck": 0
+      "sales": 7200.0,
+      "count": 3,
+      "averageCheck": 2400.0
     }
   ],
   "daily": {
-    "todaySales": 0,
-    "yesterdaySales": 0,
-    "change": 0,
-    "averageDaily": 58376,
-    "bestDaySales": 197900,
-    "bestDayDate": "03.09.2026",
-    "neededPerDay": 156108.32,
-    "daysLeft": 25,
-    "planCompletion": 6.958490321338,
-    "remaining": 3902708
+    "todaySales": 0.0,
+    "yesterdaySales": 7200.0,
+    "change": -100.0,
+    "averageDaily": 96302.85714285714,
+    "bestDaySales": 242640.0,
+    "bestDayDate": "05.09.2026",
+    "neededPerDay": 153063.8260869565,
+    "daysLeft": 23,
+    "planCompletion": 16.071185060368265,
+    "remaining": 3520468.0
   },
   "forecast": {
-    "month": 1751280,
-    "completion": 41.750941928027,
-    "pace": 41.750941928027,
-    "deviation": -58.249058071973,
-    "gap": -2443308
+    "month": 2889085.7142857146,
+    "completion": 68.87650740157828,
+    "pace": 68.87650740157828,
+    "deviation": -31.12349259842172,
+    "gap": -1305502.2857142854
   }
 }
