@@ -30,6 +30,18 @@
     {"mask":"*******aaa","count":2,"sales":5350.0},
     {"mask":"***aaabbbb","count":1,"sales":240000.0}
   ],
+  "topSubMasks": [
+    {"submask":"***0000***","count":5,"sales":11000.0},
+    {"submask":"*****0000*","count":3,"sales":6000.0},
+    {"submask":"***5555***","count":2,"sales":7000.0},
+    {"submask":"******2525","count":2,"sales":5600.0},
+    {"submask":"***7777***","count":2,"sales":4000.0},
+    {"submask":"***4440000","count":1,"sales":240000.0},
+    {"submask":"***9999992","count":1,"sales":120000.0},
+    {"submask":"***8888882","count":1,"sales":80000.0},
+    {"submask":"***99*7777","count":1,"sales":45000.0},
+    {"submask":"******1111","count":1,"sales":24000.0}
+  ],
   "dailySales": [
     {"date":"01.09.2026","sales":29540},
     {"date":"02.09.2026","sales":64440},
