@@ -28,7 +28,7 @@
     {"mask":"***aababba","count":2,"sales":10000.0},
     {"mask":"***aabbaab","count":2,"sales":10000.0},
     {"mask":"*******aaa","count":2,"sales":5350.0},
-    {"mask":"***AAABBBB","count":1,"sales":240000.0}
+    {"mask":"***aaabbbb","count":1,"sales":240000.0}
   ],
   "dailySales": [
     {"date":"01.09.2026","sales":29540},
