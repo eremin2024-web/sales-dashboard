@@ -42,7 +42,6 @@
 <body>
 <main class="shell">
   <section class="hero"><div class="hero-top"><div><div class="brand"><div class="brand-mark"></div><div class="brand-name">Агентство Связи</div></div><h1 id="dashboard-title">Дашборд продаж</h1><div class="hero-subtitle">Оперативная статистика отдела продаж</div><div class="accent-line"></div></div><div class="updated-pill">Обновлено: <b id="updated-value">—</b></div></div></section>
-
   <section class="kpi-grid">
     <article class="card kpi"><div class="kpi-label">Продажи</div><div class="kpi-value" id="sales-value">—</div></article>
     <article class="card kpi"><div class="kpi-label">Маржа</div><div class="kpi-value" id="margin-value">—</div></article>
@@ -50,17 +49,11 @@
     <article class="card kpi"><div class="kpi-label">Количество продаж</div><div class="kpi-value" id="sales-count-value">—</div></article>
     <article class="card kpi"><div class="kpi-label">Средний чек</div><div class="kpi-value" id="average-check-value">—</div></article>
   </section>
-
   <section class="section"><h2 class="section-title">План и факт по направлениям</h2><div class="card table-card"><div class="table-scroll"><table><thead><tr><th>Направление</th><th>План</th><th>Факт</th><th>Выполнение</th><th>Осталось</th><th>Прогресс</th></tr></thead><tbody id="plan-table"></tbody></table></div></div></section>
-
   <section class="section"><h2 class="section-title">Продажи по направлениям</h2><div class="card table-card"><div class="table-scroll"><table><thead><tr><th>Направление</th><th>Продажи</th><th>Маржа</th><th>Кол-во</th><th>Рентабельность</th><th>Средний чек</th><th>Доля</th></tr></thead><tbody id="directions-table"></tbody></table></div></div></section>
-
   <section class="section"><div class="split"><div><h2 class="section-title">Лучший партнёр / дилер</h2><article class="card best-card"><div class="eyebrow">Лидер месяца</div><div class="best-name" id="best-partner-name">—</div><div class="best-stats"><div class="best-stat"><span>Продаж</span><b id="best-partner-count">—</b></div><div class="best-stat"><span>Сумма</span><b id="best-partner-sales">—</b></div></div></article></div><div><h2 class="section-title">Топ-3 партнёров</h2><div class="card table-card"><div class="table-scroll"><table style="min-width:520px"><thead><tr><th>#</th><th>Партнёр</th><th>Продаж</th><th>Сумма</th></tr></thead><tbody id="partners-table"></tbody></table></div></div></div></div></section>
-
   <section class="section"><h2 class="section-title">Топ-10 масок</h2><div class="card table-card"><div class="table-scroll"><table><thead><tr><th>#</th><th>Маска</th><th>Количество</th><th>Продажи</th></tr></thead><tbody id="masks-table"></tbody></table></div></div></section>
-
   <section class="section"><h2 class="section-title">Продажи по дням недели</h2><div class="card table-card"><div class="table-scroll"><table><thead><tr><th>День недели</th><th>Продажи</th><th>Количество</th><th>Средний чек</th></tr></thead><tbody id="weekdays-table"></tbody></table></div></div></section>
-
   <section class="section"><h2 class="section-title">Ключевые показатели дня</h2><div class="metrics-grid">
     <article class="card metric-card"><div class="metric-label">Продажи сегодня</div><div class="metric-value" id="today-sales">—</div></article>
     <article class="card metric-card"><div class="metric-label">Продажи вчера</div><div class="metric-value" id="yesterday-sales">—</div></article>
@@ -71,16 +64,12 @@
     <article class="card metric-card"><div class="metric-label">Выполнение общего плана</div><div class="metric-value" id="plan-completion">—</div></article>
     <article class="card metric-card"><div class="metric-label">Осталось до плана</div><div class="metric-value" id="plan-remaining">—</div></article>
   </div></section>
-
   <section class="section"><h2 class="section-title">Прогноз и темп</h2><div class="metrics-grid">
     <article class="card metric-card"><div class="metric-label">Прогноз продаж на месяц</div><div class="metric-value" id="forecast-month">—</div></article>
     <article class="card metric-card"><div class="metric-label">Прогноз выполнения плана</div><div class="metric-value" id="forecast-completion">—</div></article>
-    <article class="card metric-card"><div class="metric-label">Текущий темп</div><div class="metric-value" id="forecast-pace">—</div></article>
     <article class="card metric-card"><div class="metric-label">Прогнозный разрыв до плана</div><div class="metric-value" id="forecast-gap">—</div></article>
   </div></section>
-
   <section class="section"><h2 class="section-title">Актуальность данных</h2><div class="status-grid"><article class="card status"><div class="status-label">Последнее обновление</div><div class="status-value" id="updated-status">—</div></article><article class="card status"><div class="status-label">Последняя продажа</div><div class="status-value" id="last-sale-value">—</div></article><article class="card status"><div class="status-label">Дней без продаж</div><div class="status-value" id="days-without-sales-value">—</div></article></div></section>
-
   <div class="footer">Агентство Связи · Дашборд отдела продаж</div>
 </main>
 <script>
@@ -101,7 +90,7 @@
     const masks=Array.isArray(data.topMasks)?data.topMasks:[];el('masks-table').innerHTML=masks.length?masks.map((item,index)=>`<tr><td><span class="rank">${index+1}</span></td><td class="name-cell">${item.mask??'—'}</td><td>${num(item.count).toLocaleString('ru-RU')}</td><td>${rub(item.sales)}</td></tr>`).join(''):`<tr><td colspan="4" class="empty">Нет данных</td></tr>`;
     const weekdays=Array.isArray(data.weekdays)?data.weekdays:[];el('weekdays-table').innerHTML=weekdays.length?weekdays.map(item=>`<tr><td class="name-cell">${item.day??'—'}</td><td>${rub(item.sales)}</td><td>${num(item.count).toLocaleString('ru-RU')}</td><td>${rub(item.averageCheck)}</td></tr>`).join(''):`<tr><td colspan="4" class="empty">Нет данных</td></tr>`;
     const d=data.daily||{};set('today-sales',rub(d.todaySales));set('yesterday-sales',rub(d.yesterdaySales));set('average-daily-sales',rub(d.averageDaily));set('best-day-sales',rub(d.bestDaySales));set('best-day-date',d.bestDayDate||'—');set('needed-per-day',rub(d.neededPerDay));set('days-left',num(d.daysLeft).toLocaleString('ru-RU'));set('plan-completion',pct(d.planCompletion));set('plan-remaining',rub(d.remaining));
-    const f=data.forecast||{};set('forecast-month',rub(f.month));set('forecast-completion',pct(f.completion));set('forecast-pace',pct(f.pace));set('forecast-gap',rub(f.gap));paintChange('forecast-gap',f.gap);
+    const f=data.forecast||{};set('forecast-month',rub(f.month));set('forecast-completion',pct(f.completion));set('forecast-gap',rub(f.gap));paintChange('forecast-gap',f.gap);
     set('updated-status',data.updated||'—');set('last-sale-value',data.lastSale||'—');set('days-without-sales-value',num(data.daysWithoutSales).toLocaleString('ru-RU'));
   }).catch(error=>{console.error('Ошибка загрузки data.json:',error);set('dashboard-title','Ошибка загрузки данных')});
 </script>
