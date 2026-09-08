@@ -608,7 +608,6 @@
         <article class="card metric-card"><div class="metric-label">Прогноз продаж на месяц</div><div class="metric-value" id="forecast-month">—</div></article>
         <article class="card metric-card"><div class="metric-label">Прогноз выполнения плана</div><div class="metric-value" id="forecast-completion">—</div></article>
         <article class="card metric-card"><div class="metric-label">Текущий темп</div><div class="metric-value" id="forecast-pace">—</div></article>
-        <article class="card metric-card"><div class="metric-label">Отклонение от нужного темпа</div><div class="metric-value" id="forecast-deviation">—</div></article>
         <article class="card metric-card"><div class="metric-label">Прогнозный разрыв до плана</div><div class="metric-value" id="forecast-gap">—</div></article>
       </div>
     </section>
@@ -788,8 +787,6 @@
         set('forecast-month', rub(f.month));
         set('forecast-completion', pct(f.completion));
         set('forecast-pace', pct(f.pace));
-        set('forecast-deviation', signPct(f.deviation));
-        paintChange('forecast-deviation', f.deviation);
         set('forecast-gap', rub(f.gap));
         paintChange('forecast-gap', f.gap);
 
