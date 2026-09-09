@@ -51,291 +51,74 @@
     "sales": 80500.0
   },
   "topPartners": [
-    {
-      "name": "Осипян",
-      "count": 17,
-      "sales": 80500.0
-    },
-    {
-      "name": "Чили",
-      "count": 5,
-      "sales": 25000.0
-    },
-    {
-      "name": "Норайр",
-      "count": 5,
-      "sales": 10000.0
-    }
+    {"name":"Осипян","count":17,"sales":80500.0},
+    {"name":"Чили","count":5,"sales":25000.0},
+    {"name":"Норайр","count":5,"sales":10000.0}
   ],
   "topMasks": [
-    {
-      "mask": "***aaaa***",
-      "count": 11,
-      "sales": 26400.0
-    },
-    {
-      "mask": "******abab",
-      "count": 6,
-      "sales": 14400.0
-    },
-    {
-      "mask": "*****aaaa*",
-      "count": 5,
-      "sales": 12240.0
-    },
-    {
-      "mask": "******aaaa",
-      "count": 3,
-      "sales": 51500.0
-    },
-    {
-      "mask": "***aaaaaa*",
-      "count": 2,
-      "sales": 200000.0
-    },
-    {
-      "mask": "***abbbaba",
-      "count": 2,
-      "sales": 19000.0
-    },
-    {
-      "mask": "***aababba",
-      "count": 2,
-      "sales": 10000.0
-    },
-    {
-      "mask": "***aabbaab",
-      "count": 2,
-      "sales": 10000.0
-    },
-    {
-      "mask": "*******aaa",
-      "count": 2,
-      "sales": 5350.0
-    },
-    {
-      "mask": "***aaabbbb",
-      "count": 1,
-      "sales": 240000.0
-    }
+    {"mask":"***aaaa***","count":11,"sales":26400.0},
+    {"mask":"******abab","count":6,"sales":14400.0},
+    {"mask":"*****aaaa*","count":5,"sales":12240.0},
+    {"mask":"******aaaa","count":3,"sales":51500.0},
+    {"mask":"***aaaaaa*","count":2,"sales":200000.0},
+    {"mask":"***abbbaba","count":2,"sales":19000.0},
+    {"mask":"***aababba","count":2,"sales":10000.0},
+    {"mask":"***aabbaab","count":2,"sales":10000.0},
+    {"mask":"*******aaa","count":2,"sales":5350.0},
+    {"mask":"***aaabbbb","count":1,"sales":240000.0}
   ],
   "topSubMasks": [
-    {
-      "submask": "***0000***",
-      "count": 5,
-      "sales": 11000.0
-    },
-    {
-      "submask": "*****0000*",
-      "count": 3,
-      "sales": 6000.0
-    },
-    {
-      "submask": "***5555***",
-      "count": 2,
-      "sales": 7000.0
-    },
-    {
-      "submask": "******2525",
-      "count": 2,
-      "sales": 5600.0
-    },
-    {
-      "submask": "***7777***",
-      "count": 2,
-      "sales": 4000.0
-    },
-    {
-      "submask": "***4440000",
-      "count": 1,
-      "sales": 240000.0
-    },
-    {
-      "submask": "***9999992",
-      "count": 1,
-      "sales": 120000.0
-    },
-    {
-      "submask": "***8888882",
-      "count": 1,
-      "sales": 80000.0
-    },
-    {
-      "submask": "***99*7777",
-      "count": 1,
-      "sales": 45000.0
-    },
-    {
-      "submask": "******1111",
-      "count": 1,
-      "sales": 24000.0
-    }
+    {"submask":"***0000***","count":5,"sales":11000.0},
+    {"submask":"*****0000*","count":3,"sales":6000.0},
+    {"submask":"***5555***","count":2,"sales":7000.0},
+    {"submask":"******2525","count":2,"sales":5600.0},
+    {"submask":"***7777***","count":2,"sales":4000.0},
+    {"submask":"***4440000","count":1,"sales":240000.0},
+    {"submask":"***9999992","count":1,"sales":120000.0},
+    {"submask":"***8888882","count":1,"sales":80000.0},
+    {"submask":"***99*7777","count":1,"sales":45000.0},
+    {"submask":"******1111","count":1,"sales":24000.0}
   ],
   "dailySales": [
-    {
-      "date": "01.09.2026",
-      "sales": 29540
-    },
-    {
-      "date": "02.09.2026",
-      "sales": 64440
-    },
-    {
-      "date": "03.09.2026",
-      "sales": 197900
-    },
-    {
-      "date": "04.09.2026",
-      "sales": 132400
-    },
-    {
-      "date": "05.09.2026",
-      "sales": 242640
-    },
-    {
-      "date": "06.09.2026",
-      "sales": 7200
-    },
-    {
-      "date": "07.09.2026",
-      "sales": 59750
-    },
-    {
-      "date": "08.09.2026",
-      "sales": null
-    },
-    {
-      "date": "09.09.2026",
-      "sales": null
-    },
-    {
-      "date": "10.09.2026",
-      "sales": null
-    },
-    {
-      "date": "11.09.2026",
-      "sales": null
-    },
-    {
-      "date": "12.09.2026",
-      "sales": null
-    },
-    {
-      "date": "13.09.2026",
-      "sales": null
-    },
-    {
-      "date": "14.09.2026",
-      "sales": null
-    },
-    {
-      "date": "15.09.2026",
-      "sales": null
-    },
-    {
-      "date": "16.09.2026",
-      "sales": null
-    },
-    {
-      "date": "17.09.2026",
-      "sales": null
-    },
-    {
-      "date": "18.09.2026",
-      "sales": null
-    },
-    {
-      "date": "19.09.2026",
-      "sales": null
-    },
-    {
-      "date": "20.09.2026",
-      "sales": null
-    },
-    {
-      "date": "21.09.2026",
-      "sales": null
-    },
-    {
-      "date": "22.09.2026",
-      "sales": null
-    },
-    {
-      "date": "23.09.2026",
-      "sales": null
-    },
-    {
-      "date": "24.09.2026",
-      "sales": null
-    },
-    {
-      "date": "25.09.2026",
-      "sales": null
-    },
-    {
-      "date": "26.09.2026",
-      "sales": null
-    },
-    {
-      "date": "27.09.2026",
-      "sales": null
-    },
-    {
-      "date": "28.09.2026",
-      "sales": null
-    },
-    {
-      "date": "29.09.2026",
-      "sales": null
-    },
-    {
-      "date": "30.09.2026",
-      "sales": null
-    }
+    {"date":"01.09.2026","personal":27140,"cpo":0,"app":2400,"total":29540},
+    {"date":"02.09.2026","personal":5000,"cpo":48000,"app":11440,"total":64440},
+    {"date":"03.09.2026","personal":171500,"cpo":0,"app":26400,"total":197900},
+    {"date":"04.09.2026","personal":118000,"cpo":12000,"app":2400,"total":132400},
+    {"date":"05.09.2026","personal":0,"cpo":240000,"app":2640,"total":242640},
+    {"date":"06.09.2026","personal":0,"cpo":0,"app":7200,"total":7200},
+    {"date":"07.09.2026","personal":54000,"cpo":3350,"app":2400,"total":59750},
+    {"date":"08.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"09.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"10.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"11.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"12.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"13.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"14.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"15.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"16.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"17.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"18.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"19.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"20.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"21.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"22.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"23.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"24.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"25.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"26.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"27.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"28.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"29.09.2026","personal":null,"cpo":null,"app":null,"total":null},
+    {"date":"30.09.2026","personal":null,"cpo":null,"app":null,"total":null}
   ],
   "weekdays": [
-    {
-      "day": "Понедельник",
-      "sales": 59750.0,
-      "count": 15,
-      "averageCheck": 3983.3333333333335
-    },
-    {
-      "day": "Вторник",
-      "sales": 29540.0,
-      "count": 5,
-      "averageCheck": 5908.0
-    },
-    {
-      "day": "Среда",
-      "sales": 64440.0,
-      "count": 6,
-      "averageCheck": 10740.0
-    },
-    {
-      "day": "Четверг",
-      "sales": 197900.0,
-      "count": 12,
-      "averageCheck": 16491.666666666668
-    },
-    {
-      "day": "Пятница",
-      "sales": 132400.0,
-      "count": 14,
-      "averageCheck": 9457.142857142857
-    },
-    {
-      "day": "Суббота",
-      "sales": 242640.0,
-      "count": 2,
-      "averageCheck": 121320.0
-    },
-    {
-      "day": "Воскресенье",
-      "sales": 7200.0,
-      "count": 3,
-      "averageCheck": 2400.0
-    }
+    {"day":"Понедельник","sales":59750.0,"count":15,"averageCheck":3983.3333333333335},
+    {"day":"Вторник","sales":29540.0,"count":5,"averageCheck":5908.0},
+    {"day":"Среда","sales":64440.0,"count":6,"averageCheck":10740.0},
+    {"day":"Четверг","sales":197900.0,"count":12,"averageCheck":16491.666666666668},
+    {"day":"Пятница","sales":132400.0,"count":14,"averageCheck":9457.142857142857},
+    {"day":"Суббота","sales":242640.0,"count":2,"averageCheck":121320.0},
+    {"day":"Воскресенье","sales":7200.0,"count":3,"averageCheck":2400.0}
   ],
   "daily": {
     "todaySales": 0.0,
