@@ -1,7 +1,6 @@
 {
-  "updated": "08.09.2026",
+  "updated": "09.09.2026",
   "lastSale": "07.09.2026",
-  "daysWithoutSales": 1,
   "sales": 733870.0,
   "margin": 538163.71,
   "profitability": 73.33229454808072,
@@ -16,7 +15,7 @@
       "count": 39,
       "profitability": 61.64574326482802,
       "averageCheck": 9631.794871794871,
-      "share": 51.18617738836578,
+      "share": 51.186177388365785,
       "completion": 11.400023246772992,
       "remaining": 2919441.0
     },
@@ -38,10 +37,10 @@
       "fact": 54880.0,
       "margin": 44027.66,
       "count": 12,
-      "profitability": 80.2253279883382,
+      "profitability": 80.22532798833821,
       "averageCheck": 4573.333333333333,
-      "share": 7.478163707468626,
-      "completion": 21.27634828389658,
+      "share": 7.478163707468625,
+      "completion": 21.276348283896578,
       "remaining": 203059.0
     }
   ],
@@ -51,42 +50,134 @@
     "sales": 80500.0
   },
   "topPartners": [
-    {"name":"Осипян","count":17,"sales":80500.0},
-    {"name":"Чили","count":5,"sales":25000.0},
-    {"name":"Норайр","count":5,"sales":10000.0}
+    {
+      "name": "Осипян",
+      "count": 17,
+      "sales": 80500.0
+    },
+    {
+      "name": "Чили",
+      "count": 5,
+      "sales": 25000.0
+    },
+    {
+      "name": "Норайр",
+      "count": 5,
+      "sales": 10000.0
+    }
   ],
   "topMasks": [
-    {"mask":"***aaaa***","count":11,"sales":26400.0},
-    {"mask":"******abab","count":6,"sales":14400.0},
-    {"mask":"*****aaaa*","count":5,"sales":12240.0},
-    {"mask":"******aaaa","count":3,"sales":51500.0},
-    {"mask":"***aaaaaa*","count":2,"sales":200000.0},
-    {"mask":"***abbbaba","count":2,"sales":19000.0},
-    {"mask":"***aababba","count":2,"sales":10000.0},
-    {"mask":"***aabbaab","count":2,"sales":10000.0},
-    {"mask":"*******aaa","count":2,"sales":5350.0},
-    {"mask":"***aaabbbb","count":1,"sales":240000.0}
+    {
+      "mask": "***aaaa***",
+      "count": 10,
+      "sales": 24400.0
+    },
+    {
+      "mask": "******abab",
+      "count": 6,
+      "sales": 14400.0
+    },
+    {
+      "mask": "*****aaaa*",
+      "count": 5,
+      "sales": 12240.0
+    },
+    {
+      "mask": "******aaaa",
+      "count": 3,
+      "sales": 51500.0
+    },
+    {
+      "mask": "***aaaaaab",
+      "count": 2,
+      "sales": 200000.0
+    },
+    {
+      "mask": "***abbbaba",
+      "count": 2,
+      "sales": 19000.0
+    },
+    {
+      "mask": "***aababba",
+      "count": 2,
+      "sales": 10000.0
+    },
+    {
+      "mask": "***aabbaab",
+      "count": 2,
+      "sales": 10000.0
+    },
+    {
+      "mask": "*******aaa",
+      "count": 2,
+      "sales": 5350.0
+    },
+    {
+      "mask": "***aaabbbb",
+      "count": 1,
+      "sales": 240000.0
+    }
   ],
   "topSubMasks": [
-    {"submask":"***0000***","count":5,"sales":11000.0},
-    {"submask":"*****0000*","count":3,"sales":6000.0},
-    {"submask":"***5555***","count":2,"sales":7000.0},
-    {"submask":"******2525","count":2,"sales":5600.0},
-    {"submask":"***7777***","count":2,"sales":4000.0},
-    {"submask":"***4440000","count":1,"sales":240000.0},
-    {"submask":"***9999992","count":1,"sales":120000.0},
-    {"submask":"***8888882","count":1,"sales":80000.0},
-    {"submask":"***99*7777","count":1,"sales":45000.0},
-    {"submask":"******1111","count":1,"sales":24000.0}
+    {
+      "submask": "***0000***",
+      "count": 5,
+      "sales": 11000.0
+    },
+    {
+      "submask": "*****0000*",
+      "count": 3,
+      "sales": 6000.0
+    },
+    {
+      "submask": "***5555***",
+      "count": 2,
+      "sales": 7000.0
+    },
+    {
+      "submask": "******2525",
+      "count": 2,
+      "sales": 5600.0
+    },
+    {
+      "submask": "***7777***",
+      "count": 2,
+      "sales": 4000.0
+    },
+    {
+      "submask": "***4440000",
+      "count": 1,
+      "sales": 240000.0
+    },
+    {
+      "submask": "***9999992",
+      "count": 1,
+      "sales": 120000.0
+    },
+    {
+      "submask": "***8888882",
+      "count": 1,
+      "sales": 80000.0
+    },
+    {
+      "submask": "***99*7777",
+      "count": 1,
+      "sales": 45000.0
+    },
+    {
+      "submask": "******1111",
+      "count": 1,
+      "sales": 24000.0
+    }
   ],
   "dailySales": [
-    {"date":"01.09.2026","personal":27140,"cpo":0,"app":2400,"total":29540},
-    {"date":"02.09.2026","personal":5000,"cpo":48000,"app":11440,"total":64440},
-    {"date":"03.09.2026","personal":171500,"cpo":0,"app":26400,"total":197900},
-    {"date":"04.09.2026","personal":118000,"cpo":12000,"app":2400,"total":132400},
-    {"date":"05.09.2026","personal":0,"cpo":240000,"app":2640,"total":242640},
-    {"date":"06.09.2026","personal":0,"cpo":0,"app":7200,"total":7200},
-    {"date":"07.09.2026","personal":54000,"cpo":3350,"app":2400,"total":59750},
+    {"date":"01.09.2026","personal":27140.0,"cpo":0.0,"app":2400.0,"total":29540.0},
+    {"date":"02.09.2026","personal":5000.0,"cpo":48000.0,"app":11440.0,"total":64440.0},
+    {"date":"03.09.2026","personal":171500.0,"cpo":0.0,"app":26400.0,"total":197900.0},
+    {"date":"04.09.2026","personal":118000.0,"cpo":12000.0,"app":2400.0,"total":132400.0},
+    {"date":"05.09.2026","personal":0.0,"cpo":240000.0,"app":2640.0,"total":242640.0},
+    {"date":"06.09.2026","personal":0.0,"cpo":0.0,"app":7200.0,"total":7200.0},
+    {"date":"07.09.2026","personal":54000.0,"cpo":3350.0,"app":2400.0,"total":59750.0},
     {"date":"08.09.2026","personal":null,"cpo":null,"app":null,"total":null},
     {"date":"09.09.2026","personal":null,"cpo":null,"app":null,"total":null},
     {"date":"10.09.2026","personal":null,"cpo":null,"app":null,"total":null},
@@ -122,21 +213,21 @@
   ],
   "daily": {
     "todaySales": 0.0,
-    "yesterdaySales": 59750.0,
-    "change": -100.0,
-    "averageDaily": 91733.75,
+    "yesterdaySales": 0.0,
+    "change": 0.0,
+    "averageDaily": 81541.11111111111,
     "bestDaySales": 242640.0,
     "bestDayDate": "05.09.2026",
-    "neededPerDay": 157305.36363636365,
-    "daysLeft": 22,
+    "neededPerDay": 164796.09523809524,
+    "daysLeft": 21,
     "planCompletion": 17.495639619433422,
     "remaining": 3460718.0
   },
   "forecast": {
-    "month": 2752012.5,
-    "completion": 65.60864857287534,
-    "pace": 65.60864857287534,
-    "deviation": -34.39135142712466,
-    "gap": -1442575.5
+    "month": 2446233.3333333335,
+    "completion": 58.318798731444744,
+    "pace": 58.318798731444744,
+    "deviation": -41.681201268555256,
+    "gap": -1748354.6666666665
   }
 }
