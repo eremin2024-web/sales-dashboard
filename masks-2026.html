@@ -9,28 +9,28 @@ function buildTrendChart(months){
   months.forEach(m=>(m[3]||[]).forEach(r=>{if(!all[r[0]])all[r[0]]={mask:r[0],sum:0};all[r[0]].sum+=Number(r[1]||0)}));
   const masks=Object.values(all).sort((a,b)=>b.sum-a.sum).slice(0,12).map(x=>x.mask);
   const maps=months.map(m=>Object.fromEntries((m[3]||[]).map(r=>[r[0],r])));
-  const W=1160,H=520,left=150,right=30,top=35,bottom=95;
+  const W=1160,H=560,left=170,right=30,top=35,bottom=80;
   const plotW=W-left-right,plotH=H-top-bottom;
-  const xStep=masks.length>1?plotW/(masks.length-1):plotW;
-  const yStep=months.length>1?plotH/(months.length-1):plotH;
+  const xStep=months.length>1?plotW/(months.length-1):plotW;
+  const yStep=masks.length>1?plotH/(masks.length-1):plotH;
   const palette=['#27b3f3','#13b0a8','#ffeb2d','#8e44ad','#ff2b6a','#ff1d16','#f36b10','#ff9d1c','#f5e600','#9ab51a','#159447','#5b8def'];
-  const vlines=masks.map((m,i)=>{const x=left+i*xStep;return `<line x1="${x}" y1="${top}" x2="${x}" y2="${top+plotH}" class="gridline"/><text x="${x}" y="${H-48}" text-anchor="middle" class="axis-mask" transform="rotate(-35 ${x} ${H-48})">${m}</text>`}).join('');
-  const hlabels=months.map((m,i)=>{const y=top+i*yStep;return `<text x="${left-18}" y="${y+4}" text-anchor="end" class="axis-label">${m[1].replace(' 2026','')}</text>`}).join('');
-  const lines=months.map((m,mi)=>{
-    const pts=masks.map((mask,xi)=>{
+  const vlines=months.map((m,i)=>{const x=left+i*xStep;return `<line x1="${x}" y1="${top}" x2="${x}" y2="${top+plotH}" class="gridline"/><text x="${x}" y="${H-34}" text-anchor="middle" class="axis-mask">${m[1].replace(' 2026','')}</text>`}).join('');
+  const hlabels=masks.map((mask,i)=>{const y=top+i*yStep;return `<text x="${left-18}" y="${y+4}" text-anchor="end" class="axis-label">${mask}</text>`}).join('');
+  const lines=masks.map((mask,mi)=>{
+    const pts=months.map((m,xi)=>{
       const x=left+xi*xStep;
-      const row=maps[mi][mask];
+      const row=maps[xi][mask];
       const val=row?Number(row[1]||0):0;
       return {x,val};
     });
     const maxVal=Math.max(1,...pts.map(p=>p.val));
-    const minY=top+mi*yStep-22, maxY=top+mi*yStep+22;
+    const minY=top+mi*yStep-18, maxY=top+mi*yStep+18;
     const poly=pts.map(p=>{const y=maxY-(p.val/maxVal)*(maxY-minY);return p.x+','+y}).join(' ');
-    const circles=pts.map(p=>{const y=maxY-(p.val/maxVal)*(maxY-minY);return `<circle cx="${p.x}" cy="${y}" r="5.5" fill="${palette[mi%palette.length]}" class="month-point"><title>${m[1]} · ${p.val} продаж</title></circle>`}).join('');
+    const circles=pts.map((p,xi)=>{const y=maxY-(p.val/maxVal)*(maxY-minY);return `<circle cx="${p.x}" cy="${y}" r="5.5" fill="${palette[mi%palette.length]}" class="month-point"><title>${mask} · ${months[xi][1]} · ${p.val} продаж</title></circle>`}).join('');
     return `<polyline points="${poly}" class="month-line" stroke="${palette[mi%palette.length]}"/>${circles}`;
   }).join('');
-  const legend=months.map((m,i)=>`<span><i style="background:${palette[i%palette.length]}"></i>${m[1]}</span>`).join('');
-  return `<div class="card chart-card"><div class="chart-head"><div><div class="chart-title">Динамика масок по месяцам</div><div class="chart-note">Слева — месяцы, снизу — маски. Каждая цветная линия показывает относительную силу масок внутри конкретного месяца.</div></div></div><div class="legend">${legend}</div><div class="linechart-wrap"><div class="linechart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${vlines}${hlabels}${lines}</svg></div></div></div>`;
+  const legend=masks.map((mask,i)=>`<span><i style="background:${palette[i%palette.length]}"></i>${mask}</span>`).join('');
+  return `<div class="card chart-card"><div class="chart-head"><div><div class="chart-title">График роста и падения масок по месяцам</div><div class="chart-note">Слева — маски, снизу — месяцы. Каждая цветная линия показывает динамику конкретной маски по месяцам.</div></div></div><div class="legend">${legend}</div><div class="linechart-wrap"><div class="linechart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${vlines}${hlabels}${lines}</svg></div></div></div>`;
 }
 fetch('masks-2026.json?v='+Date.now()).then(r=>r.json()).then(data=>{
   const overall=aggregate(data.c||[]);
