@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><title>Агентство Связи — Тренд по партнёрам</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><style>
+:root{--bg:#f3f5f4;--card:#fff;--dark:#111619;--text:#171a1d;--muted:#7b8488;--line:#e4e9e7;--accent:#35d6b4;--soft:#e5fbf5;--accent-dark:#16a989;--shadow:0 16px 34px rgba(22,31,28,.055)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text)}
+.shell{width:auto;max-width:none;margin:0 28px 0 278px;padding:16px 0 56px}
+.tabs{position:fixed;inset:0 auto 0 0;width:250px;height:100vh;padding:72px 16px 28px;background:linear-gradient(180deg,#111619 0%,#0d1215 100%);display:flex;flex-direction:column;gap:8px;z-index:50}
+.tabs:before{content:"◆  АГЕНТСТВО СВЯЗИ";position:absolute;top:22px;left:20px;color:#fff;font-size:15px;font-weight:900}
+.tabs:after{content:"Продажи красивых номеров";position:absolute;left:20px;bottom:24px;color:#7f8c89;font-size:11px}
+.tab{display:flex;align-items:center;width:100%;min-height:58px;padding:16px 18px;border-radius:15px;color:#c5cfcc;text-decoration:none;font-size:16px;font-weight:800}
+.tab:hover{background:rgba(53,214,180,.08);color:#fff}.tab.active{background:linear-gradient(90deg,#163f3b,#173531);color:#fff;border-left:4px solid var(--accent);padding-left:14px}
+.hero{position:relative;overflow:hidden;min-height:178px;border-radius:28px;padding:30px 32px;margin-bottom:22px;background:linear-gradient(135deg,#101518 0%,#111719 68%,#102b28 100%);color:#fff;box-shadow:0 18px 42px rgba(17,20,23,.08)}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-115px;top:-190px;background:var(--accent);opacity:.14}
+.brand{font-size:12px;color:#b8c3c0;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:10px}h1{margin:0;font-size:48px;line-height:1.05;letter-spacing:-.04em}.hero-subtitle{margin-top:12px;color:#aeb9b6;font-size:14px}.accent-line{height:3px;width:68px;border-radius:99px;background:var(--accent);margin-top:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.section{margin-top:24px}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:19px;font-weight:850}.section-title:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.summary{padding:20px}.summary-label{color:var(--muted);font-size:12px;font-weight:700;margin-bottom:12px}.summary-value{font-size:28px;font-weight:850}
+.table-card{overflow:hidden}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:860px}th{background:#fbfcfb;color:#7c8588;font-size:11px;font-weight:800;text-transform:uppercase;padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}td{padding:15px 16px;border-bottom:1px solid var(--line);font-size:13px}.name{font-weight:800}.up{color:#159c7d;font-weight:800}.down{color:#d85d5d;font-weight:800}.flat{color:#7b8488;font-weight:800}
+.note{padding:18px 20px;color:#66736f;font-size:13px;line-height:1.6}
+@media(max-width:900px){.shell{margin:0 auto;width:min(100% - 24px,1440px)}.tabs{position:static;width:100%;height:auto;padding:12px;border-radius:18px;margin-bottom:12px;flex-direction:row;flex-wrap:wrap}.tabs:before,.tabs:after{display:none}.tab{width:auto;flex:1;justify-content:center}.summary-grid{grid-template-columns:1fr}.hero{min-height:auto}h1{font-size:36px}}
+</style></head><body><main class="shell">
+<section class="hero"><div class="brand">Агентство Связи</div><h1>Тренд по партнёрам</h1><div class="hero-subtitle">Сравнение продаж партнёров по месяцам</div><div class="accent-line"></div></section>
+<nav class="tabs"><a class="tab" href="index.html">Чистые продажи</a><a class="tab" href="general-sales.html">Общие продажи</a><a class="tab" href="payouts.html">Выплаты за продажу</a><a class="tab active" href="partners-trend.html">Тренд по партнёрам</a></nav>
+<section class="summary-grid"><article class="card summary"><div class="summary-label">Партнёров в сравнении</div><div class="summary-value" id="partners-count">—</div></article><article class="card summary"><div class="summary-label">Рост к августу</div><div class="summary-value up" id="growth-count">—</div></article><article class="card summary"><div class="summary-label">Снижение к августу</div><div class="summary-value down" id="decline-count">—</div></article></section>
+<section class="section"><h2 class="section-title">Август → Сентябрь 2026</h2><div class="card table-card"><div class="table-scroll"><table><thead><tr><th>Партнёр</th><th>Август</th><th>Сентябрь</th><th>Изменение</th><th>Тренд</th></tr></thead><tbody id="trend-body"></tbody></table></div></div></section>
+<section class="section"><div class="card note">Сейчас сравнение строится по партнёрам, которые присутствуют в месячных данных дашборда. Когда появятся данные за октябрь, ноябрь и декабрь, сюда можно будет добавить последовательный тренд по всем месяцам.</div></section>
+</main><script>
+const rub=v=>Math.round(Number(v||0)).toLocaleString('ru-RU')+' ₽';
+Promise.all([fetch('data-general-2026-08.json?v='+Date.now()).then(r=>r.json()),fetch('data-general.json?v='+Date.now()).then(r=>r.json())]).then(([aug,sep])=>{
+ const a=new Map((aug.topPartners||[]).map(x=>[x.name,Number(x.sales||0)])),s=new Map((sep.topPartners||[]).map(x=>[x.name,Number(x.sales||0)]));
+ const names=[...new Set([...a.keys(),...s.keys()])];
+ const rows=names.map(name=>{const av=a.get(name)||0,sv=s.get(name)||0,d=sv-av;return{name,av,sv,d}}).sort((x,y)=>Math.max(y.av,y.sv)-Math.max(x.av,x.sv));
+ document.getElementById('partners-count').textContent=rows.length;
+ document.getElementById('growth-count').textContent=rows.filter(x=>x.d>0).length;
+ document.getElementById('decline-count').textContent=rows.filter(x=>x.d<0).length;
+ document.getElementById('trend-body').innerHTML=rows.map(x=>{const cls=x.d>0?'up':x.d<0?'down':'flat',arrow=x.d>0?'▲':x.d<0?'▼':'—';return '<tr><td class="name">'+x.name+'</td><td>'+rub(x.av)+'</td><td>'+rub(x.sv)+'</td><td class="'+cls+'">'+(x.d>0?'+':'')+rub(x.d)+'</td><td class="'+cls+'">'+arrow+'</td></tr>'}).join('');
+}).catch(()=>{document.getElementById('trend-body').innerHTML='<tr><td colspan="5">Не удалось загрузить данные для сравнения</td></tr>'});
+</script></body></html>
