@@ -1,60 +1,33 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><title>Агентство Связи — Тренд по партнёрам</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><style>
-:root{--bg:#f3f5f4;--card:#fff;--dark:#111619;--text:#171a1d;--muted:#7b8488;--line:#e4e9e7;--accent:#35d6b4;--soft:#e5fbf5;--accent-dark:#16a989;--shadow:0 16px 34px rgba(22,31,28,.055)}
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><title>Агентство Связи — Тренд по партнёрам 2026</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><style>
+:root{--bg:#f3f5f4;--card:#fff;--dark:#111619;--text:#171a1d;--muted:#7b8488;--line:#e4e9e7;--accent:#35d6b4;--accent-dark:#16a989;--shadow:0 16px 34px rgba(22,31,28,.055);--bad:#d85d5d}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text)}
-.shell{width:auto;max-width:none;margin:0 28px 0 278px;padding:16px 0 56px}
-.tabs{position:fixed;inset:0 auto 0 0;width:250px;height:100vh;padding:72px 16px 28px;background:linear-gradient(180deg,#111619 0%,#0d1215 100%);display:flex;flex-direction:column;gap:8px;z-index:50}
-.tabs:before{content:"◆  АГЕНТСТВО СВЯЗИ";position:absolute;top:22px;left:20px;color:#fff;font-size:15px;font-weight:900}
-.tabs:after{content:"Продажи красивых номеров";position:absolute;left:20px;bottom:24px;color:#7f8c89;font-size:11px}
-.tab{display:flex;align-items:center;width:100%;min-height:58px;padding:16px 18px;border-radius:15px;color:#c5cfcc;text-decoration:none;font-size:16px;font-weight:800}
-.tab:hover{background:rgba(53,214,180,.08);color:#fff}.tab.active{background:linear-gradient(90deg,#163f3b,#173531);color:#fff;border-left:4px solid var(--accent);padding-left:14px}
-.hero{position:relative;overflow:hidden;min-height:178px;border-radius:28px;padding:30px 32px;margin-bottom:22px;background:linear-gradient(135deg,#101518 0%,#111719 68%,#102b28 100%);color:#fff;box-shadow:0 18px 42px rgba(17,20,23,.08)}
-.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-115px;top:-190px;background:var(--accent);opacity:.14}
-.brand{font-size:12px;color:#b8c3c0;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:10px}h1{margin:0;font-size:48px;line-height:1.05;letter-spacing:-.04em}.hero-subtitle{margin-top:12px;color:#aeb9b6;font-size:14px}.accent-line{height:3px;width:68px;border-radius:99px;background:var(--accent);margin-top:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.section{margin-top:24px}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:19px;font-weight:850}.section-title:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.summary{padding:20px}.summary-label{color:var(--muted);font-size:12px;font-weight:700;margin-bottom:12px}.summary-value{font-size:28px;font-weight:850}
-.chart-card{padding:20px}.chart-head{display:grid;grid-template-columns:220px 1fr 110px;gap:14px;align-items:center;padding:0 0 10px;color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase}.partner-row{display:grid;grid-template-columns:220px 1fr 110px;gap:14px;align-items:center;padding:13px 0;border-top:1px solid var(--line)}.partner-name{font-size:14px;font-weight:850}.bars{display:grid;gap:7px}.bar-line{display:grid;grid-template-columns:70px 1fr 95px;gap:10px;align-items:center}.bar-label{font-size:11px;color:var(--muted);font-weight:750}.bar-track{height:11px;border-radius:999px;background:#edf1ef;overflow:hidden}.bar{height:100%;border-radius:999px;min-width:2px}.bar.aug{background:#aeb9b6}.bar.sep{background:linear-gradient(90deg,#18ad8f,#3bd6bc)}.bar-value{font-size:12px;font-weight:800;text-align:right;white-space:nowrap}.trend-box{font-size:13px;font-weight:850;text-align:right;white-space:nowrap}.up{color:#159c7d}.down{color:#d85d5d}.flat{color:#7b8488}.legend{display:flex;gap:16px;align-items:center;margin:0 0 12px;font-size:12px;color:#6f7a77;font-weight:750}.legend span{display:inline-flex;align-items:center;gap:7px}.legend i{width:10px;height:10px;border-radius:50%;display:inline-block}.legend .aug{background:#aeb9b6}.legend .sep{background:#27c8aa}.empty-chart{padding:28px;color:#7a8581;text-align:center;font-weight:700}
-.note{padding:18px 20px;color:#66736f;font-size:13px;line-height:1.6}
-@media(max-width:900px){.shell{margin:0 auto;width:min(100% - 24px,1440px)}.tabs{position:static;width:100%;height:auto;padding:12px;border-radius:18px;margin-bottom:12px;flex-direction:row;flex-wrap:wrap}.tabs:before,.tabs:after{display:none}.tab{width:auto;flex:1;justify-content:center}.summary-grid{grid-template-columns:1fr}.hero{min-height:auto}h1{font-size:36px}}
+.shell{width:auto;max-width:none;margin:0 28px 0 278px;padding:16px 0 56px}.tabs{position:fixed;inset:0 auto 0 0;width:250px;height:100vh;padding:72px 16px 28px;background:linear-gradient(180deg,#111619 0%,#0d1215 100%);display:flex;flex-direction:column;gap:8px;z-index:50}.tabs:before{content:"◆  АГЕНТСТВО СВЯЗИ";position:absolute;top:22px;left:20px;color:#fff;font-size:15px;font-weight:900}.tabs:after{content:"Продажи красивых номеров";position:absolute;left:20px;bottom:24px;color:#7f8c89;font-size:11px}.tab{display:flex;align-items:center;width:100%;min-height:58px;padding:16px 18px;border-radius:15px;color:#c5cfcc;text-decoration:none;font-size:16px;font-weight:800}.tab:hover{background:rgba(53,214,180,.08);color:#fff}.tab.active{background:linear-gradient(90deg,#163f3b,#173531);color:#fff;border-left:4px solid var(--accent);padding-left:14px}
+.hero{position:relative;overflow:hidden;min-height:178px;border-radius:28px;padding:30px 32px;margin-bottom:22px;background:linear-gradient(135deg,#101518 0%,#111719 68%,#102b28 100%);color:#fff;box-shadow:0 18px 42px rgba(17,20,23,.08)}.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-115px;top:-190px;background:var(--accent);opacity:.14}.brand{font-size:12px;color:#b8c3c0;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:10px}h1{margin:0;font-size:48px;line-height:1.05;letter-spacing:-.04em}.hero-subtitle{margin-top:12px;color:#aeb9b6;font-size:14px}.accent-line{height:3px;width:68px;border-radius:99px;background:var(--accent);margin-top:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.summary{padding:20px;min-height:112px}.summary-label{color:var(--muted);font-size:12px;font-weight:700;margin-bottom:12px}.summary-value{font-size:27px;font-weight:850;letter-spacing:-.03em}.summary-value.small{font-size:21px}.section{margin-top:24px}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:19px;font-weight:850}.section-title:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.chart-card{padding:18px 20px 22px;overflow-x:auto}.chart-inner{min-width:1040px}.axis,.trend-row{display:grid;grid-template-columns:180px repeat(9,minmax(70px,1fr)) 125px;gap:7px;align-items:end}.axis{padding:0 0 10px;border-bottom:1px solid var(--line);color:var(--muted);font-size:10px;font-weight:850;text-transform:uppercase;text-align:center}.axis .left{text-align:left}.trend-row{min-height:92px;padding:12px 0;border-bottom:1px solid var(--line)}.partner-name{align-self:center;font-size:14px;font-weight:850;line-height:1.25}.month-cell{height:64px;display:flex;align-items:flex-end;justify-content:center;position:relative}.month-bar{width:58%;min-width:20px;border-radius:7px 7px 3px 3px;background:linear-gradient(180deg,#3ed7bd,#18ad8f);min-height:2px;transition:transform .15s ease,filter .15s ease}.month-bar:hover{transform:translateY(-2px);filter:brightness(.96)}.month-cell.zero .month-bar{background:#e9eeec}.total{align-self:center;text-align:right}.total b{display:block;font-size:14px}.total span{display:block;font-size:11px;color:var(--muted);margin-top:5px}.rank{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;margin-right:8px;border-radius:8px;background:#e7faf5;color:#168f77;font-size:11px;font-weight:900}.note{padding:16px 18px;margin-top:14px;color:#6d7975;font-size:12px;line-height:1.55}.loading{padding:32px;text-align:center;color:#7a8581;font-weight:700}
+@media(max-width:1100px){.summary-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:900px){.shell{margin:0 auto;width:min(100% - 24px,1440px)}.tabs{position:static;width:100%;height:auto;padding:12px;border-radius:18px;margin-bottom:12px;flex-direction:row;flex-wrap:wrap}.tabs:before,.tabs:after{display:none}.tab{width:auto;flex:1;justify-content:center}.hero{min-height:auto}h1{font-size:36px}}@media(max-width:600px){.summary-grid{grid-template-columns:1fr}}
 </style></head><body><main class="shell">
-<section class="hero"><div class="brand">Агентство Связи</div><h1>Тренд по партнёрам</h1><div class="hero-subtitle">Сравнение продаж партнёров по месяцам</div><div class="accent-line"></div></section>
-<nav class="tabs"><a class="tab" href="index.html">Чистые продажи</a><a class="tab" href="general-sales.html">Общие продажи</a><a class="tab" href="payouts.html">Выплаты за продажу</a><a class="tab active" href="partners-trend.html">Тренд по партнёрам</a></nav>
-<section class="summary-grid"><article class="card summary"><div class="summary-label">Партнёров в сравнении</div><div class="summary-value" id="partners-count">—</div></article><article class="card summary"><div class="summary-label">Рост к августу</div><div class="summary-value up" id="growth-count">—</div></article><article class="card summary"><div class="summary-label">Снижение к августу</div><div class="summary-value down" id="decline-count">—</div></article><article class="card summary"><div class="summary-label">Лучший рост</div><div class="summary-value" id="best-growth">—</div></article></section>
-<section class="section"><h2 class="section-title">Август → Сентябрь 2026</h2><div class="legend"><span><i class="aug"></i>Август</span><span><i class="sep"></i>Сентябрь</span></div><div class="card chart-card"><div class="chart-head"><div>Партнёр</div><div>Продажи</div><div>Изменение</div></div><div id="trend-chart"></div></div></section>
-<section class="section"><div class="card note">Сейчас сравнение строится по партнёрам, которые присутствуют в месячных данных дашборда. Когда появятся данные за октябрь, ноябрь и декабрь, сюда можно будет добавить последовательный тренд по всем месяцам.</div></section>
+<section class="hero"><div class="brand">Агентство Связи</div><h1>Тренд по партнёрам</h1><div class="hero-subtitle">Динамика продаж партнёров по месяцам · 2026 год</div><div class="accent-line"></div></section>
+<nav class="tabs"><a class="tab" href="index.html?month=2026-09">Чистые продажи</a><a class="tab" href="general-sales.html?month=2026-09">Общие продажи</a><a class="tab" href="payouts.html?month=2026-09">Выплаты за продажу</a><a class="tab active" href="partners-trend.html">Тренд по партнёрам</a></nav>
+<section class="summary-grid"><article class="card summary"><div class="summary-label">Партнёров в 2026</div><div class="summary-value" id="partners-count">—</div></article><article class="card summary"><div class="summary-label">Месяцев с данными</div><div class="summary-value" id="months-count">—</div></article><article class="card summary"><div class="summary-label">Лидер по продажам</div><div class="summary-value small" id="leader-name">—</div></article><article class="card summary"><div class="summary-label">Продажи лидера за год</div><div class="summary-value" id="leader-sales">—</div></article></section>
+<section class="section"><h2 class="section-title">Динамика Топ-10 партнёров · Январь → Сентябрь</h2><div class="card chart-card"><div class="chart-inner"><div class="axis"><div class="left">Партнёр</div><div>Янв</div><div>Фев</div><div>Мар</div><div>Апр</div><div>Май</div><div>Июн</div><div>Июл</div><div>Авг</div><div>Сен</div><div>Итого</div></div><div id="trend-chart"><div class="loading">Загрузка данных 2026…</div></div></div></div><div class="card note">Высота столбцов внутри каждой строки показывает динамику конкретного партнёра по месяцам. Наведи на столбец — увидишь точную сумму продаж за месяц.</div></section>
 </main><script>
+const MONTHS=["2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"],MONTH_LABELS=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь"];
 const rub=v=>Math.round(Number(v||0)).toLocaleString('ru-RU')+' ₽';
-Promise.all([
- fetch('data-general-2026-08.json?v='+Date.now()).then(r=>r.json()),
- fetch('data-general.json?v='+Date.now()).then(r=>r.json())
-]).then(([aug,sep])=>{
- const a=new Map((aug.topPartners||[]).map(x=>[x.name,Number(x.sales||0)]));
- const s=new Map((sep.topPartners||[]).map(x=>[x.name,Number(x.sales||0)]));
- const names=[...new Set([...a.keys(),...s.keys()])];
- let rows=names.map(name=>{const av=a.get(name)||0,sv=s.get(name)||0,d=sv-av;return{name,av,sv,d}});
- rows.sort((x,y)=>Math.max(y.av,y.sv)-Math.max(x.av,x.sv));
- const top=rows.slice(0,10);
- const max=Math.max(1,...top.flatMap(x=>[x.av,x.sv]));
- document.getElementById('partners-count').textContent=rows.length;
- document.getElementById('growth-count').textContent=rows.filter(x=>x.d>0).length;
- document.getElementById('decline-count').textContent=rows.filter(x=>x.d<0).length;
- const best=[...rows].sort((x,y)=>y.d-x.d)[0];
- document.getElementById('best-growth').textContent=best?best.name:'—';
- const chart=document.getElementById('trend-chart');
- chart.innerHTML=top.length?top.map(x=>{
-   const cls=x.d>0?'up':x.d<0?'down':'flat';
-   const delta=(x.d>0?'+':'')+rub(x.d);
-   const augW=Math.max(0.5,x.av/max*100);
-   const sepW=Math.max(0.5,x.sv/max*100);
-   return '<div class="partner-row">'+
-     '<div class="partner-name">'+x.name+'</div>'+
-     '<div class="bars">'+
-       '<div class="bar-line"><div class="bar-label">Август</div><div class="bar-track"><div class="bar aug" style="width:'+augW+'%"></div></div><div class="bar-value">'+rub(x.av)+'</div></div>'+
-       '<div class="bar-line"><div class="bar-label">Сентябрь</div><div class="bar-track"><div class="bar sep" style="width:'+sepW+'%"></div></div><div class="bar-value">'+rub(x.sv)+'</div></div>'+
-     '</div>'+
-     '<div class="trend-box '+cls+'">'+delta+'</div>'+
-   '</div>';
- }).join(''):'<div class="empty-chart">Нет данных для сравнения</div>';
-}).catch(()=>{
- document.getElementById('trend-chart').innerHTML='<div class="empty-chart">Не удалось загрузить данные для сравнения</div>';
-});
+function loadYear(){return Promise.all(Array.from({length:13},(_,i)=>fetch('year-2026-compact-'+String(i).padStart(2,'0')+'.part?v='+Date.now()).then(r=>{if(!r.ok)throw new Error('YEAR_PART_'+i);return r.text()}))).then(parts=>JSON.parse(parts.join('')))}
+loadYear().then(year=>{
+ const blocked=/^(?:выход(?:,|\s)|выход оплата|дилерский заказ|на понедельник|ооо$)/i;
+ const rows=(year.trend||[]).map(x=>({name:x[0],count:x[1],sales:x[2],months:new Map((x[3]||[]).map(m=>[m[0],{count:m[1],sales:m[2]}]))})).filter(x=>!blocked.test(x.name||''));
+ rows.sort((a,b)=>b.sales-a.sales||b.count-a.count);
+ const top=rows.slice(0,10),leader=top[0];
+ document.getElementById('partners-count').textContent=rows.length.toLocaleString('ru-RU');
+ document.getElementById('months-count').textContent=Object.keys(year.months||{}).length;
+ document.getElementById('leader-name').textContent=leader?.name||'—';
+ document.getElementById('leader-sales').textContent=leader?rub(leader.sales):'—';
+ document.getElementById('trend-chart').innerHTML=top.map((p,idx)=>{
+   const vals=MONTHS.map(m=>p.months.get(m)?.sales||0),max=Math.max(1,...vals);
+   const bars=vals.map((v,i)=>{const h=v?Math.max(7,v/max*58):2;return '<div class="month-cell '+(v?'':'zero')+'" title="'+MONTH_LABELS[i]+': '+rub(v)+'"><div class="month-bar" style="height:'+h+'px"></div></div>'}).join('');
+   return '<div class="trend-row"><div class="partner-name"><span class="rank">'+(idx+1)+'</span>'+p.name+'</div>'+bars+'<div class="total"><b>'+rub(p.sales)+'</b><span>'+p.count+' продаж</span></div></div>';
+ }).join('');
+}).catch(()=>{document.getElementById('trend-chart').innerHTML='<div class="loading">Не удалось загрузить данные 2026 года</div>'});
 </script></body></html>
