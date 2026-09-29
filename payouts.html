@@ -104,7 +104,7 @@ function renderChart(){
  const grids=[0,.25,.5,.75,1].map(f=>{const y=T+IH*(1-f);return '<line class="pc-grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+y+'" y2="'+y+'"/><text class="pc-axis" x="'+(L-8)+'" y="'+(y+3)+'" text-anchor="end">'+Math.round(maxSales*f/1000)+'к</text>'}).join('');
  const bars=series.map((p,i)=>{const x=L+i*step+(step-barW)/2,h=p.sales/maxSales*IH,y=T+IH-h;return '<rect class="pc-bar" x="'+x+'" y="'+y+'" width="'+barW+'" height="'+h+'" rx="7"/><text class="pc-value" x="'+(x+barW/2)+'" y="'+Math.max(12,y-7)+'" text-anchor="middle">'+Math.round(p.sales/1000)+'к</text><text class="pc-axis" x="'+(x+barW/2)+'" y="'+(H-17)+'" text-anchor="middle">'+p.label+'</text>'}).join('');
  const linePts=series.map((p,i)=>{const x=L+i*step+step/2,y=T+IH-(p.avg/maxAvg*IH);return{x,y,v:p.avg}}),poly=linePts.map(p=>p.x+','+p.y).join(' ');
- const line='<polyline class="pc-line" points="'+poly+'"/>'+linePts.map(p=>'<circle class="pc-point" cx="'+p.x+'" cy="'+p.y+'" r="4"/><text class="pc-value" x="'+p.x+'" y="'+Math.max(14,p.y-10)+'" text-anchor="middle">'+Math.round(p.v/1000)+'к</text>').join('');
+ const line='<polyline class="pc-line" points="'+poly+'"/>'+linePts.map(p=>'<circle class="pc-point" cx="'+p.x+'" cy="'+p.y+'" r="4"><title>Средний чек: '+rub(p.v)+'</title></circle>').join('');
  host.innerHTML='<svg class="payout-chart-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none">'+grids+bars+line+'</svg>'
 }
 const render=()=>{const manager=filter.value;body.innerHTML=details.filter(x=>!manager||x.manager===manager).map(x=>`<tr><td class="name-cell">${x.manager}</td><td>${x.phone||'—'}</td><td>${rub(x.sales)}</td><td>${x.rate}%</td><td class="name-cell">${rub(x.payout)}</td></tr>`).join('')};
