@@ -132,12 +132,14 @@ function renderTrajectoryChart(data,monthPlan,forecastData){
 function attentionCheckText(key,item){if(item.state==='ok'){const okNames={empty_phone:'Телефон',unknown_responsible:'Ответственные',new_manager:'Новые менеджеры',duplicate:'Дубли',no_partner:'Партнёр'};return (okNames[key]||item.label)+' ✓'}if(item.state==='na')return key==='strange_status'?'Статус: нет поля':item.label;return item.count+' · '+item.label}
 function renderAttention(data){
  const section=el('attention-section'),list=el('attention-list'),checks=el('attention-checks'),count=el('attention-count'),sub=el('attention-sub');if(!section||!list||!checks||!count)return;
- const rows=data.issues||[],summary=data.summary||{};section.style.display='';
- count.textContent=rows.length?summary.rowsWithAttention+' строк · '+summary.signals+' сигналов':'Всё чисто';count.classList.toggle('ok',!rows.length);
- if(sub)sub.textContent='Проверено '+Number(data.sourceRows||0)+' строк · маржа < '+Number(data.rules?.lowMarginProfitabilityBelow||40)+'% считается низкой · обновлено '+(data.updated||'—');
- checks.innerHTML=Object.entries(data.checks||{}).map(([key,item])=>'<span class="attention-check '+(item.state||'')+'">'+attentionCheckText(key,item)+'</span>').join('');
- if(!rows.length){list.innerHTML='<div class="attention-empty">Критичных сигналов в текущей выгрузке нет</div>';return}
- list.innerHTML=rows.map(r=>'<div class="attention-row"><div class="attention-main"><div class="attention-line"><span class="attention-phone">'+(r.phone||'Без телефона')+'</span><span class="attention-amount">'+rub(r.amount)+'</span></div><div class="attention-meta">'+(r.date||'—')+' · '+(r.partner||r.buyer||'Без партнёра')+' · '+(r.responsible||'Без ответственного')+'</div><div class="attention-source">строка '+r.row+' в исходном Excel</div></div><div class="attention-badges">'+(r.issues||[]).map(x=>'<span class="attention-badge '+x.type+'">'+x.label+'</span>').join('')+'</div><div class="attention-amount">маржа '+rub(r.margin)+'</div></div>').join('');
+ const rows=(data.issues||[]).filter(r=>!(r.issues||[]).some(x=>x.type==='excluded'));section.style.display='';
+ const signalCount=rows.reduce((s,r)=>s+(r.issues||[]).filter(x=>x.type!=='excluded').length,0);
+ count.textContent=rows.length?rows.length+' строк · '+signalCount+' сигналов':'Всё чисто';count.classList.toggle('ok',!rows.length);
+ if(sub)sub.textContent='Проверка только чистых продаж · маржа < '+Number(data.rules?.lowMarginProfitabilityBelow||40)+'% считается низкой · обновлено '+(data.updated||'—');
+ const cleanChecks=Object.entries(data.checks||{}).filter(([key])=>key!=='excluded').map(([key,item])=>{if(item.state==='na')return[key,item];const n=rows.reduce((s,r)=>s+(r.issues||[]).filter(x=>x.type===key).length,0);return[key,{...item,count:n,state:n?'warning':'ok'}]});
+ checks.innerHTML=cleanChecks.map(([key,item])=>'<span class="attention-check '+(item.state||'')+'">'+attentionCheckText(key,item)+'</span>').join('');
+ if(!rows.length){list.innerHTML='<div class="attention-empty">В чистых продажах критичных сигналов нет</div>';return}
+ list.innerHTML=rows.map(r=>'<div class="attention-row"><div class="attention-main"><div class="attention-line"><span class="attention-phone">'+(r.phone||'Без телефона')+'</span><span class="attention-amount">'+rub(r.amount)+'</span></div><div class="attention-meta">'+(r.date||'—')+' · '+(r.partner||r.buyer||'Без партнёра')+' · '+(r.responsible||'Без ответственного')+'</div><div class="attention-source">строка '+r.row+' в исходном Excel</div></div><div class="attention-badges">'+(r.issues||[]).filter(x=>x.type!=='excluded').map(x=>'<span class="attention-badge '+x.type+'">'+x.label+'</span>').join('')+'</div><div class="attention-amount">маржа '+rub(r.margin)+'</div></div>').join('');
 }
 function loadAttention(){
  const section=el('attention-section');if(!section)return;if(selectedMonth==='2026'){section.style.display='none';return}
