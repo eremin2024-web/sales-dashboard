@@ -70,7 +70,6 @@ td{padding:15px 16px;font-size:13px}
 const selectedMonth=MONTHS[new URLSearchParams(location.search).get("month")]?new URLSearchParams(location.search).get("month"):DEFAULT_MONTH;
 function setupMonthTabs(){const wrap=document.getElementById("month-tabs");if(!wrap)return;wrap.querySelectorAll("button").forEach(b=>{b.classList.toggle("active",b.dataset.month===selectedMonth);b.title=MONTHS[b.dataset.month];b.addEventListener("click",()=>{const u=new URL(location.href);u.searchParams.set("month",b.dataset.month);location.href=u.toString()})});document.querySelectorAll(".tabs .tab").forEach(a=>{const u=new URL(a.getAttribute("href"),location.href);u.searchParams.set("month",selectedMonth);a.href=u.pathname.split("/").pop()+"?month="+selectedMonth})}
 setupMonthTabs();
-loadAttention();
 const YEAR_PARTS=13;
 function loadYear(){return Promise.all(Array.from({length:YEAR_PARTS},(_,i)=>fetch('year-2026-compact-'+String(i).padStart(2,'0')+'.part?v='+Date.now()).then(r=>{if(!r.ok)throw new Error('YEAR_PART_'+i);return r.text()}))).then(parts=>JSON.parse(parts.join('')))}
 function unpackSales(a){if(!a)return null;const bp=a[8]||[];return{updated:a[0],lastSale:a[1],sales:a[2],margin:a[3],profitability:a[4],salesCount:a[5],averageCheck:a[6],directions:(a[7]||[]).map(i=>({name:i[0],plan:i[1],fact:i[2],margin:i[3],count:i[4],profitability:i[5],averageCheck:i[6],share:i[7],completion:i[8],remaining:i[9]})),bestPartner:{name:bp[0],count:bp[1],sales:bp[2]},topPartners:(a[9]||[]).map(i=>({name:i[0],count:i[1],sales:i[2]})),topMasks:(a[10]||[]).map(i=>({mask:i[0],count:i[1],sales:i[2]})),topSubMasks:(a[11]||[]).map(i=>({submask:i[0],count:i[1],sales:i[2]})),dailySales:(a[12]||[]).map(i=>({date:i[0],personal:i[1],cpo:i[2],app:i[3],total:i[4],count:i[5]})),weekdays:(a[13]||[]).map(i=>({day:i[0],sales:i[1],count:i[2],averageCheck:i[3]})),daily:{todaySales:a[14]?.[0],yesterdaySales:a[14]?.[1],change:a[14]?.[2],averageDaily:a[14]?.[3],bestDaySales:a[14]?.[4],bestDayDate:a[14]?.[5],neededPerDay:a[14]?.[6],daysLeft:a[14]?.[7],planCompletion:a[14]?.[8],remaining:a[14]?.[9]},forecast:{month:a[15]?.[0],completion:a[15]?.[1],pace:a[15]?.[2],deviation:a[15]?.[3],gap:a[15]?.[4]}}}
@@ -144,6 +143,7 @@ function loadAttention(){
  const section=el('attention-section');if(!section)return;if(selectedMonth==='2026'){section.style.display='none';return}
  fetch('attention-'+selectedMonth+'.json?v='+Date.now()).then(r=>{if(!r.ok)throw new Error('NO_ATTENTION');return r.json()}).then(renderAttention).catch(()=>{section.style.display='none'});
 }
+loadAttention();
 function renderAnnualSalesChart(data){
  const host=el('annual-sales-chart');if(!host)return;
  const rows=(data.dailySales||[]).filter(x=>x.total!=null),W=1320,H=420,L=72,R=28,T=54,B=54,IW=W-L-R,IH=H-T-B;
