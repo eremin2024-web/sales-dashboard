@@ -97,11 +97,16 @@ function renderChart(){
    series.push({key,label:monthNames[m-1],sales,count,avg});
  }
  const current=series.find(x=>x.key===selectedMonth.slice(5,7))||series[series.length-1],currentIndex=series.indexOf(current),prev=currentIndex>0?series[currentIndex-1]:null;
- const growth=prev&&prev.sales?((current.sales-prev.sales)/prev.sales*100):(current?.sales>0&&prev?100:0);
+ const now=new Date(),currentCalendarKey=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0'),seriesMonthKey=current?('2026-'+current.key):'';
+ const isCurrentOpenMonth=seriesMonthKey===currentCalendarKey;
+ const daysInCurrentMonth=current?new Date(2026,Number(current.key),0).getDate():0,elapsedDays=isCurrentOpenMonth?Math.max(1,Math.min(now.getDate(),daysInCurrentMonth)):daysInCurrentMonth;
+ const forecastSales=current?(isCurrentOpenMonth?current.sales/elapsedDays*daysInCurrentMonth:current.sales):0;
+ const growthBase=isCurrentOpenMonth?forecastSales:(current?.sales||0);
+ const growth=prev&&prev.sales?((growthBase-prev.sales)/prev.sales*100):(growthBase>0&&prev?100:0);
  document.getElementById('chart-current-sales').textContent=selectedMonth==="2026"?rub(data.summary?.sales):current?rub(current.sales):'—';
  document.getElementById('chart-current-date').textContent=selectedMonth==="2026"?'январь — октябрь 2026':current?'за '+MONTHS['2026-'+current.key].toLowerCase():'—';
  const ge=document.getElementById('chart-growth');ge.textContent=prev?fmtPct(growth):'—';ge.className=growth>0?'up':growth<0?'down':'flat';
- document.getElementById('chart-growth-note').textContent=prev?('к '+MONTHS['2026-'+prev.key].toLowerCase()):'нет предыдущего месяца';
+ document.getElementById('chart-growth-note').textContent=prev?((isCurrentOpenMonth?'прогноз к ':'к ')+MONTHS['2026-'+prev.key].toLowerCase()):'нет предыдущего месяца';
  document.getElementById('chart-average-check').textContent=selectedMonth==="2026"?(data.summary?.count?rub(data.summary.sales/data.summary.count):'—'):current?rub(current.avg):'—';
  document.getElementById('chart-month-count').textContent=selectedMonth==="2026"?(Number(data.summary?.count||0)+' продаж за год'):current?(current.count+' продаж за месяц'):'—';
  const host=document.getElementById('payout-chart');
