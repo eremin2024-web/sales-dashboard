@@ -195,9 +195,9 @@ function renderTodayActions(data,monthPlan,d,f){
    const actions=[...core],partners=matrix?.partners||[];
    const attention=partners.filter(p=>p.status==='Падает'||p.status==='Давно не продавал').sort((a,b)=>Number(b.previousAnalogSales||0)-Number(a.previousAnalogSales||0));
    if(attention.length){
-     const names=attention.slice(0,4).map(p=>p.partner).join(', ');
+     const names=attention.map(p=>p.partner).join(', ');
      const lost=attention.reduce((s,p)=>s+Number(p.previousAnalogSales||0),0);
-     actions.push({type:'risk',title:'Написать партнёрам, которые просели или замолчали',desc:names+(attention.length>4?' и ещё '+(attention.length-4):''),result:attention.length+' партнёров · в аналогичном периоде '+rub(lost)});
+     actions.push({type:'risk',title:'Написать партнёрам, которые просели или замолчали',desc:names,result:attention.length+' партнёров · в аналогичном периоде '+rub(lost)});
    }
    const growing=partners.filter(p=>p.status==='Растёт'&&Number(p.currentSales||0)>0).sort((a,b)=>Number(b.currentSales||0)-Number(a.currentSales||0))[0];
    if(growing){
