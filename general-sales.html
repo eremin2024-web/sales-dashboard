@@ -125,7 +125,8 @@ function renderTrajectoryChart(data,monthPlan,forecastData){
  const points=arr=>arr.map((v,i)=>v==null?null:(x(i+1)+','+y(v))).filter(Boolean).join(' ');
  const factPts=points(actual),planPts=points(plan),forecastPts=points(forecast);
  const nowX=x(lastActualDay),lastFactY=y(startVal),planNowY=y(planToday),forecastEndY=y(forecastMonth);
- const labels='<text class="trajectory-label fact" x="'+Math.min(W-R-84,nowX+10)+'" y="'+Math.max(16,lastFactY-10)+'">Факт '+short(startVal)+'</text><text class="trajectory-label plan" x="'+Math.min(W-R-88,nowX+10)+'" y="'+Math.max(28,planNowY+18)+'">План '+short(planToday)+'</text><text class="trajectory-label forecast" x="'+(W-R-6)+'" y="'+Math.max(16,forecastEndY-10)+'" text-anchor="end">Прогноз '+short(forecastMonth)+'</text>';
+ const factIsHigher=startVal>=planToday,factLabelY=Math.max(16,Math.min(H-B-4,lastFactY+(factIsHigher?-12:20))),planLabelY=Math.max(16,Math.min(H-B-4,planNowY+(factIsHigher?20:-12)));
+ const labels='<text class="trajectory-label fact" x="'+Math.min(W-R-84,nowX+10)+'" y="'+factLabelY+'">Факт '+short(startVal)+'</text><text class="trajectory-label plan" x="'+Math.min(W-R-88,nowX+10)+'" y="'+planLabelY+'">План '+short(planToday)+'</text><text class="trajectory-label forecast" x="'+(W-R-6)+'" y="'+Math.max(16,forecastEndY-10)+'" text-anchor="end">Прогноз '+short(forecastMonth)+'</text>';
  host.innerHTML='<svg class="trajectory-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none">'+grids+'<line class="trajectory-now" x1="'+nowX+'" x2="'+nowX+'" y1="'+T+'" y2="'+(T+IH)+'"/><polyline class="trajectory-plan-line" points="'+planPts+'"/><polyline class="trajectory-forecast-line" points="'+forecastPts+'"/><polyline class="trajectory-fact-line" points="'+factPts+'"/><circle class="trajectory-dot-fact" cx="'+nowX+'" cy="'+lastFactY+'" r="5"/><circle class="trajectory-dot-plan" cx="'+nowX+'" cy="'+planNowY+'" r="5"/>'+ticks+labels+'</svg>';
 }
 
