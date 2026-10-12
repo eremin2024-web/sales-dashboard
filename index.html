@@ -194,7 +194,7 @@ function renderTodayActions(data,monthPlan,d,f){
    const x=dirs[1];core.push({type:x.pct<85?'risk':'growth',title:'Второй приоритет — '+x.name,desc:'Прогноз '+Math.round(x.pct)+'% плана.',result:'Нужно '+rub(x.need)+'/день'});
  }
  function draw(matrix){
-   const actions=[...core],partners=matrix?.partners||[];
+   const actions=[...core],partners=(matrix?.partners||[]).filter(p=>!p.excludedFromClean);
    const attention=partners.filter(p=>p.status==='Падает'||p.status==='Давно не продавал').sort((a,b)=>Number(b.previousAnalogSales||0)-Number(a.previousAnalogSales||0));
    if(attention.length){
      const names=attention.map(p=>p.partner).join(', ');
