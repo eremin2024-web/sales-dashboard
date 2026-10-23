@@ -1,1 +1,46 @@
-{"updated":"23.10.2026","lastSale":"22.10.2026","sales":2564270,"margin":1818658.2,"profitability":70.92296531696921,"salesCount":128,"averageCheck":20033.359375,"directions":[{"name":"Личные продажи","plan":3459835,"fact":2150040,"margin":1541143.96,"count":82,"profitability":71.67978084128667,"averageCheck":26220,"share":83.84608485065925,"completion":62.142847852571,"remaining":1309795},{"name":"ЦПО","plan":643754,"fact":246150,"margin":150277.23,"count":21,"profitability":61.05107861060329,"averageCheck":11721.42857142857,"share":9.599223170726951,"completion":38.23665561689714,"remaining":397604},{"name":"Приложение","plan":283733,"fact":168080,"margin":127237.01,"count":25,"profitability":75.70026772965255,"averageCheck":6723.2,"share":6.554691978613797,"completion":59.23879139895606,"remaining":115653}],"bestPartner":{"name":"Осипян","count":37,"sales":914300},"topPartners":[{"name":"Осипян","count":37,"sales":914300},{"name":"Клиент с тг","count":1,"sales":340000},{"name":"Ахмедов","count":3,"sales":144000},{"name":"Алаудинов","count":1,"sales":100000},{"name":"Барсуков","count":1,"sales":88000},{"name":"Зиновкин","count":1,"sales":88000},{"name":"Сабир","count":1,"sales":82000},{"name":"Зюзина","count":1,"sales":75000},{"name":"Бегиев","count":5,"sales":60000},{"name":"Куветов","count":5,"sales":57000}],"topMasks":[{"mask":"*****aaaaa","count":12,"sales":895000},{"mask":"***aaabbaa","count":4,"sales":364000},{"mask":"***aaaaaab","count":3,"sales":255000},{"mask":"**********","count":31,"sales":205700},{"mask":"******aaaa","count":6,"sales":173000},{"mask":"***aaaaaba","count":2,"sales":93000},{"mask":"****a*aaaa","count":2,"sales":78000},{"mask":"***aa*bbbb","count":2,"sales":70000},{"mask":"***aaabaaa","count":1,"sales":70000},{"mask":"******abab","count":12,"sales":44970}],"topSubMasks":[{"submask":"***1110011","count":1,"sales":340000},{"submask":"***9999991","count":1,"sales":100000},{"submask":"***1877777","count":1,"sales":88000},{"submask":"***7866666","count":1,"sales":88000},{"submask":"***8277777","count":1,"sales":88000},{"submask":"***4077777","count":1,"sales":82000},{"submask":"***1111110","count":1,"sales":80000},{"submask":"***3877777","count":1,"sales":80000},{"submask":"***7677777","count":1,"sales":80000},{"submask":"***9277777","count":1,"sales":80000}],"dailySales":[{"date":"01.10.2026","personal":219640,"cpo":0,"app":0,"total":219640,"count":11},{"date":"02.10.2026","personal":90000,"cpo":0,"app":2640,"total":92640,"count":3},{"date":"03.10.2026","personal":142000,"cpo":3000,"app":0,"total":145000,"count":5},{"date":"04.10.2026","personal":0,"cpo":0,"app":2400,"total":2400,"count":1},{"date":"05.10.2026","personal":86000,"cpo":80000,"app":32000,"total":198000,"count":8},{"date":"06.10.2026","personal":99400,"cpo":3000,"app":0,"total":102400,"count":7},{"date":"07.10.2026","personal":7200,"cpo":0,"app":2400,"total":9600,"count":2},{"date":"08.10.2026","personal":136000,"cpo":0,"app":6400,"total":142400,"count":7},{"date":"09.10.2026","personal":146000,"cpo":15800,"app":5280,"total":167080,"count":9},{"date":"10.10.2026","personal":0,"cpo":0,"app":4000,"total":4000,"count":1},{"date":"11.10.2026","personal":0,"cpo":9800,"app":2640,"total":12440,"count":2},{"date":"12.10.2026","personal":11000,"cpo":48000,"app":32240,"total":91240,"count":8},{"date":"13.10.2026","personal":164000,"cpo":0,"app":49840,"total":213840,"count":7},{"date":"14.10.2026","personal":0,"cpo":0,"app":0,"total":0,"count":0},{"date":"15.10.2026","personal":360300,"cpo":3200,"app":6400,"total":369900,"count":11},{"date":"16.10.2026","personal":139500,"cpo":9300,"app":5040,"total":153840,"count":10},{"date":"17.10.2026","personal":0,"cpo":2400,"app":0,"total":2400,"count":1},{"date":"18.10.2026","personal":0,"cpo":3000,"app":0,"total":3000,"count":1},{"date":"19.10.2026","personal":235500,"cpo":0,"app":9600,"total":245100,"count":14},{"date":"20.10.2026","personal":124000,"cpo":40000,"app":0,"total":164000,"count":4},{"date":"21.10.2026","personal":185000,"cpo":19350,"app":2400,"total":206750,"count":9},{"date":"22.10.2026","personal":4500,"cpo":9300,"app":4800,"total":18600,"count":7},{"date":"23.10.2026","personal":0,"cpo":0,"app":0,"total":0,"count":0},{"date":"24.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"25.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"26.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"27.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"28.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"29.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"30.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null},{"date":"31.10.2026","personal":null,"cpo":null,"app":null,"total":null,"count":null}],"weekdays":[{"day":"Понедельник","sales":534340,"count":30,"averageCheck":17811.333333333332},{"day":"Вторник","sales":480240,"count":18,"averageCheck":26680},{"day":"Среда","sales":216350,"count":11,"averageCheck":19668.18181818182},{"day":"Четверг","sales":750540,"count":36,"averageCheck":20848.333333333332},{"day":"Пятница","sales":413560,"count":22,"averageCheck":18798.18181818182},{"day":"Суббота","sales":151400,"count":7,"averageCheck":21628.571428571428},{"day":"Воскресенье","sales":17840,"count":4,"averageCheck":4460}],"daily":{"todaySales":0,"yesterdaySales":18600,"change":-100,"averageDaily":111490,"bestDaySales":369900,"bestDayDate":"15.10.2026","neededPerDay":227881.5,"daysLeft":8,"planCompletion":58.447271479048034,"remaining":1823052},"forecast":{"month":3456190,"completion":78.77675721089084,"pace":78.77675721089084,"deviation":-21.223242789109165,"gap":-931132},"sourceRows":219,"sourceFile":"Лист Microsoft Excel.xlsx","logicVersion":"rebuild-2026-10-23-full-source-refusal-excluded-own-number-count-excluded-return-marker-nonsale-babich-special-payout-filimonova-as-kulemin-mask-normalized-v6"}
+{
+  "period": "2026-10",
+  "total_records": 94,
+  "total_revenue": 1417030,
+  "total_cost": 381656.32,
+  "total_margin": 1035373.68,
+  "own_number_withdrawals_count": 7,
+  "by_manager": {
+    "Еремин Валентин Андреевич": {
+      "deals_count": 74,
+      "revenue": 1188340,
+      "cost": 313175.05,
+      "margin": 875164.95
+    },
+    "Хасянов Илсаф Ханнянович": {
+      "deals_count": 7,
+      "revenue": 75000,
+      "cost": 41947.15,
+      "margin": 33052.85
+    },
+    "Назаров Дмитрий Александрович": {
+      "deals_count": 4,
+      "revenue": 79000,
+      "cost": 31001.01,
+      "margin": 47998.99
+    },
+    "Бабич Александр Алексеевич": {
+      "deals_count": 3,
+      "revenue": 50750,
+      "cost": 14101,
+      "margin": 36649
+    },
+    "Филимонова Анастасия Вячеславовна": {
+      "deals_count": 2,
+      "revenue": 12300,
+      "cost": 3781.44,
+      "margin": 8518.56
+    },
+    "1c_iis": {
+      "deals_count": 14,
+      "revenue": 91640,
+      "cost": 27650.67,
+      "margin": 63989.33
+    }
+  }
+}
