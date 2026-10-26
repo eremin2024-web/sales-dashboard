@@ -2,17 +2,17 @@
   "month": "2026-10",
   "clean": {
     "sales": 263877000,
-    "margin": 19288473.990000002,
+    "margin": 19387473,
     "count": 143
   },
   "general": {
     "sales": 309507000,
-    "margin": 31614312.76,
+    "margin": 32015644,
     "count": 228
   },
   "forecast": {
-    "clean": 0,
-    "general": 0
+    "clean": 314622576.9230769,
+    "general": 369027576.9230769
   },
   "channels": {
     "Личные продажи": {
