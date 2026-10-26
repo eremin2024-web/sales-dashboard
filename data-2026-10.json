@@ -1,46 +1,77 @@
 {
   "period": "2026-10",
-  "total_records": 94,
-  "total_revenue": 1417030,
-  "total_cost": 381656.32,
-  "total_margin": 1035373.68,
-  "own_number_withdrawals_count": 7,
-  "by_manager": {
+  "total_records": 150,
+  "total_revenue": 1944810,
+  "total_cost": 490333.15,
+  "total_margin": 1454476.85,
+  "managers_summary": {
     "Еремин Валентин Андреевич": {
-      "deals_count": 74,
-      "revenue": 1188340,
-      "cost": 313175.05,
-      "margin": 875164.95
+      "count": 115,
+      "revenue": 1729740,
+      "cost": 427845,
+      "margin": 1301895
     },
     "Хасянов Илсаф Ханнянович": {
-      "deals_count": 7,
-      "revenue": 75000,
-      "cost": 41947.15,
-      "margin": 33052.85
+      "count": 10,
+      "revenue": 87800,
+      "cost": 34947.3,
+      "margin": 52852.7
+    },
+    "1c_iis": {
+      "count": 17,
+      "revenue": 45400,
+      "cost": 12808.24,
+      "margin": 32591.76
     },
     "Назаров Дмитрий Александрович": {
-      "deals_count": 4,
+      "count": 4,
       "revenue": 79000,
-      "cost": 31001.01,
-      "margin": 47998.99
+      "cost": 31000.02,
+      "margin": 47999.98
     },
     "Бабич Александр Алексеевич": {
-      "deals_count": 3,
+      "count": 3,
       "revenue": 50750,
       "cost": 14101,
       "margin": 36649
     },
     "Филимонова Анастасия Вячеславовна": {
-      "deals_count": 2,
-      "revenue": 12300,
-      "cost": 3781.44,
-      "margin": 8518.56
+      "count": 3,
+      "revenue": 17300,
+      "cost": 3781.45,
+      "margin": 13518.55
+    }
+  },
+  "channels_summary": {
+    "Продажи айфон": {
+      "count": 66,
+      "revenue": 1386740,
+      "margin": 1109038.54
     },
-    "1c_iis": {
-      "deals_count": 14,
-      "revenue": 91640,
-      "cost": 27650.67,
-      "margin": 63989.33
+    "Григорий Люкснамберс портация": {
+      "count": 43,
+      "revenue": 145000,
+      "margin": 95687.73
+    },
+    "Асад Портация": {
+      "count": 34,
+      "revenue": 218100,
+      "margin": 114674.34
+    },
+    "Слава Блэк Портация": {
+      "count": 4,
+      "revenue": 4800,
+      "margin": 3080.93
+    },
+    "Турланов Арсен": {
+      "count": 2,
+      "revenue": 50000,
+      "margin": 39830
+    },
+    "Частные лица и портал": {
+      "count": 34,
+      "revenue": 279370,
+      "margin": 218765.31
     }
   }
 }
