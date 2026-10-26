@@ -1,45 +1,58 @@
 {
-  "description": "Предварительный расчет выплат ЦПО с исключением системных активаций (1c_iis), предоплат и технических выводов собственных номеров",
-  "managers": [
+  "cpo_partners": [
     {
-      "manager": "Еремин Валентин Андреевич",
-      "eligible_deals_count": 67,
-      "excluded_deals_count": 7,
-      "adjusted_margin": 882164.95,
-      "payout_cpo": 88216.5,
-      "note": "Исключены 7 выводов собственных номеров (в т.ч. убыточные по списанию себестоимости)"
+      "partner": "Продажи айфон",
+      "type": "Субдилер / ЦПО",
+      "activations_count": 66,
+      "turnover": 1386740,
+      "gross_margin": 1109038.54,
+      "excluded_from_payout_margin": 2999.99,
+      "reasons": "Возврат 9647011101 (2 000 руб.), вывод собственного номера 9190056789 (999.99 руб.)",
+      "net_margin_for_payout": 1106038.55
     },
     {
-      "manager": "Хасянов Илсаф Ханнянович",
-      "eligible_deals_count": 5,
-      "excluded_deals_count": 2,
-      "adjusted_margin": 46052.85,
-      "payout_cpo": 4605.29,
-      "note": "Исключены незавершенные предоплаты по номерам 9688882288 и 9686155555 до полной оплаты"
+      "partner": "Григорий Люкснамберс портация",
+      "type": "Портация / Опт",
+      "activations_count": 43,
+      "turnover": 145000,
+      "gross_margin": 95687.73,
+      "excluded_from_payout_margin": -2,
+      "reasons": "Выводы собственных номеров (9600110707, 9650020020 - маржа -2 000 руб., 9610707400, 9610707500)",
+      "net_margin_for_payout": 97689.73
     },
     {
-      "manager": "Назаров Дмитрий Александрович",
-      "eligible_deals_count": 4,
-      "excluded_deals_count": 0,
-      "adjusted_margin": 47998.99,
-      "payout_cpo": 4799.9,
-      "note": "Все сделки квалифицированы"
+      "partner": "Асад Портация",
+      "type": "Выкуп номеров / Портация",
+      "activations_count": 34,
+      "turnover": 218100,
+      "gross_margin": 114674.34,
+      "excluded_from_payout_margin": 0,
+      "net_margin_for_payout": 114674.34
     },
     {
-      "manager": "Бабич Александр Алексеевич",
-      "eligible_deals_count": 3,
-      "excluded_deals_count": 0,
-      "adjusted_margin": 36649,
-      "payout_cpo": 3664.9,
-      "note": "Все сделки квалифицированы"
+      "partner": "Слава Блэк Портация",
+      "type": "Выкуп номеров",
+      "activations_count": 4,
+      "turnover": 4800,
+      "gross_margin": 3080.93,
+      "excluded_from_payout_margin": 0,
+      "net_margin_for_payout": 3080.93
     },
     {
-      "manager": "Филимонова Анастасия Вячеславовна",
-      "eligible_deals_count": 2,
-      "excluded_deals_count": 0,
-      "adjusted_margin": 8518.56,
-      "payout_cpo": 851.86,
-      "note": "Все сделки квалифицированы"
+      "partner": "Турланов Арсен RT100000258",
+      "type": "Выкуп номеров",
+      "activations_count": 2,
+      "turnover": 50000,
+      "gross_margin": 39830,
+      "excluded_from_payout_margin": 0,
+      "net_margin_for_payout": 39830
     }
-  ]
+  ],
+  "own_number_exits_summary": {
+    "count": 7,
+    "total_fee": 7000,
+    "total_cost": 12002.02,
+    "net_result": -5002.02,
+    "rule": "Вывод собственного номера не формирует бонусную базу и не участвует в стандартных мотивационных выплатах ЦПО/менеджеров"
+  }
 }
