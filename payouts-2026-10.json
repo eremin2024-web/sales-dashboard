@@ -1,11 +1,11 @@
 {
   "month": "2026-10",
   "label": "Октябрь 2026",
-  "updated": "27.10.2026",
+  "updated": "28.10.2026",
   "summary": {
-    "count": 23,
-    "sales": 254150,
-    "payout": 20375
+    "count": 26,
+    "sales": 344150,
+    "payout": 26975
   },
   "managers": [
     {
@@ -22,15 +22,15 @@
     },
     {
       "name": "Хасянов Илсаф Ханнянович",
-      "count": 12,
-      "sales": 104100,
-      "payout": 8820
+      "count": 13,
+      "sales": 109100,
+      "payout": 9320
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 3,
-      "sales": 17300,
-      "payout": 2630
+      "count": 5,
+      "sales": 102300,
+      "payout": 8730
     }
   ],
   "details": [
@@ -230,9 +230,33 @@
       "rate": 10,
       "payout": 500,
       "sourceManager": "Филимонова Анастасия Вячеславовна"
+    },
+    {
+      "date": "27.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9820002777",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "27.10.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9099999154",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "27.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9018377777",
+      "sales": 80000,
+      "rate": 7,
+      "payout": 5600
     }
   ],
-  "sourceRows": 236,
-  "sourceFile": "Для дашборда 27.10.xlsx",
-  "logicVersion": "babich-own-sales-special-rate-kulemin-share-v12-2026-10-27-full-source"
+  "sourceRows": 244,
+  "sourceFile": "Исходник для дашборда.xlsx",
+  "logicVersion": "babich-own-sales-special-rate-kulemin-share-v12-2026-10-28-full-source"
 }
