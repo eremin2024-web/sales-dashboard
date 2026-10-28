@@ -1,11 +1,11 @@
 {
-  "updated": "27.10.2026",
+  "updated": "28.10.2026",
   "month": "2026-10",
   "partners": [
     {
       "name": "Осипян",
-      "count": 41,
-      "sales": 923800
+      "count": 43,
+      "sales": 1002800
     },
     {
       "name": "Клиент с тг",
@@ -48,6 +48,11 @@
       "sales": 82000
     },
     {
+      "name": "ВипСторе",
+      "sales": 80000,
+      "count": 1
+    },
+    {
       "name": "Илона",
       "count": 3,
       "sales": 78000
@@ -59,8 +64,8 @@
     },
     {
       "name": "Куветов",
-      "count": 6,
-      "sales": 64000
+      "count": 8,
+      "sales": 73000
     },
     {
       "name": "Бегиев",
@@ -116,6 +121,11 @@
       "name": "Бердукаев",
       "count": 1,
       "sales": 4000
+    },
+    {
+      "name": "Переверзев",
+      "sales": 4000,
+      "count": 1
     },
     {
       "name": "Ахмедпашаев",
@@ -183,5 +193,5 @@
       "sales": 1000
     }
   ],
-  "logicVersion": "rebuild-2026-10-27-full-236-rows-own-number-count-excluded-v8"
+  "logicVersion": "rebuild-2026-10-28-full-source-244-rows-november-classification-v9"
 }
