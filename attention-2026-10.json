@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "updated": "27.10.2026",
-  "sourceFile": "Для дашборда 27.10.xlsx",
-  "sourceRows": 236,
+  "updated": "28.10.2026",
+  "sourceFile": "Исходник для дашборда.xlsx",
+  "sourceRows": 244,
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -19,15 +19,15 @@
     "returnMarkerNonSale": true
   },
   "summary": {
-    "rowsWithAttention": 11,
-    "signals": 11,
+    "rowsWithAttention": 12,
+    "signals": 12,
     "checksOk": 5,
     "checksWarning": 1
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 11,
+      "count": 12,
       "state": "warning"
     },
     "empty_phone": {
@@ -268,6 +268,25 @@
         {
           "type": "low_margin",
           "label": "Низкая маржа 16,7%"
+        }
+      ]
+    },
+    {
+      "row": 244,
+      "date": "27.10.2026",
+      "phone": "9018377777",
+      "amount": 80000,
+      "cost": 64725.94,
+      "margin": 15274.06,
+      "profitability": 19.09,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "ВипСторе",
+      "comment": "Випсторе. 1063301-6371",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 19,1%"
         }
       ]
     }
