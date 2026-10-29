@@ -1,11 +1,11 @@
 {
-  "updated": "28.10.2026",
+  "updated": "29.10.2026",
   "month": "2026-10",
   "partners": [
     {
       "name": "Осипян",
-      "count": 43,
-      "sales": 1002800
+      "count": 44,
+      "sales": 1082800
     },
     {
       "name": "Клиент с тг",
@@ -65,7 +65,7 @@
     {
       "name": "Куветов",
       "count": 8,
-      "sales": 73000
+      "sales": 71000
     },
     {
       "name": "Бегиев",
@@ -79,8 +79,8 @@
     },
     {
       "name": "Норайр",
-      "count": 10,
-      "sales": 45140
+      "count": 11,
+      "sales": 47140
     },
     {
       "name": "Нерсисян",
@@ -99,8 +99,8 @@
     },
     {
       "name": "Джалилов",
-      "count": 2,
-      "sales": 10000
+      "count": 3,
+      "sales": 12400
     },
     {
       "name": "Ибрагимов",
@@ -108,9 +108,19 @@
       "sales": 7200
     },
     {
+      "name": "Ахаминов",
+      "count": 2,
+      "sales": 7000
+    },
+    {
       "name": "Вяткин",
       "count": 1,
       "sales": 7000
+    },
+    {
+      "name": "Салатаев",
+      "count": 2,
+      "sales": 5000
     },
     {
       "name": "Слава Блэк",
@@ -148,12 +158,12 @@
       "sales": 2000
     },
     {
-      "name": "Ахаминов",
+      "name": "Бек",
       "count": 1,
       "sales": 2000
     },
     {
-      "name": "Бек",
+      "name": "Нурмагомед",
       "count": 1,
       "sales": 2000
     },
@@ -193,5 +203,5 @@
       "sales": 1000
     }
   ],
-  "logicVersion": "rebuild-2026-10-28-full-source-244-rows-november-classification-v9"
+  "logicVersion": "rebuild-2026-10-29-252-source-rows-partner-adjustments-v10"
 }

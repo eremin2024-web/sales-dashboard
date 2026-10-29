@@ -1,35 +1,35 @@
 {
-  "updated": "28.10.2026",
-  "lastSale": "27.10.2026",
-  "sales": 3274470,
-  "margin": 2254997.39,
-  "profitability": 68.86602686847031,
-  "salesCount": 236,
-  "averageCheck": 13874.872881355932,
+  "updated": "29.10.2026",
+  "lastSale": "28.10.2026",
+  "sales": 3372870,
+  "margin": 2320711.07,
+  "profitability": 68.8052332286747,
+  "salesCount": 244,
+  "averageCheck": 13823.237704918032,
   "directions": [
     {
       "name": "Личные продажи",
       "plan": 3459835,
       "fact": 2711840,
-      "margin": 1911359.13,
-      "count": 177,
-      "profitability": 70.4820022567703,
-      "averageCheck": 15321.129943502825,
-      "share": 82.81767736458114,
+      "margin": 1910359.13,
+      "count": 178,
+      "profitability": 70.44512692489232,
+      "averageCheck": 15235.056179775282,
+      "share": 80.40155713087074,
       "completion": 78.38061641667883,
       "remaining": 747995
     },
     {
       "name": "ЦПО",
       "plan": 643754,
-      "fact": 344150,
-      "margin": 182551.26,
-      "count": 26,
-      "profitability": 53.04409705070464,
-      "averageCheck": 13236.538461538461,
-      "share": 10.510097817356701,
-      "completion": 53.459861996974,
-      "remaining": 299604
+      "fact": 442550,
+      "margin": 249264.94,
+      "count": 33,
+      "profitability": 56.32469551463112,
+      "averageCheck": 13410.60606060606,
+      "share": 13.120873321533294,
+      "completion": 68.74520391329607,
+      "remaining": 201204
     },
     {
       "name": "Приложение",
@@ -39,21 +39,21 @@
       "count": 33,
       "profitability": 73.73077627242768,
       "averageCheck": 6620.606060606061,
-      "share": 6.67222481806216,
+      "share": 6.477569547595964,
       "completion": 77.00197016208901,
       "remaining": 65253
     }
   ],
   "bestPartner": {
     "name": "Осипян",
-    "sales": 1002800,
-    "count": 43
+    "count": 44,
+    "sales": 1082800
   },
   "topPartners": [
     {
       "name": "Осипян",
-      "count": 43,
-      "sales": 1002800
+      "count": 44,
+      "sales": 1082800
     },
     {
       "name": "Клиент с тг",
@@ -97,8 +97,8 @@
     },
     {
       "name": "ВипСторе",
-      "sales": 80000,
-      "count": 1
+      "count": 1,
+      "sales": 80000
     }
   ],
   "topMasks": [
@@ -114,8 +114,8 @@
     },
     {
       "mask": "**********",
-      "count": 66,
-      "sales": 336300
+      "count": 68,
+      "sales": 342700
     },
     {
       "mask": "***aaaaaab",
@@ -128,6 +128,11 @@
       "sales": 228000
     },
     {
+      "mask": "***aaabbbb",
+      "count": 2,
+      "sales": 157000
+    },
+    {
       "mask": "***aaaaaba",
       "count": 2,
       "sales": 93000
@@ -136,11 +141,6 @@
       "mask": "****a*aaaa",
       "count": 2,
       "sales": 78000
-    },
-    {
-      "mask": "***aaabbbb",
-      "count": 1,
-      "sales": 77000
     },
     {
       "mask": "***aa*bbbb",
@@ -158,6 +158,11 @@
       "submask": "***1110011",
       "count": 1,
       "sales": 340000
+    },
+    {
+      "submask": "***1117777",
+      "count": 2,
+      "sales": 157000
     },
     {
       "submask": "***9999991",
@@ -196,11 +201,6 @@
     },
     {
       "submask": "***7677777",
-      "count": 1,
-      "sales": 80000
-    },
-    {
-      "submask": "***8377777",
       "count": 1,
       "sales": 80000
     }
@@ -408,10 +408,10 @@
     },
     {
       "date": "26.10.2026",
-      "personal": 18500,
+      "personal": 16500,
       "cpo": 0,
       "app": 4800,
-      "total": 23300,
+      "total": 21300,
       "count": 8
     },
     {
@@ -424,19 +424,19 @@
     },
     {
       "date": "28.10.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
+      "personal": 2000,
+      "cpo": 98400,
+      "app": 0,
+      "total": 100400,
+      "count": 8
     },
     {
       "date": "29.10.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
+      "personal": 0,
+      "cpo": 0,
+      "app": 0,
+      "total": 0,
+      "count": 0
     },
     {
       "date": "30.10.2026",
@@ -458,9 +458,9 @@
   "weekdays": [
     {
       "day": "Понедельник",
-      "sales": 558840,
+      "sales": 556840,
       "count": 39,
-      "averageCheck": 14329.23076923077
+      "averageCheck": 14277.948717948719
     },
     {
       "day": "Вторник",
@@ -470,9 +470,9 @@
     },
     {
       "day": "Среда",
-      "sales": 218350,
-      "count": 11,
-      "averageCheck": 19850
+      "sales": 318750,
+      "count": 19,
+      "averageCheck": 16776.315789473683
     },
     {
       "day": "Четверг",
@@ -501,24 +501,24 @@
   ],
   "daily": {
     "todaySales": 0,
-    "yesterdaySales": 179400,
+    "yesterdaySales": 100400,
     "change": -100,
-    "averageDaily": 116945.35714285714,
+    "averageDaily": 116305.86206896552,
     "bestDaySales": 546340,
     "bestDayDate": "16.10.2026",
-    "neededPerDay": 370950.6666666667,
-    "daysLeft": 3,
-    "planCompletion": 74.6348227916711,
-    "remaining": 1112852
+    "neededPerDay": 507226,
+    "daysLeft": 2,
+    "planCompletion": 76.87764882541104,
+    "remaining": 1014452
   },
   "forecast": {
-    "month": 3625306.0714285714,
-    "completion": 82.63141094792157,
-    "pace": 82.63141094792157,
-    "deviation": -17.368589052078434,
-    "gap": -762015.9285714286
+    "month": 3605481.724137931,
+    "completion": 82.17955564095662,
+    "pace": 82.17955564095662,
+    "deviation": -17.82044435904338,
+    "gap": -781840.2758620689
   },
-  "sourceRows": 244,
-  "sourceFile": "Исходник для дашборда.xlsx",
-  "logicVersion": "rebuild-2026-10-28-full-244-rows-november-kulemin-rule-not-retroactive-v9"
+  "sourceRows": 252,
+  "sourceFile": "Исходник для дашборда(1).xlsx",
+  "logicVersion": "rebuild-2026-10-29-full-252-rows-28oct-updated-one-backdated-amount-nov-rule-not-retroactive-v10"
 }

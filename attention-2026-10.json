@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "updated": "28.10.2026",
-  "sourceFile": "Исходник для дашборда.xlsx",
-  "sourceRows": 244,
+  "updated": "29.10.2026",
+  "sourceFile": "Исходник для дашборда(1).xlsx",
+  "sourceRows": 252,
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [

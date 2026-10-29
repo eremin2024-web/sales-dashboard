@@ -1,11 +1,11 @@
 {
   "month": "2026-10",
   "label": "Октябрь 2026",
-  "updated": "28.10.2026",
+  "updated": "29.10.2026",
   "summary": {
-    "count": 26,
-    "sales": 344150,
-    "payout": 26975
+    "count": 33,
+    "sales": 442550,
+    "payout": 34415
   },
   "managers": [
     {
@@ -16,9 +16,9 @@
     },
     {
       "name": "Бабич Александр Алексеевич",
-      "count": 3,
-      "sales": 50750,
-      "payout": 2825
+      "count": 4,
+      "sales": 54750,
+      "payout": 3225
     },
     {
       "name": "Хасянов Илсаф Ханнянович",
@@ -28,9 +28,9 @@
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 5,
-      "sales": 102300,
-      "payout": 8730
+      "count": 11,
+      "sales": 196700,
+      "payout": 15770
     }
   ],
   "details": [
@@ -254,9 +254,65 @@
       "sales": 80000,
       "rate": 7,
       "payout": 5600
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9151117777",
+      "sales": 80000,
+      "rate": 7,
+      "payout": 5600
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9060005700",
+      "sales": 2400,
+      "rate": 10,
+      "payout": 240
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9099022727",
+      "sales": 4000,
+      "rate": 10,
+      "payout": 400
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9060017272",
+      "sales": 2000,
+      "rate": 10,
+      "payout": 200
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9684400007",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9770777756",
+      "sales": 2500,
+      "rate": 10,
+      "payout": 250
+    },
+    {
+      "date": "28.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9770777786",
+      "sales": 2500,
+      "rate": 10,
+      "payout": 250
     }
   ],
-  "sourceRows": 244,
-  "sourceFile": "Исходник для дашборда.xlsx",
-  "logicVersion": "babich-own-sales-special-rate-kulemin-share-v12-2026-10-28-full-source"
+  "sourceRows": 252,
+  "sourceFile": "Исходник для дашборда(1).xlsx",
+  "logicVersion": "cpo-payments-babich-split-filimonova-to-kulemin-nov-rule-not-retroactive-2026-10-29"
 }
