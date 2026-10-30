@@ -92,8 +92,9 @@ function renderChart(){
    if(selectedMonth==="2026")md=data.monthly?.[key];else if(key===selectedMonth.slice(5,7))md=data;
    else{const packed=year.months?.[key]?.p;if(packed)md=unpackPayout(packed)}
    if(!md)continue;
-   const xs=(md.details||[]).filter(x=>x.countsAsSale!==false&&(!manager||x.manager===manager));
-   const sales=xs.reduce((s,x)=>s+Number(x.sales||0),0),count=xs.length,avg=count?sales/count:0;
+   const xs=(md.details||[]).filter(x=>!manager||x.manager===manager);
+   const revenueRows=xs.filter(x=>x.countsAsSale!==false||x.countsAsRevenue===true);
+   const sales=revenueRows.reduce((s,x)=>s+Number(x.sales||0),0),count=xs.filter(x=>x.countsAsSale!==false).length,avg=count?sales/count:0;
    series.push({key,label:monthNames[m-1],sales,count,avg});
  }
  const current=series.find(x=>x.key===selectedMonth.slice(5,7))||series[series.length-1],currentIndex=series.indexOf(current),prev=currentIndex>0?series[currentIndex-1]:null;
@@ -118,6 +119,6 @@ function renderChart(){
  const line='<polyline class="pc-line" points="'+poly+'"/>'+linePts.map(p=>'<circle class="pc-point" cx="'+p.x+'" cy="'+p.y+'" r="4"><title>Средний чек: '+rub(p.v)+'</title></circle>').join('');
  host.innerHTML='<svg class="payout-chart-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none">'+grids+bars+line+'</svg>'
 }
-const render=()=>{const manager=filter.value;body.innerHTML=details.filter(x=>!manager||x.manager===manager).map(x=>{const note=x.sourceManager&&x.sourceManager!==x.manager?'<div class="source-note">'+(x.countsAsSale===false?'доля с продажи: ':'продал: ')+x.sourceManager+'</div>':'';return `<tr><td class="name-cell">${x.manager}${note}</td><td>${x.phone||'—'}</td><td>${rub(x.sales)}</td><td>${x.rate}%</td><td class="name-cell">${rub(x.payout)}</td></tr>`}).join('')};
+const render=()=>{const manager=filter.value;body.innerHTML=details.filter(x=>!manager||x.manager===manager).map(x=>{const note=x.nonCountedReason?'<div class="source-note">'+x.nonCountedReason+'</div>':(x.sourceManager&&x.sourceManager!==x.manager?'<div class="source-note">'+(x.countsAsSale===false?'доля с продажи: ':'продал: ')+x.sourceManager+'</div>':'');return `<tr><td class="name-cell">${x.manager}${note}</td><td>${x.phone||'—'}</td><td>${rub(x.sales)}</td><td>${x.rate}%</td><td class="name-cell">${rub(x.payout)}</td></tr>`}).join('')};
 filter.addEventListener('change',()=>{chartFilter.value=filter.value;render();renderChart()});chartFilter.addEventListener('change',()=>{filter.value=chartFilter.value;render();renderChart()});render();renderChart()}).catch(()=>{const box=document.getElementById('month-empty');if(box){box.textContent='Данных за '+MONTHS[selectedMonth]+' пока нет';box.classList.add('show')}});
 </script><script id="layout-revision-20260924-2">document.querySelectorAll('.updated-pill').forEach(e=>e.remove());document.querySelectorAll('body *').forEach(e=>{if(e.children.length===0&&/^Обновлено\s*:/.test((e.textContent||'').trim()))e.remove()});</script></body></html>

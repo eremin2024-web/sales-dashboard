@@ -1,5 +1,5 @@
 {
-  "updated": "29.10.2026",
+  "updated": "30.10.2026",
   "month": "2026-10",
   "partners": [
     {
@@ -53,6 +53,11 @@
       "count": 1
     },
     {
+      "name": "Куветов",
+      "count": 9,
+      "sales": 78000
+    },
+    {
       "name": "Илона",
       "count": 3,
       "sales": 78000
@@ -61,11 +66,6 @@
       "name": "Зюзина",
       "count": 1,
       "sales": 75000
-    },
-    {
-      "name": "Куветов",
-      "count": 8,
-      "sales": 71000
     },
     {
       "name": "Бегиев",
@@ -118,14 +118,14 @@
       "sales": 7000
     },
     {
+      "name": "Слава Блэк",
+      "count": 5,
+      "sales": 6000
+    },
+    {
       "name": "Салатаев",
       "count": 2,
       "sales": 5000
-    },
-    {
-      "name": "Слава Блэк",
-      "count": 4,
-      "sales": 4800
     },
     {
       "name": "Бердукаев",
@@ -188,6 +188,11 @@
       "sales": 1000
     },
     {
+      "name": "Дмитрий Эльмар",
+      "count": 0,
+      "sales": 1000
+    },
+    {
       "name": "Мавлуд Бан",
       "count": 0,
       "sales": 1000
@@ -203,5 +208,5 @@
       "sales": 1000
     }
   ],
-  "logicVersion": "rebuild-2026-10-29-252-source-rows-partner-adjustments-v10"
+  "logicVersion": "rebuild-2026-10-30-partners-full-256-rows-v11"
 }

@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "updated": "29.10.2026",
-  "sourceFile": "Исходник для дашборда(1).xlsx",
-  "sourceRows": 252,
+  "updated": "30.10.2026",
+  "sourceFile": "Исходник для дашборда(2).xlsx",
+  "sourceRows": 256,
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -19,15 +19,15 @@
     "returnMarkerNonSale": true
   },
   "summary": {
-    "rowsWithAttention": 12,
-    "signals": 12,
+    "rowsWithAttention": 13,
+    "signals": 13,
     "checksOk": 5,
     "checksWarning": 1
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 12,
+      "count": 13,
       "state": "warning"
     },
     "empty_phone": {
@@ -287,6 +287,25 @@
         {
           "type": "low_margin",
           "label": "Низкая маржа 19,1%"
+        }
+      ]
+    },
+    {
+      "row": 255,
+      "date": "29.10.2026",
+      "phone": "9692777778",
+      "amount": 1000,
+      "cost": 5000,
+      "margin": -4000,
+      "profitability": -400,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Эльмар Портация",
+      "partner": "Дмитрий Эльмар",
+      "comment": "Дмитрий Эльмар. вывод собственного номера",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа -400,0%"
         }
       ]
     }

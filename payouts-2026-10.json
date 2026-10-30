@@ -1,11 +1,11 @@
 {
   "month": "2026-10",
   "label": "Октябрь 2026",
-  "updated": "29.10.2026",
+  "updated": "30.10.2026",
   "summary": {
-    "count": 33,
-    "sales": 442550,
-    "payout": 34415
+    "count": 36,
+    "sales": 454750,
+    "payout": 35635
   },
   "managers": [
     {
@@ -22,15 +22,15 @@
     },
     {
       "name": "Хасянов Илсаф Ханнянович",
-      "count": 13,
-      "sales": 109100,
-      "payout": 9320
+      "count": 14,
+      "sales": 112100,
+      "payout": 9620
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 11,
-      "sales": 196700,
-      "payout": 15770
+      "count": 13,
+      "sales": 205900,
+      "payout": 16690
     }
   ],
   "details": [
@@ -310,9 +310,44 @@
       "sales": 2500,
       "rate": 10,
       "payout": 250
+    },
+    {
+      "date": "29.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9327775577",
+      "sales": 7000,
+      "rate": 10,
+      "payout": 700
+    },
+    {
+      "date": "29.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9692777778",
+      "sales": 1000,
+      "rate": 10,
+      "payout": 100,
+      "countsAsSale": false,
+      "countsAsRevenue": true,
+      "nonCountedReason": "Вывод собственного номера: количество продаж +0"
+    },
+    {
+      "date": "29.10.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9668550005",
+      "sales": 1200,
+      "rate": 10,
+      "payout": 120
+    },
+    {
+      "date": "29.10.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9670966363",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 252,
-  "sourceFile": "Исходник для дашборда(1).xlsx",
-  "logicVersion": "cpo-payments-babich-split-filimonova-to-kulemin-nov-rule-not-retroactive-2026-10-29"
+  "sourceRows": 256,
+  "sourceFile": "Исходник для дашборда(2).xlsx",
+  "logicVersion": "cpo-payouts-2026-10-30-own-number-revenue-count-0-babich-special-v13"
 }
