@@ -1,8 +1,8 @@
 {
   "month": "2026-10",
-  "updated": "30.10.2026",
-  "sourceFile": "Исходник для дашборда(2).xlsx",
-  "sourceRows": 256,
+  "updated": "02.11.2026",
+  "sourceFile": "Исходник для дашборда(3).xlsx",
+  "sourceRows": 299,
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -19,15 +19,15 @@
     "returnMarkerNonSale": true
   },
   "summary": {
-    "rowsWithAttention": 13,
-    "signals": 13,
+    "rowsWithAttention": 14,
+    "signals": 14,
     "checksOk": 5,
     "checksWarning": 1
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 13,
+      "count": 14,
       "state": "warning"
     },
     "empty_phone": {
@@ -306,6 +306,25 @@
         {
           "type": "low_margin",
           "label": "Низкая маржа -400,0%"
+        }
+      ]
+    },
+    {
+      "row": 295,
+      "date": "30.10.2026",
+      "phone": "9820006649",
+      "amount": 500,
+      "cost": 1000,
+      "margin": -500,
+      "profitability": -100,
+      "responsible": "Назаров Дмитрий Александрович",
+      "buyer": "Частное лицо(1)",
+      "partner": null,
+      "comment": "уже актив пополнение за наш счёт",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа -100,0%"
         }
       ]
     }
