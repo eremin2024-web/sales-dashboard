@@ -1,11 +1,11 @@
 {
-  "updated": "30.10.2026",
-  "lastSale": "29.10.2026",
-  "sales": 2927570,
-  "margin": 2021288.19,
-  "profitability": 69.043206140246,
-  "salesCount": 161,
-  "averageCheck": 18183.66459627329,
+  "updated": "02.11.2026",
+  "lastSale": "31.10.2026",
+  "sales": 3033070,
+  "margin": 2101183.28,
+  "profitability": 69.27579251385559,
+  "salesCount": 179,
+  "averageCheck": 16944.525139664805,
   "directions": [
     {
       "name": "Личные продажи",
@@ -15,21 +15,21 @@
       "count": 93,
       "profitability": 71.33264096402635,
       "averageCheck": 24253.11827956989,
-      "share": 77.04478458243527,
+      "share": 74.3649173939276,
       "completion": 65.19212621411137,
       "remaining": 1204295
     },
     {
       "name": "ЦПО",
       "plan": 643754,
-      "fact": 453550,
-      "margin": 251264.94,
-      "count": 35,
-      "profitability": 55.39961195017088,
-      "averageCheck": 12958.57142857143,
-      "share": 15.492370805821892,
-      "completion": 70.45393116003939,
-      "remaining": 190204
+      "fact": 559050,
+      "margin": 331160.03,
+      "count": 53,
+      "profitability": 59.23620964135588,
+      "averageCheck": 10548.11320754717,
+      "share": 18.43181990524452,
+      "completion": 86.84217884471397,
+      "remaining": 84704
     },
     {
       "name": "Приложение",
@@ -39,15 +39,15 @@
       "count": 33,
       "profitability": 73.73077627242768,
       "averageCheck": 6620.606060606061,
-      "share": 7.462844611742844,
+      "share": 7.2032627008278745,
       "completion": 77.00197016208901,
       "remaining": 65253
     }
   ],
   "bestPartner": {
     "name": "Осипян",
-    "count": 44,
-    "sales": 1082800
+    "sales": 1131800,
+    "count": 56
   },
   "topPartners": [
     {
@@ -119,8 +119,8 @@
     },
     {
       "mask": "**********",
-      "count": 41,
-      "sales": 237400
+      "count": 43,
+      "sales": 241400
     },
     {
       "mask": "******aaaa",
@@ -425,9 +425,9 @@
     {
       "date": "28.10.2026",
       "personal": 2000,
-      "cpo": 98400,
+      "cpo": 101400,
       "app": 0,
-      "total": 100400,
+      "total": 103400,
       "count": 8
     },
     {
@@ -440,19 +440,19 @@
     },
     {
       "date": "30.10.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
+      "personal": 0,
+      "cpo": 64500,
+      "app": 0,
+      "total": 64500,
+      "count": 16
     },
     {
       "date": "31.10.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
+      "personal": 0,
+      "cpo": 38000,
+      "app": 0,
+      "total": 38000,
+      "count": 2
     }
   ],
   "weekdays": [
@@ -470,9 +470,9 @@
     },
     {
       "day": "Среда",
-      "sales": 316750,
+      "sales": 319750,
       "count": 19,
-      "averageCheck": 16671.052631578947
+      "averageCheck": 16828.947368421053
     },
     {
       "day": "Четверг",
@@ -482,15 +482,15 @@
     },
     {
       "day": "Пятница",
-      "sales": 453360,
-      "count": 26,
-      "averageCheck": 17436.923076923078
+      "sales": 517860,
+      "count": 42,
+      "averageCheck": 12330
     },
     {
       "day": "Суббота",
-      "sales": 160400,
-      "count": 9,
-      "averageCheck": 17822.222222222223
+      "sales": 198400,
+      "count": 11,
+      "averageCheck": 18036.363636363636
     },
     {
       "day": "Воскресенье",
@@ -501,24 +501,24 @@
   ],
   "daily": {
     "todaySales": 0,
-    "yesterdaySales": 11000,
-    "change": -100,
-    "averageDaily": 97585.66666666667,
+    "yesterdaySales": 0,
+    "change": 0,
+    "averageDaily": 97840.96774193548,
     "bestDaySales": 369900,
     "bestDayDate": "15.10.2026",
-    "neededPerDay": 1459752,
-    "daysLeft": 1,
-    "planCompletion": 66.72794930483789,
-    "remaining": 1459752
+    "neededPerDay": 0,
+    "daysLeft": 0,
+    "planCompletion": 69.13260526580908,
+    "remaining": 1354252
   },
   "forecast": {
-    "month": 3025155.666666667,
-    "completion": 68.95221428166583,
-    "pace": 68.95221428166583,
-    "deviation": -31.04778571833417,
-    "gap": -1362166.333333333
+    "month": 3033070,
+    "completion": 69.13260526580908,
+    "pace": 69.13260526580908,
+    "deviation": -30.867394734190924,
+    "gap": -1354252
   },
-  "sourceRows": 256,
-  "sourceFile": "Исходник для дашборда(2).xlsx",
-  "logicVersion": "rebuild-2026-10-30-full-256-rows-own-number-cpo-revenue-not-counted-nov-rule-from-1nov-v11"
+  "sourceRows": 299,
+  "sourceFile": "Исходник для дашборда(3).xlsx",
+  "logicVersion": "closed-oct-full-xlsx-299-rows-v14"
 }
