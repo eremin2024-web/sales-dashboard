@@ -52,53 +52,53 @@
   "topPartners": [
     {
       "name": "Осипян",
-      "sales": 1082800,
-      "count": 44
+      "count": 56,
+      "sales": 1131800
     },
     {
       "name": "Клиент с тг",
-      "sales": 340000,
-      "count": 1
+      "count": 1,
+      "sales": 340000
     },
     {
       "name": "Асад",
-      "sales": 184000,
-      "count": 32
+      "count": 53,
+      "sales": 294000
     },
     {
       "name": "Оганесян",
-      "sales": 151500,
-      "count": 42
+      "count": 43,
+      "sales": 155500
     },
     {
       "name": "Ахмедов",
-      "sales": 144000,
-      "count": 3
+      "count": 3,
+      "sales": 144000
     },
     {
       "name": "Алаудинов",
-      "sales": 100000,
-      "count": 1
+      "count": 1,
+      "sales": 100000
     },
     {
       "name": "Барсуков",
-      "sales": 88000,
-      "count": 1
+      "count": 1,
+      "sales": 88000
     },
     {
       "name": "Зиновкин",
-      "sales": 88000,
-      "count": 1
+      "count": 1,
+      "sales": 88000
     },
     {
       "name": "Сабир",
-      "sales": 82000,
-      "count": 1
+      "count": 1,
+      "sales": 82000
     },
     {
       "name": "ВипСторе",
-      "sales": 80000,
-      "count": 1
+      "count": 1,
+      "sales": 80000
     }
   ],
   "topMasks": [
