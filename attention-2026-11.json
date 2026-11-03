@@ -1,0 +1,128 @@
+{
+  "month": "2026-11",
+  "updated": "03.11.2026",
+  "sourceRows": 15,
+  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "rules": {
+    "lowMarginProfitabilityBelow": 40,
+    "knownResponsibles": [
+      "1c_iis",
+      "Бабич Александр Алексеевич",
+      "Еремин Валентин Андреевич",
+      "Кулемин Алексей Александрович",
+      "Назаров Дмитрий Александрович",
+      "Филимонова Анастасия Вячеславовна",
+      "Хасянов Илсаф Ханнянович",
+      "Хусеинов Руфат Рафекович"
+    ],
+    "statusColumnPresent": false,
+    "returnMarkerNonSale": true
+  },
+  "summary": {
+    "rowsWithAttention": 3,
+    "signals": 3,
+    "checksOk": 5,
+    "checksWarning": 2
+  },
+  "checks": {
+    "low_margin": {
+      "label": "Низкая маржа < 40%",
+      "count": 2,
+      "state": "warning"
+    },
+    "comment_review": {
+      "label": "Комментарии для проверки",
+      "count": 1,
+      "state": "warning"
+    },
+    "empty_phone": {
+      "label": "Пустой телефон",
+      "count": 0,
+      "state": "ok"
+    },
+    "unknown_responsible": {
+      "label": "Неизвестный ответственный",
+      "count": 0,
+      "state": "ok"
+    },
+    "new_manager": {
+      "label": "Новый менеджер",
+      "count": 0,
+      "state": "ok"
+    },
+    "duplicate": {
+      "label": "Возможный дубль",
+      "count": 0,
+      "state": "ok"
+    },
+    "strange_status": {
+      "label": "Странный статус",
+      "count": 0,
+      "state": "na"
+    },
+    "no_partner": {
+      "label": "Продажа без партнёра",
+      "count": 0,
+      "state": "ok"
+    }
+  },
+  "issues": [
+    {
+      "row": 3,
+      "date": "02.11.2026",
+      "phone": "9959944499",
+      "amount": 7440,
+      "cost": 5393.83,
+      "margin": 2046.17,
+      "profitability": 27.5,
+      "responsible": "1c_iis",
+      "buyer": "НЕМЦУРОВ МАРСЕЛЬ ЕГОРОВИЧ RT100149404",
+      "partner": null,
+      "comment": null,
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 27,5%"
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "date": "02.11.2026",
+      "phone": "9680531010",
+      "amount": 3000,
+      "cost": 1000,
+      "margin": 2000,
+      "profitability": 66.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Частное лицо/рассрочка платежа",
+      "partner": null,
+      "comment": "не собирать тест",
+      "issues": [
+        {
+          "type": "review_note",
+          "label": "Проверить комментарий «не собирать тест»"
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "date": "02.11.2026",
+      "phone": "9770000110",
+      "amount": 19000,
+      "cost": 11700,
+      "margin": 7300,
+      "profitability": 38.42,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "Осипян",
+      "comment": "Осипян. 1063301-6450",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 38,4%"
+        }
+      ]
+    }
+  ]
+}
