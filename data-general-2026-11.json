@@ -479,21 +479,35 @@
   "sourceRows": 15,
   "sourceFile": "Исходник для дашборда(4).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-2026-personal-in-general-for-asad-slava-portations-kulemin-eremin-v3",
+  "logicVersion": "nov-2026-oct1-15-baseline-swap-eremin-to-kulemin-cpo-payout-preserved-v4",
   "classificationRules": {
+    "baseline": "Полностью сохранить правила 01–15.10.2026; единственная замена в личных продажах с 01.11.2026: ответственный Еремин Валентин Андреевич → Кулемин Алексей Александрович.",
+    "referencePeriod": "01.10.2026–15.10.2026",
     "effectiveFrom": "01.11.2026",
-    "personalSalesRules": [
-      "Кулемин Алексей Александрович + Кто купил = Продажи айфон",
-      "Портационные продажи контрагентам Асад Портация / Слава Блэк Портация, если ответственный Кулемин Алексей Александрович или Еремин Валентин Андреевич: личные продажи только в общем дашборде"
-    ],
-    "counterpartiesPersonalInGeneral": [
+    "referencePersonalResponsible": "Еремин Валентин Андреевич",
+    "newPersonalResponsible": "Кулемин Алексей Александрович",
+    "personalBuyerTypesObservedInReference": [
+      "Продажи айфон",
       "Асад Портация",
-      "Слава Блэк Портация"
+      "Слава Блэк Портация",
+      "Григорий Люкснамберс портация",
+      "Турланов Арсен RT100000258"
     ],
-    "excludedFromClean": true,
-    "excludedFromCpo": true,
-    "excludedFromCpoPayout": true,
-    "separateDirection": false,
-    "octoberHistoryUnchanged": true
+    "routing": [
+      "Ответственный 1c_iis — Приложение (без изменений).",
+      "Продажи Кулемина, соответствующие прежним личным продажам Еремина за 1–15 октября, — Личные продажи в общих данных; покупатель может быть «Продажи айфон» или контрагентом.",
+      "Существующие продажи Кулемина по ЦПО, включая обычные продажи покупателям, — ЦПО без изменения классификации, выплат и ставок.",
+      "Асад Портация и Слава Блэк Портация не образуют отдельного направления; в общих данных это личные продажи ответственного, в чистых исключаются; выплаты ЦПО за них не начисляются.",
+      "Исторические продажи до 01.11.2026 не переименовывать и не изменять."
+    ],
+    "existingCpoKuleminPreserved": true,
+    "cpoPayoutRulesPreserved": true,
+    "babichBonusPreserved": true,
+    "filimonovaCreditedToKulemin": true,
+    "cleanExclusionsPreserved": true,
+    "returnRulesPreserved": true,
+    "ownNumberWithdrawalCountZero": true,
+    "separateCounterpartyDirection": false,
+    "octoberDataImmutable": true
   }
 }
