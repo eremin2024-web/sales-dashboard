@@ -1,0 +1,24 @@
+{
+  "updated": "03.11.2026",
+  "month": "2026-11",
+  "sourceRows": 15,
+  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "partners": [
+    {
+      "name": "Осипян",
+      "count": 5,
+      "sales": 48000
+    },
+    {
+      "name": "Слава Блэк",
+      "count": 1,
+      "sales": 35000
+    },
+    {
+      "name": "Ахаминов",
+      "count": 2,
+      "sales": 5400
+    }
+  ],
+  "logicVersion": "nov-2026-partner-source-from-comments-v1"
+}
