@@ -1,0 +1,483 @@
+{
+  "month": "2026-11",
+  "updated": "03.11.2026",
+  "lastSale": "02.11.2026",
+  "sales": 121240,
+  "margin": 77715.36,
+  "profitability": 64.10042890135269,
+  "salesCount": 15,
+  "averageCheck": 8082.666666666667,
+  "directions": [
+    {
+      "name": "Личные продажи",
+      "plan": 3618274,
+      "fact": 53400,
+      "margin": 31969.2,
+      "count": 7,
+      "profitability": 59.86741573033708,
+      "averageCheck": 7628.571428571428,
+      "share": 44.04486967997361,
+      "completion": 1.4758417963924235,
+      "remaining": 3564874
+    },
+    {
+      "name": "ЦПО",
+      "plan": 673234,
+      "fact": 54000,
+      "margin": 39299.99,
+      "count": 5,
+      "profitability": 72.77775925925926,
+      "averageCheck": 10800,
+      "share": 44.539755856153086,
+      "completion": 8.020985274065184,
+      "remaining": 619234
+    },
+    {
+      "name": "Приложение",
+      "plan": 296726,
+      "fact": 13840,
+      "margin": 6446.17,
+      "count": 3,
+      "profitability": 46.57637283236994,
+      "averageCheck": 4613.333333333333,
+      "share": 11.41537446387331,
+      "completion": 4.664235692187405,
+      "remaining": 282886
+    }
+  ],
+  "bestPartner": {
+    "name": "Осипян",
+    "count": 5,
+    "sales": 48000
+  },
+  "topPartners": [
+    {
+      "name": "Осипян",
+      "count": 5,
+      "sales": 48000
+    },
+    {
+      "name": "Слава Блэк",
+      "count": 1,
+      "sales": 35000
+    },
+    {
+      "name": "Ахаминов",
+      "count": 2,
+      "sales": 5400
+    }
+  ],
+  "topMasks": [
+    {
+      "mask": "***00000bc",
+      "count": 1,
+      "sales": 35000
+    },
+    {
+      "mask": "***0000bb0",
+      "count": 2,
+      "sales": 30000
+    },
+    {
+      "mask": "**********",
+      "count": 3,
+      "sales": 16000
+    },
+    {
+      "mask": "***7777bb7",
+      "count": 1,
+      "sales": 11000
+    },
+    {
+      "mask": "***aabbbaa",
+      "count": 1,
+      "sales": 7440
+    },
+    {
+      "mask": "***aaabcbc",
+      "count": 1,
+      "sales": 5000
+    },
+    {
+      "mask": "***aaabbcc",
+      "count": 1,
+      "sales": 4000
+    },
+    {
+      "mask": "******a0a0",
+      "count": 1,
+      "sales": 3000
+    },
+    {
+      "mask": "***aaabb**",
+      "count": 1,
+      "sales": 3000
+    },
+    {
+      "mask": "***aaaa*a*",
+      "count": 1,
+      "sales": 2400
+    }
+  ],
+  "topSubMasks": [
+    {
+      "submask": "***0000057",
+      "count": 1,
+      "sales": 35000
+    },
+    {
+      "submask": "***0000110",
+      "count": 1,
+      "sales": 19000
+    },
+    {
+      "submask": "***0000770",
+      "count": 1,
+      "sales": 11000
+    },
+    {
+      "submask": "***7777007",
+      "count": 1,
+      "sales": 11000
+    },
+    {
+      "submask": "***9997287",
+      "count": 1,
+      "sales": 10000
+    },
+    {
+      "submask": "***9944499",
+      "count": 1,
+      "sales": 7440
+    },
+    {
+      "submask": "***0001616",
+      "count": 1,
+      "sales": 5000
+    },
+    {
+      "submask": "***9996622",
+      "count": 1,
+      "sales": 4000
+    },
+    {
+      "submask": "***9222279",
+      "count": 1,
+      "sales": 3000
+    },
+    {
+      "submask": "***0531010",
+      "count": 1,
+      "sales": 3000
+    }
+  ],
+  "dailySales": [
+    {
+      "date": "01.11.2026",
+      "personal": 0,
+      "cpo": 3000,
+      "app": 0,
+      "total": 3000,
+      "count": 1
+    },
+    {
+      "date": "02.11.2026",
+      "personal": 53400,
+      "cpo": 51000,
+      "app": 13840,
+      "total": 118240,
+      "count": 14
+    },
+    {
+      "date": "03.11.2026",
+      "personal": 0,
+      "cpo": 0,
+      "app": 0,
+      "total": 0,
+      "count": 0
+    },
+    {
+      "date": "04.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "05.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "06.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "07.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "08.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "09.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "10.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "11.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "12.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "13.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "14.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "15.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "16.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "17.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "18.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "19.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "20.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "21.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "22.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "23.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "24.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "25.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "26.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "27.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "28.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "29.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    },
+    {
+      "date": "30.11.2026",
+      "personal": null,
+      "cpo": null,
+      "app": null,
+      "total": null,
+      "count": null
+    }
+  ],
+  "weekdays": [
+    {
+      "day": "Понедельник",
+      "sales": 118240,
+      "count": 14,
+      "averageCheck": 8445.714285714286
+    },
+    {
+      "day": "Вторник",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Среда",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Четверг",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Пятница",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Суббота",
+      "sales": 0,
+      "count": 0,
+      "averageCheck": 0
+    },
+    {
+      "day": "Воскресенье",
+      "sales": 3000,
+      "count": 1,
+      "averageCheck": 3000
+    }
+  ],
+  "daily": {
+    "todaySales": 0,
+    "yesterdaySales": 118240,
+    "change": -100,
+    "averageDaily": 40413.333333333336,
+    "bestDaySales": 118240,
+    "bestDayDate": "02.11.2026",
+    "neededPerDay": 165444.22222222222,
+    "daysLeft": 27,
+    "planCompletion": 2.6424110017056672,
+    "remaining": 4466994
+  },
+  "forecast": {
+    "month": 1212400,
+    "completion": 26.424110017056673,
+    "pace": 26.424110017056673,
+    "deviation": -73.57588998294332,
+    "gap": -3375834
+  },
+  "sourceRows": 15,
+  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
+  "logicVersion": "nov-2026-kulemin-iphone-personal-other-cpo-v1"
+}
