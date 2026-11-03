@@ -1,0 +1,77 @@
+{
+  "month": "2026-11",
+  "label": "Ноябрь 2026",
+  "updated": "03.11.2026",
+  "summary": {
+    "count": 4,
+    "sales": 19000,
+    "payout": 1900
+  },
+  "managers": [
+    {
+      "name": "Бабич Александр Алексеевич",
+      "count": 1,
+      "sales": 10000,
+      "payout": 1000
+    },
+    {
+      "name": "Хасянов Илсаф Ханнянович",
+      "count": 2,
+      "sales": 6000,
+      "payout": 600
+    },
+    {
+      "name": "Кулемин Алексей Александрович",
+      "count": 1,
+      "sales": 3000,
+      "payout": 300
+    }
+  ],
+  "details": [
+    {
+      "date": "01.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9629222279",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "02.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9999997287",
+      "sales": 10000,
+      "rate": 10,
+      "payout": 1000
+    },
+    {
+      "date": "02.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "phone": "9680531010",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "02.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9684440013",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    }
+  ],
+  "sourceRows": 15,
+  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "logicVersion": "nov-2026-cpo-excludes-slava-blek-counterparty-no-manager-payout-v2",
+  "exclusions": [
+    {
+      "buyer": "Слава Блэк Портация",
+      "phone": "9770000057",
+      "sales": 35000,
+      "reason": "Контрагент, не ЦПО. В общих продажах учитывается отдельно; в чистых не учитывается.",
+      "doesNotAffectCpoCount": true,
+      "doesNotAffectCpoPayout": true
+    }
+  ]
+}
