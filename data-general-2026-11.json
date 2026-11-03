@@ -23,14 +23,14 @@
     {
       "name": "ЦПО",
       "plan": 673234,
-      "fact": 54000,
-      "margin": 39299.99,
-      "count": 5,
-      "profitability": 72.77775925925926,
-      "averageCheck": 10800,
-      "share": 44.539755856153086,
-      "completion": 8.020985274065184,
-      "remaining": 619234
+      "fact": 19000,
+      "margin": 15999.99,
+      "count": 4,
+      "profitability": 84.21047368421053,
+      "averageCheck": 4750,
+      "share": 15.671395579016826,
+      "completion": 2.8221985223562682,
+      "remaining": 654234
     },
     {
       "name": "Приложение",
@@ -43,6 +43,18 @@
       "share": 11.41537446387331,
       "completion": 4.664235692187405,
       "remaining": 282886
+    },
+    {
+      "name": "Контрагенты",
+      "plan": 0,
+      "fact": 35000,
+      "margin": 23300,
+      "count": 1,
+      "profitability": 66.57142857142857,
+      "averageCheck": 35000,
+      "share": 28.868360277136258,
+      "completion": null,
+      "remaining": null
     }
   ],
   "bestPartner": {
@@ -178,15 +190,17 @@
       "cpo": 3000,
       "app": 0,
       "total": 3000,
-      "count": 1
+      "count": 1,
+      "partners": 0
     },
     {
       "date": "02.11.2026",
       "personal": 53400,
-      "cpo": 51000,
+      "cpo": 16000,
       "app": 13840,
       "total": 118240,
-      "count": 14
+      "count": 14,
+      "partners": 35000
     },
     {
       "date": "03.11.2026",
@@ -194,7 +208,8 @@
       "cpo": 0,
       "app": 0,
       "total": 0,
-      "count": 0
+      "count": 0,
+      "partners": 0
     },
     {
       "date": "04.11.2026",
@@ -202,7 +217,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "05.11.2026",
@@ -210,7 +226,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "06.11.2026",
@@ -218,7 +235,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "07.11.2026",
@@ -226,7 +244,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "08.11.2026",
@@ -234,7 +253,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "09.11.2026",
@@ -242,7 +262,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "10.11.2026",
@@ -250,7 +271,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "11.11.2026",
@@ -258,7 +280,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "12.11.2026",
@@ -266,7 +289,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "13.11.2026",
@@ -274,7 +298,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "14.11.2026",
@@ -282,7 +307,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "15.11.2026",
@@ -290,7 +316,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "16.11.2026",
@@ -298,7 +325,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "17.11.2026",
@@ -306,7 +334,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "18.11.2026",
@@ -314,7 +343,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "19.11.2026",
@@ -322,7 +352,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "20.11.2026",
@@ -330,7 +361,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "21.11.2026",
@@ -338,7 +370,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "22.11.2026",
@@ -346,7 +379,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "23.11.2026",
@@ -354,7 +388,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "24.11.2026",
@@ -362,7 +397,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "25.11.2026",
@@ -370,7 +406,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "26.11.2026",
@@ -378,7 +415,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "27.11.2026",
@@ -386,7 +424,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "28.11.2026",
@@ -394,7 +433,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "29.11.2026",
@@ -402,7 +442,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     },
     {
       "date": "30.11.2026",
@@ -410,7 +451,8 @@
       "cpo": null,
       "app": null,
       "total": null,
-      "count": null
+      "count": null,
+      "partners": null
     }
   ],
   "weekdays": [
@@ -479,5 +521,14 @@
   "sourceRows": 15,
   "sourceFile": "Исходник для дашборда(4).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-2026-kulemin-iphone-personal-other-cpo-v1"
+  "logicVersion": "nov-2026-kulemin-iphone-personal-counterparty-slava-not-cpo-v2",
+  "classificationRules": {
+    "effectiveFrom": "01.11.2026",
+    "kuleminPersonalWhenBuyer": "Продажи айфон",
+    "counterpartiesNotCpo": [
+      "Слава Блэк Портация"
+    ],
+    "separateDirection": "Контрагенты",
+    "excludedFromClean": true
+  }
 }
