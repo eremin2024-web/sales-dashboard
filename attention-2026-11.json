@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "03.11.2026",
-  "sourceRows": 15,
-  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "updated": "05.11.2026",
+  "sourceRows": 48,
+  "sourceFile": "Исходник для дашборда(5).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -19,15 +19,15 @@
     "returnMarkerNonSale": true
   },
   "summary": {
-    "rowsWithAttention": 3,
-    "signals": 3,
+    "rowsWithAttention": 6,
+    "signals": 6,
     "checksOk": 5,
     "checksWarning": 2
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 2,
+      "count": 5,
       "state": "warning"
     },
     "comment_review": {
@@ -106,7 +106,45 @@
       ]
     },
     {
-      "row": 14,
+      "row": 18,
+      "date": "02.11.2026",
+      "phone": "9690002277",
+      "amount": 3500,
+      "cost": 2400,
+      "margin": 1100,
+      "profitability": 31.43,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Амигос",
+      "partner": "Амигос",
+      "comment": "Амигос",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 31,4%"
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "date": "02.11.2026",
+      "phone": "9690009977",
+      "amount": 3500,
+      "cost": 2400,
+      "margin": 1100,
+      "profitability": 31.43,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Амигос",
+      "partner": "Амигос",
+      "comment": "Амигос",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 31,4%"
+        }
+      ]
+    },
+    {
+      "row": 28,
       "date": "02.11.2026",
       "phone": "9770000110",
       "amount": 19000,
@@ -121,6 +159,25 @@
         {
           "type": "low_margin",
           "label": "Низкая маржа 38,4%"
+        }
+      ]
+    },
+    {
+      "row": 41,
+      "date": "03.11.2026",
+      "phone": "9859117373",
+      "amount": 1200,
+      "cost": 1000,
+      "margin": 200,
+      "profitability": 16.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Слава Блэк Портация",
+      "partner": "Слава Блэк",
+      "comment": "Слава Блэк. выкупил",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 16,7%"
         }
       ]
     }
