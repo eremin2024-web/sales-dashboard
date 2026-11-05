@@ -1,24 +1,44 @@
 {
-  "updated": "03.11.2026",
+  "updated": "05.11.2026",
   "month": "2026-11",
-  "sourceRows": 15,
-  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "sourceRows": 48,
+  "sourceFile": "Исходник для дашборда(5).xlsx",
   "partners": [
     {
       "name": "Осипян",
-      "count": 5,
-      "sales": 48000
+      "count": 8,
+      "sales": 163000
+    },
+    {
+      "name": "Асад",
+      "count": 6,
+      "sales": 77600
+    },
+    {
+      "name": "Амигос",
+      "count": 14,
+      "sales": 43000
     },
     {
       "name": "Слава Блэк",
-      "count": 1,
-      "sales": 35000
+      "count": 3,
+      "sales": 37400
+    },
+    {
+      "name": "Оганесян",
+      "count": 5,
+      "sales": 12000
     },
     {
       "name": "Ахаминов",
       "count": 2,
       "sales": 5400
+    },
+    {
+      "name": "Норайр",
+      "count": 2,
+      "sales": 4400
     }
   ],
-  "logicVersion": "nov-2026-partner-source-from-comments-v1"
+  "logicVersion": "nov-2026-full-48-source-oct1-15-partner-aliases-v5"
 }
