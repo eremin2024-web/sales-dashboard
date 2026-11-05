@@ -1,24 +1,24 @@
 {
   "month": "2026-11",
-  "updated": "03.11.2026",
-  "lastSale": "02.11.2026",
-  "sales": 121240,
-  "margin": 77715.36,
-  "profitability": 64.10042890135269,
-  "salesCount": 15,
-  "averageCheck": 8082.666666666667,
+  "updated": "05.11.2026",
+  "lastSale": "03.11.2026",
+  "sales": 379640,
+  "margin": 291542.32,
+  "profitability": 76.79441576230113,
+  "salesCount": 48,
+  "averageCheck": 7909.166666666667,
   "directions": [
     {
       "name": "Личные продажи",
       "plan": 3618274,
-      "fact": 88400,
-      "margin": 55269.2,
-      "count": 8,
-      "profitability": 62.521719457013575,
-      "averageCheck": 11050,
-      "share": 72.91322995710986,
-      "completion": 2.443153835226409,
-      "remaining": 3529874
+      "fact": 342800,
+      "margin": 267496.16,
+      "count": 40,
+      "profitability": 78.0327187864644,
+      "averageCheck": 8570,
+      "share": 90.2960699610157,
+      "completion": 9.474130483208292,
+      "remaining": 3275474
     },
     {
       "name": "ЦПО",
@@ -28,46 +28,76 @@
       "count": 4,
       "profitability": 84.21047368421053,
       "averageCheck": 4750,
-      "share": 15.671395579016826,
+      "share": 5.004741333895269,
       "completion": 2.8221985223562682,
       "remaining": 654234
     },
     {
       "name": "Приложение",
       "plan": 296726,
-      "fact": 13840,
-      "margin": 6446.17,
-      "count": 3,
-      "profitability": 46.57637283236994,
-      "averageCheck": 4613.333333333333,
-      "share": 11.41537446387331,
-      "completion": 4.664235692187405,
-      "remaining": 282886
+      "fact": 17840,
+      "margin": 8046.17,
+      "count": 4,
+      "profitability": 45.10184977578475,
+      "averageCheck": 4460,
+      "share": 4.699188705089032,
+      "completion": 6.01228068992943,
+      "remaining": 278886
     }
   ],
   "bestPartner": {
     "name": "Осипян",
-    "count": 5,
-    "sales": 48000
+    "count": 8,
+    "sales": 163000
   },
   "topPartners": [
     {
       "name": "Осипян",
-      "count": 5,
-      "sales": 48000
+      "count": 8,
+      "sales": 163000
+    },
+    {
+      "name": "Асад",
+      "count": 6,
+      "sales": 77600
+    },
+    {
+      "name": "Амигос",
+      "count": 14,
+      "sales": 43000
     },
     {
       "name": "Слава Блэк",
-      "count": 1,
-      "sales": 35000
+      "count": 3,
+      "sales": 37400
+    },
+    {
+      "name": "Оганесян",
+      "count": 5,
+      "sales": 12000
     },
     {
       "name": "Ахаминов",
       "count": 2,
       "sales": 5400
+    },
+    {
+      "name": "Норайр",
+      "count": 2,
+      "sales": 4400
     }
   ],
   "topMasks": [
+    {
+      "mask": "**********",
+      "count": 10,
+      "sales": 134000
+    },
+    {
+      "mask": "****ababab",
+      "count": 1,
+      "sales": 56000
+    },
     {
       "mask": "***00000bc",
       "count": 1,
@@ -79,9 +109,19 @@
       "sales": 30000
     },
     {
-      "mask": "**********",
-      "count": 3,
-      "sales": 16000
+      "mask": "***aaabbcc",
+      "count": 6,
+      "sales": 22000
+    },
+    {
+      "mask": "***aaabcbc",
+      "count": 4,
+      "sales": 20000
+    },
+    {
+      "mask": "*****aaaa*",
+      "count": 2,
+      "sales": 14400
     },
     {
       "mask": "***7777bb7",
@@ -89,46 +129,46 @@
       "sales": 11000
     },
     {
-      "mask": "***aabbbaa",
-      "count": 1,
-      "sales": 7440
-    },
-    {
-      "mask": "***aaabcbc",
-      "count": 1,
-      "sales": 5000
-    },
-    {
-      "mask": "***aaabbcc",
-      "count": 1,
-      "sales": 4000
-    },
-    {
-      "mask": "******a0a0",
-      "count": 1,
-      "sales": 3000
-    },
-    {
-      "mask": "***aaabb**",
-      "count": 1,
-      "sales": 3000
+      "mask": "***aaa****",
+      "count": 5,
+      "sales": 10800
     },
     {
       "mask": "***aaaa*a*",
-      "count": 1,
-      "sales": 2400
+      "count": 4,
+      "sales": 9600
     }
   ],
   "topSubMasks": [
+    {
+      "submask": "***8008080",
+      "count": 1,
+      "sales": 78000
+    },
+    {
+      "submask": "***0161616",
+      "count": 1,
+      "sales": 56000
+    },
     {
       "submask": "***0000057",
       "count": 1,
       "sales": 35000
     },
     {
+      "submask": "***4939999",
+      "count": 1,
+      "sales": 30000
+    },
+    {
       "submask": "***0000110",
       "count": 1,
       "sales": 19000
+    },
+    {
+      "submask": "***1100007",
+      "count": 1,
+      "sales": 12000
     },
     {
       "submask": "***0000770",
@@ -149,26 +189,6 @@
       "submask": "***9944499",
       "count": 1,
       "sales": 7440
-    },
-    {
-      "submask": "***0001616",
-      "count": 1,
-      "sales": 5000
-    },
-    {
-      "submask": "***9996622",
-      "count": 1,
-      "sales": 4000
-    },
-    {
-      "submask": "***9222279",
-      "count": 1,
-      "sales": 3000
-    },
-    {
-      "submask": "***0531010",
-      "count": 1,
-      "sales": 3000
     }
   ],
   "dailySales": [
@@ -182,19 +202,19 @@
     },
     {
       "date": "02.11.2026",
-      "personal": 88400,
+      "personal": 131400,
       "cpo": 16000,
       "app": 13840,
-      "total": 118240,
-      "count": 14
+      "total": 161240,
+      "count": 28
     },
     {
       "date": "03.11.2026",
-      "personal": 0,
+      "personal": 211400,
       "cpo": 0,
-      "app": 0,
-      "total": 0,
-      "count": 0
+      "app": 4000,
+      "total": 215400,
+      "count": 19
     },
     {
       "date": "04.11.2026",
@@ -416,15 +436,15 @@
   "weekdays": [
     {
       "day": "Понедельник",
-      "sales": 118240,
-      "count": 14,
-      "averageCheck": 8445.714285714286
+      "sales": 161240,
+      "count": 28,
+      "averageCheck": 5758.571428571428
     },
     {
       "day": "Вторник",
-      "sales": 0,
-      "count": 0,
-      "averageCheck": 0
+      "sales": 215400,
+      "count": 19,
+      "averageCheck": 11336.842105263158
     },
     {
       "day": "Среда",
@@ -459,27 +479,27 @@
   ],
   "daily": {
     "todaySales": 0,
-    "yesterdaySales": 118240,
-    "change": -100,
-    "averageDaily": 40413.333333333336,
-    "bestDaySales": 118240,
-    "bestDayDate": "02.11.2026",
-    "neededPerDay": 165444.22222222222,
-    "daysLeft": 27,
-    "planCompletion": 2.6424110017056672,
-    "remaining": 4466994
+    "yesterdaySales": 0,
+    "change": 0,
+    "averageDaily": 75928,
+    "bestDaySales": 215400,
+    "bestDayDate": "03.11.2026",
+    "neededPerDay": 168343.76,
+    "daysLeft": 25,
+    "planCompletion": 8.274207461955951,
+    "remaining": 4208594
   },
   "forecast": {
-    "month": 1212400,
-    "completion": 26.424110017056673,
-    "pace": 26.424110017056673,
-    "deviation": -73.57588998294332,
-    "gap": -3375834
+    "month": 2277840,
+    "completion": 49.645244771735705,
+    "pace": 49.645244771735705,
+    "deviation": -50.354755228264295,
+    "gap": -2310394
   },
-  "sourceRows": 15,
-  "sourceFile": "Исходник для дашборда(4).xlsx",
+  "sourceRows": 48,
+  "sourceFile": "Исходник для дашборда(5).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-2026-oct1-15-baseline-swap-eremin-to-kulemin-cpo-payout-preserved-v4",
+  "logicVersion": "nov-5-full-48-row-oct1-15-baseline-eremin-kulemin-cpo-payroll-unchanged-v5",
   "classificationRules": {
     "baseline": "Полностью сохранить правила 01–15.10.2026; единственная замена в личных продажах с 01.11.2026: ответственный Еремин Валентин Андреевич → Кулемин Алексей Александрович.",
     "referencePeriod": "01.10.2026–15.10.2026",
