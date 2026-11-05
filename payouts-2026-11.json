@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "03.11.2026",
+  "updated": "05.11.2026",
   "summary": {
     "count": 4,
     "sales": 19000,
@@ -61,9 +61,9 @@
       "payout": 300
     }
   ],
-  "sourceRows": 15,
-  "sourceFile": "Исходник для дашборда(4).xlsx",
-  "logicVersion": "nov-2026-cpo-payouts-exclude-asad-slava-personal-general-v3",
+  "sourceRows": 48,
+  "sourceFile": "Исходник для дашборда(5).xlsx",
+  "logicVersion": "nov-5-full-48-rows-cpo-payout-unchanged-oct-baseline-v5",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -79,5 +79,27 @@
     "Слава Блэк Портация": "Общие личные продажи ответственного (Кулемин / Еремин), исключать из чистых продаж и ЦПО",
     "Кулемин + Продажи айфон": "Личные продажи",
     "Кулемин + остальные обычные покупатели": "ЦПО"
-  }
+  },
+  "personalsExcludedFromCpo": [
+    {
+      "buyer": "Амигос",
+      "count": 14,
+      "sales": 43000
+    },
+    {
+      "buyer": "Асад Портация",
+      "count": 6,
+      "sales": 77600
+    },
+    {
+      "buyer": "Слава Блэк Портация",
+      "count": 3,
+      "sales": 37400
+    },
+    {
+      "buyer": "Григорий Люкснамберс портация",
+      "count": 5,
+      "sales": 12000
+    }
+  ]
 }
