@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "05.11.2026",
-  "sourceRows": 48,
-  "sourceFile": "Исходник для дашборда(5).xlsx",
+  "updated": "06.11.2026",
+  "sourceRows": 71,
+  "sourceFile": "Исходник для дашборда(6).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -181,5 +181,6 @@
         }
       ]
     }
-  ]
+  ],
+  "logicVersion": "nov-6-full-71-rows-attention-checks-no-new-alerts-v6"
 }
