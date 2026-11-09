@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "06.11.2026",
-  "sourceRows": 71,
-  "sourceFile": "Исходник для дашборда(6).xlsx",
+  "updated": "09.11.2026",
+  "sourceRows": 102,
+  "sourceFile": "Исходник для дашборда(7).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -19,10 +19,10 @@
     "returnMarkerNonSale": true
   },
   "summary": {
-    "rowsWithAttention": 6,
-    "signals": 6,
-    "checksOk": 5,
-    "checksWarning": 2
+    "rowsWithAttention": 7,
+    "signals": 7,
+    "checksOk": 4,
+    "checksWarning": 3
   },
   "checks": {
     "low_margin": {
@@ -37,8 +37,8 @@
     },
     "empty_phone": {
       "label": "Пустой телефон",
-      "count": 0,
-      "state": "ok"
+      "count": 1,
+      "state": "warning"
     },
     "unknown_responsible": {
       "label": "Неизвестный ответственный",
@@ -180,7 +180,26 @@
           "label": "Низкая маржа 16,7%"
         }
       ]
+    },
+    {
+      "row": 100,
+      "date": "08.11.2026",
+      "phone": null,
+      "amount": 3000,
+      "cost": 0,
+      "margin": 3000,
+      "profitability": 100,
+      "responsible": "Назаров Дмитрий Александрович",
+      "buyer": "Частное лицо(1)",
+      "partner": null,
+      "comment": "аренда уже актив",
+      "issues": [
+        {
+          "type": "empty_phone",
+          "label": "Не указан номер телефона — проверить операцию аренды"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-6-full-71-rows-attention-checks-no-new-alerts-v6"
+  "logicVersion": "nov-9-102rows-attention-5margin-1review-1emptyphone-v7"
 }
