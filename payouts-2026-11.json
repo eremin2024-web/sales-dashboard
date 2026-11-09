@@ -1,30 +1,30 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "06.11.2026",
+  "updated": "09.11.2026",
   "summary": {
-    "count": 17,
-    "sales": 112000,
-    "payout": 9850
+    "count": 28,
+    "sales": 149000,
+    "payout": 13550
   },
   "managers": [
     {
       "name": "Назаров Дмитрий Александрович",
-      "count": 10,
-      "sales": 73000,
-      "payout": 5950
+      "count": 12,
+      "sales": 79000,
+      "payout": 6550
+    },
+    {
+      "name": "Хасянов Илсаф Ханнянович",
+      "count": 13,
+      "sales": 47000,
+      "payout": 4700
     },
     {
       "name": "Бабич Александр Алексеевич",
       "count": 2,
       "sales": 20000,
       "payout": 2000
-    },
-    {
-      "name": "Хасянов Илсаф Ханнянович",
-      "count": 4,
-      "sales": 16000,
-      "payout": 1600
     },
     {
       "name": "Кулемин Алексей Александрович",
@@ -169,11 +169,99 @@
       "sales": 3000,
       "rate": 10,
       "payout": 300
+    },
+    {
+      "date": "06.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9399000636",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "06.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9060022225",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "06.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9327777475",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "06.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9620636060",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "06.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9660144400",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "07.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9060695222",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "07.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9687032929",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "07.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9671670707",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "08.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9661460707",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "08.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": null,
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "08.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9670105656",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 71,
-  "sourceFile": "Исходник для дашборда(6).xlsx",
-  "logicVersion": "nov-6-71-rows-cpo-payroll-same-rates-babich-10k-no-kulemin-bonus-v6",
+  "sourceRows": 102,
+  "sourceFile": "Исходник для дашборда(7).xlsx",
+  "logicVersion": "nov-9-102row-cpo-payouts-unchanged-rates-kulemin-babich-filim-v7",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
