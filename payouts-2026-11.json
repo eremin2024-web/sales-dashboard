@@ -261,22 +261,29 @@
   ],
   "sourceRows": 102,
   "sourceFile": "Исходник для дашборда(7).xlsx",
-  "logicVersion": "nov-9-102row-cpo-payouts-unchanged-rates-kulemin-babich-filim-v7",
+  "logicVersion": "nov-10-new-comment-only-clean-rule-payroll-untouched-v8",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
       "phone": "9770000057",
       "sales": 35000,
-      "reason": "Продажа контрагенту «Слава Блэк Портация» включена в общие личные продажи Кулемина; исключена из чистых продаж и выплат ЦПО (как партнёрские сделки октября).",
+      "reason": "Продажа «Слава Блэк Портация» относится к личным продажам Кулемина, не к ЦПО и не к зарплате ЦПО. В чистых продажах теперь ВКЛЮЧЕНА: комментарий не содержит фразу «НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ».",
       "doesNotAffectCpoCount": true,
-      "doesNotAffectCpoPayout": true
+      "doesNotAffectCpoPayout": true,
+      "inCleanSales": true,
+      "cleanExclusionRule": "Только маркер в поле «Комментарий»"
     }
   ],
   "classificationRules": {
     "Асад Портация": "Общие личные продажи ответственного (Кулемин / Еремин), исключать из чистых продаж и ЦПО",
     "Слава Блэк Портация": "Общие личные продажи ответственного (Кулемин / Еремин), исключать из чистых продаж и ЦПО",
     "Кулемин + Продажи айфон": "Личные продажи",
-    "Кулемин + остальные обычные покупатели": "ЦПО"
+    "Кулемин + остальные обычные покупатели": "ЦПО",
+    "cleanExclusionBasis": "Комментарий",
+    "cleanExclusionMarker": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
+    "cleanExclusionByBuyer": false,
+    "oldPartnerNameExclusionDisabled": true,
+    "cpoPayoutLogicUnchanged": true
   },
   "personalsExcludedFromCpo": [
     {
