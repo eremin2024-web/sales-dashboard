@@ -105,7 +105,7 @@
       "growthPct": 0,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Чили",
@@ -217,7 +217,7 @@
       "growthPct": 0,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Хаджимурадов",
@@ -265,7 +265,7 @@
       "growthPct": 0,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Боев",
@@ -345,7 +345,7 @@
       "growthPct": 0,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Номер Асада",
@@ -361,7 +361,7 @@
       "growthPct": 0,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Андреева",
@@ -489,7 +489,7 @@
       "growthPct": -100,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Сабир",
@@ -681,7 +681,7 @@
       "growthPct": -100,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Клиент с тг",
@@ -729,7 +729,7 @@
       "growthPct": -100,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Мавлуд Бан",
@@ -841,7 +841,7 @@
       "growthPct": -100,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Бегиев",
@@ -985,7 +985,7 @@
       "growthPct": 2288.888888888889,
       "status": "Давно не продавал",
       "priority": 0,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Асад",
@@ -1001,7 +1001,7 @@
       "growthPct": -12.018140589569164,
       "status": "Стабилен",
       "priority": 2,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Оганесян",
@@ -1017,7 +1017,7 @@
       "growthPct": -74.27652733118971,
       "status": "Падает",
       "priority": 1,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Слава Блэк",
@@ -1033,7 +1033,7 @@
       "growthPct": 1977.7777777777778,
       "status": "Растёт",
       "priority": 3,
-      "excludedFromClean": true
+      "excludedFromClean": false
     },
     {
       "partner": "Ахаминов",
@@ -1132,5 +1132,11 @@
       "excludedFromClean": false
     }
   ],
-  "logicVersion": "nov-9-partner-matrix-rebuild-from-102rows-v7"
+  "logicVersion": "nov-10-comment-only-clean-102source-no-matches-v8",
+  "cleanExclusionRule": {
+    "sourceColumn": "Комментарий",
+    "containsText": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
+    "nameBasedExclusion": false,
+    "markerHitsInCurrentNovemberFile": 0
+  }
 }
