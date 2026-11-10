@@ -547,7 +547,6 @@
     "cleanExclusionBasis": "Только поле «Комментарий»",
     "cleanExclusionMarker": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
     "cleanExclusionOperation": "Подстрока в комментарии, в любом месте, независимо от регистра; другой текст до или после разрешён",
-    "cleanExclusionMatched": true,
     "cleanExclusionCounterpartyNamesIgnored": true,
     "cleanExclusionByBuyer": false,
     "cleanExclusionByPartner": false,
@@ -555,7 +554,9 @@
     "cleanExclusionByOldNames": false,
     "historicalOctoberDataImmutable": true,
     "excludedFromCleanWhenCommentContainsMarker": true,
-    "nonSaleReturnRulesPreserved": true
+    "nonSaleReturnRulesPreserved": true,
+    "cleanExclusionMatchCount": 0,
+    "cleanCommentNormalization": "Свернуть повторяющиеся пробелы; искать фразу без учёта регистра; допускается другой текст вокруг фразы"
   },
   "cleanSalesRule": {
     "effectiveFrom": "2026-11-01",
@@ -565,6 +566,8 @@
     "allowsOtherCommentText": true,
     "excludeFromCleanOnly": true,
     "doNotUseCounterpartyOrPartner": true,
-    "returnAndNonSaleRulesRemain": true
+    "returnAndNonSaleRulesRemain": true,
+    "normalizeWhitespace": true,
+    "matchMode": "contains"
   }
 }
