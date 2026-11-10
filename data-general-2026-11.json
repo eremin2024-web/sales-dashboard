@@ -514,7 +514,7 @@
   "sourceRows": 102,
   "sourceFile": "Исходник для дашборда(7).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-9-102row-source-oct1-15-kulemin-personal-cpo-payroll-preserved-v7",
+  "logicVersion": "nov-10-2026-comment-marker-only-clean-scope-Nov-forward-v8",
   "classificationRules": {
     "baseline": "Полностью сохранить правила 01–15.10.2026; единственная замена в личных продажах с 01.11.2026: ответственный Еремин Валентин Андреевич → Кулемин Алексей Александрович.",
     "referencePeriod": "01.10.2026–15.10.2026",
@@ -539,10 +539,32 @@
     "cpoPayoutRulesPreserved": true,
     "babichBonusPreserved": true,
     "filimonovaCreditedToKulemin": true,
-    "cleanExclusionsPreserved": true,
+    "cleanExclusionsPreserved": false,
     "returnRulesPreserved": true,
     "ownNumberWithdrawalCountZero": true,
     "separateCounterpartyDirection": false,
-    "octoberDataImmutable": true
+    "octoberDataImmutable": true,
+    "cleanExclusionBasis": "Только поле «Комментарий»",
+    "cleanExclusionMarker": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
+    "cleanExclusionOperation": "Подстрока в комментарии, в любом месте, независимо от регистра; другой текст до или после разрешён",
+    "cleanExclusionMatched": true,
+    "cleanExclusionCounterpartyNamesIgnored": true,
+    "cleanExclusionByBuyer": false,
+    "cleanExclusionByPartner": false,
+    "cleanExclusionByResponsible": false,
+    "cleanExclusionByOldNames": false,
+    "historicalOctoberDataImmutable": true,
+    "excludedFromCleanWhenCommentContainsMarker": true,
+    "nonSaleReturnRulesPreserved": true
+  },
+  "cleanSalesRule": {
+    "effectiveFrom": "2026-11-01",
+    "sourceColumn": "Комментарий",
+    "containsText": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
+    "caseInsensitive": true,
+    "allowsOtherCommentText": true,
+    "excludeFromCleanOnly": true,
+    "doNotUseCounterpartyOrPartner": true,
+    "returnAndNonSaleRulesRemain": true
   }
 }
