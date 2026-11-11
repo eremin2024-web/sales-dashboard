@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "09.11.2026",
-  "sourceRows": 102,
-  "sourceFile": "Исходник для дашборда(7).xlsx",
+  "updated": "11.11.2026",
+  "sourceRows": 151,
+  "sourceFile": "Исходник для дашборда(8).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -16,12 +16,14 @@
       "Хусеинов Руфат Рафекович"
     ],
     "statusColumnPresent": false,
-    "returnMarkerNonSale": true
+    "returnMarkerNonSale": true,
+    "cleanExclusionMarker": "НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ",
+    "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
     "rowsWithAttention": 7,
     "signals": 7,
-    "checksOk": 4,
+    "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
@@ -62,6 +64,11 @@
     },
     "no_partner": {
       "label": "Продажа без партнёра",
+      "count": 0,
+      "state": "ok"
+    },
+    "clean_comment_marker": {
+      "label": "Явных исключений из чистых по комментарию",
       "count": 0,
       "state": "ok"
     }
@@ -201,5 +208,5 @@
       ]
     }
   ],
-  "logicVersion": "nov-9-102rows-attention-5margin-1review-1emptyphone-v7"
+  "logicVersion": "nov-11-151rows-7prior-flags-no-new-issues-v9"
 }
