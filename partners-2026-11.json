@@ -1,13 +1,18 @@
 {
-  "updated": "09.11.2026",
+  "updated": "11.11.2026",
   "month": "2026-11",
-  "sourceRows": 102,
-  "sourceFile": "Исходник для дашборда(7).xlsx",
+  "sourceRows": 151,
+  "sourceFile": "Исходник для дашборда(8).xlsx",
   "partners": [
     {
       "name": "Осипян",
-      "count": 13,
-      "sales": 174500
+      "count": 43,
+      "sales": 245300
+    },
+    {
+      "name": "ВипСторе",
+      "count": 1,
+      "sales": 80000
     },
     {
       "name": "Переверзев",
@@ -25,6 +30,11 @@
       "sales": 76000
     },
     {
+      "name": "Норайр",
+      "count": 9,
+      "sales": 46900
+    },
+    {
       "name": "Амигос",
       "count": 14,
       "sales": 43000
@@ -35,9 +45,9 @@
       "sales": 37400
     },
     {
-      "name": "Норайр",
-      "count": 8,
-      "sales": 27900
+      "name": "Исмаилов",
+      "count": 1,
+      "sales": 20000
     },
     {
       "name": "Куветов",
@@ -53,9 +63,19 @@
       "name": "Ахаминов",
       "count": 3,
       "sales": 7900
+    },
+    {
+      "name": "Випномер",
+      "count": 2,
+      "sales": 4000
+    },
+    {
+      "name": "Сату",
+      "count": 1,
+      "sales": 2500
     }
   ],
-  "logicVersion": "nov-9-102rows-partner-10groups-source-matched-v7",
-  "elapsedDays": 9,
+  "logicVersion": "nov-11-151records-14partners-october-canonical-aliases-v9",
+  "elapsedDays": 11,
   "daysInMonth": 30
 }
