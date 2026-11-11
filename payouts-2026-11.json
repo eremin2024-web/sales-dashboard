@@ -1,18 +1,18 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "09.11.2026",
+  "updated": "11.11.2026",
   "summary": {
-    "count": 28,
-    "sales": 149000,
-    "payout": 13550
+    "count": 34,
+    "sales": 169000,
+    "payout": 15550
   },
   "managers": [
     {
       "name": "Назаров Дмитрий Александрович",
-      "count": 12,
-      "sales": 79000,
-      "payout": 6550
+      "count": 14,
+      "sales": 87000,
+      "payout": 7350
     },
     {
       "name": "Хасянов Илсаф Ханнянович",
@@ -22,15 +22,15 @@
     },
     {
       "name": "Бабич Александр Алексеевич",
-      "count": 2,
-      "sales": 20000,
-      "payout": 2000
+      "count": 4,
+      "sales": 26000,
+      "payout": 2600
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 1,
-      "sales": 3000,
-      "payout": 300
+      "count": 3,
+      "sales": 9000,
+      "payout": 900
     }
   ],
   "details": [
@@ -257,11 +257,61 @@
       "sales": 3000,
       "rate": 10,
       "payout": 300
+    },
+    {
+      "date": "09.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9629006868",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "09.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9608390007",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "09.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9618699595",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "09.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9690000838",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "10.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9660061555",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "10.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9166442666",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 102,
-  "sourceFile": "Исходник для дашборда(7).xlsx",
-  "logicVersion": "nov-10-new-comment-only-clean-rule-payroll-untouched-v8",
+  "sourceRows": 151,
+  "sourceFile": "Исходник для дашборда(8).xlsx",
+  "logicVersion": "nov-11-151rows-cpo-payroll-original-oct-rates-filim-to-kulemin-v9",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -306,5 +356,17 @@
       "count": 5,
       "sales": 12000
     }
-  ]
+  ],
+  "sourceReconciliation": {
+    "newSourceRows": 49,
+    "newCpoSales": 6,
+    "newCpoRevenue": 20000,
+    "newCpoPayout": 2000,
+    "filimonovaCreditedToKulemin": {
+      "count": 2,
+      "sales": 6000,
+      "payout": 600
+    },
+    "babichSpecialRulesUnchanged": true
+  }
 }
