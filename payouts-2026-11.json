@@ -1,24 +1,24 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "11.11.2026",
+  "updated": "12.11.2026",
   "summary": {
-    "count": 34,
-    "sales": 169000,
-    "payout": 15550
+    "count": 36,
+    "sales": 252000,
+    "payout": 21450
   },
   "managers": [
     {
-      "name": "Назаров Дмитрий Александрович",
+      "name": "Хасянов Илсаф Ханнянович",
       "count": 14,
-      "sales": 87000,
-      "payout": 7350
+      "sales": 127000,
+      "payout": 10300
     },
     {
-      "name": "Хасянов Илсаф Ханнянович",
-      "count": 13,
-      "sales": 47000,
-      "payout": 4700
+      "name": "Назаров Дмитрий Александрович",
+      "count": 15,
+      "sales": 90000,
+      "payout": 7650
     },
     {
       "name": "Бабич Александр Алексеевич",
@@ -307,11 +307,27 @@
       "sales": 3000,
       "rate": 10,
       "payout": 300
+    },
+    {
+      "date": "11.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9060031103",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "11.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9686155555",
+      "sales": 80000,
+      "rate": 7,
+      "payout": 5600
     }
   ],
-  "sourceRows": 151,
-  "sourceFile": "Исходник для дашборда(8).xlsx",
-  "logicVersion": "nov-11-151rows-cpo-payroll-original-oct-rates-filim-to-kulemin-v9",
+  "sourceRows": 162,
+  "sourceFile": "Исходник для дашборда(9).xlsx",
+  "logicVersion": "nov-12-cpo-payroll-162rows-hasyan-80k-7pct-oct-rules-unchanged-v10",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -358,15 +374,12 @@
     }
   ],
   "sourceReconciliation": {
-    "newSourceRows": 49,
-    "newCpoSales": 6,
-    "newCpoRevenue": 20000,
-    "newCpoPayout": 2000,
-    "filimonovaCreditedToKulemin": {
-      "count": 2,
-      "sales": 6000,
-      "payout": 600
-    },
+    "previousSourceRows": 151,
+    "newRows": 11,
+    "newCpoCount": 2,
+    "newCpoSales": 83000,
+    "newCpoPayout": 5900,
+    "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
 }
