@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "11.11.2026",
-  "sourceRows": 151,
-  "sourceFile": "Исходник для дашборда(8).xlsx",
+  "updated": "12.11.2026",
+  "sourceRows": 162,
+  "sourceFile": "Исходник для дашборда(9).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 7,
-    "signals": 7,
+    "rowsWithAttention": 8,
+    "signals": 8,
     "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 5,
+      "count": 6,
       "state": "warning"
     },
     "comment_review": {
@@ -189,6 +189,25 @@
       ]
     },
     {
+      "row": 49,
+      "date": "03.11.2026",
+      "phone": "9808000990",
+      "amount": 1200,
+      "cost": 1000,
+      "margin": 200,
+      "profitability": 16.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Слава Блэк Портация",
+      "partner": "Слава Блэк",
+      "comment": "Слава блэк портация.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 16,7% — исправлена себестоимость"
+        }
+      ]
+    },
+    {
       "row": 100,
       "date": "08.11.2026",
       "phone": null,
@@ -208,5 +227,5 @@
       ]
     }
   ],
-  "logicVersion": "nov-11-151rows-7prior-flags-no-new-issues-v9"
+  "logicVersion": "nov-12-162records-6lowmargin-1review-1empty-phone-v10"
 }
