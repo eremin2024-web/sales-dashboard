@@ -1,8 +1,8 @@
 {
-  "updated": "12.11.2026",
+  "updated": "13.11.2026",
   "month": "2026-11",
-  "sourceRows": 162,
-  "sourceFile": "Исходник для дашборда(9).xlsx",
+  "sourceRows": 170,
+  "sourceFile": "Исходник для дашборда(10).xlsx",
   "partners": [
     {
       "name": "Осипян",
@@ -31,8 +31,8 @@
     },
     {
       "name": "Норайр",
-      "count": 12,
-      "sales": 52900
+      "count": 13,
+      "sales": 54900
     },
     {
       "name": "Амигос",
@@ -45,14 +45,14 @@
       "sales": 37400
     },
     {
+      "name": "Куветов",
+      "count": 4,
+      "sales": 23300
+    },
+    {
       "name": "Исмаилов",
       "count": 1,
       "sales": 20000
-    },
-    {
-      "name": "Куветов",
-      "count": 3,
-      "sales": 19800
     },
     {
       "name": "Оганесян",
@@ -83,20 +83,26 @@
       "name": "Зиновкин",
       "count": 1,
       "sales": 2400
+    },
+    {
+      "name": "Нурмагомед",
+      "count": 1,
+      "sales": 2000
     }
   ],
-  "logicVersion": "nov-12-162-records-16-partners-one-withdrawal-zero-count-v10",
-  "elapsedDays": 12,
+  "logicVersion": "nov-13-170operations-17partner-groups-october-aliases-v11",
+  "elapsedDays": 13,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousPartnerCount": 14,
-    "newPartnerAliases": [
-      "Багиев",
-      "Зиновкин"
-    ],
-    "personalsales": 767300,
-    "personalCount": 100,
-    "oganessyanWithdrawalRevenue": 1000,
-    "oganessyanWithdrawalSalesCount": 0
+    "oldPartnerCount": 16,
+    "activePartnerCount": 17,
+    "newPartner": "Нурмагомед",
+    "newPartnerAmount": 2000,
+    "norairIncrement": 2000,
+    "kuvetovIncrement": 3500,
+    "personalsales": 774800,
+    "personalCount": 103,
+    "ownNumberWithdrawalRevenue": 1000,
+    "ownNumberWithdrawalSaleCount": 0
   }
 }
