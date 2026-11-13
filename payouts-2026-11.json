@@ -1,24 +1,24 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "12.11.2026",
+  "updated": "13.11.2026",
   "summary": {
-    "count": 36,
-    "sales": 252000,
-    "payout": 21450
+    "count": 41,
+    "sales": 356350,
+    "payout": 29035
   },
   "managers": [
     {
       "name": "Хасянов Илсаф Ханнянович",
-      "count": 14,
-      "sales": 127000,
-      "payout": 10300
+      "count": 18,
+      "sales": 228350,
+      "payout": 17585
     },
     {
       "name": "Назаров Дмитрий Александрович",
-      "count": 15,
-      "sales": 90000,
-      "payout": 7650
+      "count": 16,
+      "sales": 93000,
+      "payout": 7950
     },
     {
       "name": "Бабич Александр Алексеевич",
@@ -323,11 +323,51 @@
       "sales": 80000,
       "rate": 7,
       "payout": 5600
+    },
+    {
+      "date": "12.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9771965555",
+      "sales": 25000,
+      "rate": 7,
+      "payout": 1750
+    },
+    {
+      "date": "12.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9688882288",
+      "sales": 70000,
+      "rate": 7,
+      "payout": 4900
+    },
+    {
+      "date": "12.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9898720077",
+      "sales": 3350,
+      "rate": 10,
+      "payout": 335
+    },
+    {
+      "date": "12.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9327772600",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "12.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9096600011",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 162,
-  "sourceFile": "Исходник для дашборда(9).xlsx",
-  "logicVersion": "nov-12-cpo-payroll-162rows-hasyan-80k-7pct-oct-rules-unchanged-v10",
+  "sourceRows": 170,
+  "sourceFile": "Исходник для дашборда(10).xlsx",
+  "logicVersion": "nov-13-170rows-cpo-payroll-unchanged-7pct-above10k-v11",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -374,11 +414,11 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 151,
-    "newRows": 11,
-    "newCpoCount": 2,
-    "newCpoSales": 83000,
-    "newCpoPayout": 5900,
+    "previousSourceRows": 162,
+    "addedSourceRows": 8,
+    "newCpoSales": 5,
+    "newCpoRevenue": 104350,
+    "newCpoPayout": 7585,
     "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
