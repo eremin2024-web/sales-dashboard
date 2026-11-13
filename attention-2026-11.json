@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "12.11.2026",
-  "sourceRows": 162,
-  "sourceFile": "Исходник для дашборда(9).xlsx",
+  "updated": "13.11.2026",
+  "sourceRows": 170,
+  "sourceFile": "Исходник для дашборда(10).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -227,5 +227,13 @@
       ]
     }
   ],
-  "logicVersion": "nov-12-162records-6lowmargin-1review-1empty-phone-v10"
+  "logicVersion": "nov-13-170rows-8historical-attention-alerts-no-new-v11",
+  "sourceReconciliation": {
+    "oldSourceRows": 162,
+    "newSourceRows": 170,
+    "addedSourceRows": 8,
+    "newLowMarginIssues": 0,
+    "newMissingPhoneIssues": 0,
+    "newCommentMarkerMatches": 0
+  }
 }
