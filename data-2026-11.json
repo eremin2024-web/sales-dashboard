@@ -1,48 +1,48 @@
 {
   "month": "2026-11",
-  "updated": "13.11.2026",
-  "lastSale": "12.11.2026",
-  "sales": 1295870,
-  "margin": 974540.29,
-  "profitability": 75.20355359719726,
-  "salesCount": 169,
-  "averageCheck": 7667.869822485207,
+  "updated": "16.11.2026",
+  "lastSale": "15.11.2026",
+  "sales": 1506910,
+  "margin": 1153880.85,
+  "profitability": 76.57264534710103,
+  "salesCount": 196,
+  "averageCheck": 7688.316326530612,
   "directions": [
     {
       "name": "Личные продажи",
       "plan": 3618274,
-      "fact": 774800,
-      "margin": 581920.29,
-      "count": 103,
-      "profitability": 75.10587119256583,
-      "averageCheck": 7522.330097087379,
-      "share": 59.789948065778205,
-      "completion": 21.413524791102056,
-      "remaining": 2843474
+      "fact": 897300,
+      "margin": 691589.07,
+      "count": 117,
+      "profitability": 77.07445336008024,
+      "averageCheck": 7669.2307692307695,
+      "share": 59.54569284164283,
+      "completion": 24.799116927021004,
+      "remaining": 2720974
     },
     {
       "name": "ЦПО",
       "plan": 673234,
-      "fact": 356350,
-      "margin": 285515.51,
-      "count": 41,
-      "profitability": 80.12221411533605,
-      "averageCheck": 8691.463414634147,
-      "share": 27.498900352658833,
-      "completion": 52.931075970613485,
-      "remaining": 316884
+      "fact": 376650,
+      "margin": 302443.3,
+      "count": 46,
+      "profitability": 80.298234435152,
+      "averageCheck": 8188.04347826087,
+      "share": 24.994857025303435,
+      "completion": 55.94637228660466,
+      "remaining": 296584
     },
     {
       "name": "Приложение",
       "plan": 296726,
-      "fact": 164720,
-      "margin": 107104.49,
-      "count": 25,
-      "profitability": 65.02215274405052,
-      "averageCheck": 6588.8,
-      "share": 12.711151581562966,
-      "completion": 55.51249300701657,
-      "remaining": 132006
+      "fact": 232960,
+      "margin": 159848.48,
+      "count": 33,
+      "profitability": 68.61627747252749,
+      "averageCheck": 7059.393939393939,
+      "share": 15.459450133053732,
+      "completion": 78.51014066849551,
+      "remaining": 63766
     }
   ],
   "bestPartner": {
@@ -58,8 +58,13 @@
     },
     {
       "name": "ВипСторе",
-      "count": 1,
-      "sales": 80000
+      "count": 2,
+      "sales": 160000
+    },
+    {
+      "name": "Нерсисян",
+      "count": 2,
+      "sales": 78500
     },
     {
       "name": "Переверзев",
@@ -72,14 +77,9 @@
       "sales": 77600
     },
     {
-      "name": "Нерсисян",
-      "count": 1,
-      "sales": 76000
-    },
-    {
       "name": "Норайр",
-      "count": 13,
-      "sales": 54900
+      "count": 18,
+      "sales": 76300
     },
     {
       "name": "Амигос",
@@ -88,13 +88,13 @@
     },
     {
       "name": "Слава Блэк",
-      "count": 3,
-      "sales": 37400
+      "count": 6,
+      "sales": 41000
     },
     {
       "name": "Куветов",
-      "count": 4,
-      "sales": 23300
+      "count": 6,
+      "sales": 31800
     },
     {
       "name": "Исмаилов",
@@ -107,14 +107,14 @@
       "sales": 13000
     },
     {
+      "name": "Багиев",
+      "count": 4,
+      "sales": 10500
+    },
+    {
       "name": "Ахаминов",
       "count": 3,
       "sales": 7900
-    },
-    {
-      "name": "Багиев",
-      "count": 2,
-      "sales": 4000
     },
     {
       "name": "Випномер",
@@ -140,18 +140,18 @@
   "topMasks": [
     {
       "mask": "**********",
-      "count": 34,
-      "sales": 220540
+      "count": 41,
+      "sales": 240340
     },
     {
       "mask": "***AAA****",
-      "count": 17,
-      "sales": 55840
+      "count": 21,
+      "sales": 77240
     },
     {
       "mask": "******0A0A",
-      "count": 15,
-      "sales": 34500
+      "count": 17,
+      "sales": 41000
     },
     {
       "mask": "***AAABBCC",
@@ -169,24 +169,24 @@
       "sales": 18900
     },
     {
+      "mask": "******ABAB",
+      "count": 7,
+      "sales": 17300
+    },
+    {
+      "mask": "******AABB",
+      "count": 7,
+      "sales": 17150
+    },
+    {
       "mask": "*****AABAB",
       "count": 7,
       "sales": 16400
     },
     {
-      "mask": "******AABB",
-      "count": 6,
-      "sales": 14750
-    },
-    {
-      "mask": "***AAAA*A*",
+      "mask": "***AAABCBC",
       "count": 5,
-      "sales": 12600
-    },
-    {
-      "mask": "******ABAB",
-      "count": 5,
-      "sales": 11900
+      "sales": 25000
     }
   ],
   "topSubMasks": [
@@ -202,6 +202,11 @@
     },
     {
       "submask": "***6155555",
+      "count": 1,
+      "sales": 80000
+    },
+    {
+      "submask": "***9999885",
       "count": 1,
       "sales": 80000
     },
@@ -234,11 +239,6 @@
       "submask": "***1111177",
       "count": 1,
       "sales": 45000
-    },
-    {
-      "submask": "***0000057",
-      "count": 1,
-      "sales": 35000
     }
   ],
   "dailySales": [
@@ -340,35 +340,35 @@
     },
     {
       "date": "13.11.2026",
+      "personal": 87500,
+      "cpo": 8800,
+      "app": 32240,
+      "total": 128540,
+      "count": 8
+    },
+    {
+      "date": "14.11.2026",
+      "personal": 19500,
+      "cpo": 8500,
+      "app": 7200,
+      "total": 35200,
+      "count": 11
+    },
+    {
+      "date": "15.11.2026",
+      "personal": 15500,
+      "cpo": 3000,
+      "app": 28800,
+      "total": 47300,
+      "count": 8
+    },
+    {
+      "date": "16.11.2026",
       "personal": 0,
       "cpo": 0,
       "app": 0,
       "total": 0,
       "count": 0
-    },
-    {
-      "date": "14.11.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
-    },
-    {
-      "date": "15.11.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
-    },
-    {
-      "date": "16.11.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
     },
     {
       "date": "17.11.2026",
@@ -486,9 +486,9 @@
   "weekdays": [
     {
       "day": "Воскресенье",
-      "sales": 28200,
-      "count": 8,
-      "averageCheck": 3525
+      "sales": 75500,
+      "count": 16,
+      "averageCheck": 4718.75
     },
     {
       "day": "Понедельник",
@@ -516,40 +516,40 @@
     },
     {
       "day": "Пятница",
-      "sales": 209000,
-      "count": 15,
-      "averageCheck": 13933.333333333334
+      "sales": 337540,
+      "count": 23,
+      "averageCheck": 14675.652173913044
     },
     {
       "day": "Суббота",
-      "sales": 34900,
-      "count": 9,
-      "averageCheck": 3877.777777777778
+      "sales": 70100,
+      "count": 20,
+      "averageCheck": 3505
     }
   ],
   "daily": {
     "todaySales": 0,
-    "yesterdaySales": 114490,
+    "yesterdaySales": 47300,
     "change": -100,
-    "averageDaily": 99682.30769230769,
+    "averageDaily": 94181.875,
     "bestDaySales": 215400,
     "bestDayDate": "03.11.2026",
-    "neededPerDay": 193668.4705882353,
-    "daysLeft": 17,
-    "planCompletion": 28.24332847888752,
-    "remaining": 3292364
+    "neededPerDay": 220094.57142857142,
+    "daysLeft": 14,
+    "planCompletion": 32.84291951979781,
+    "remaining": 3081324
   },
   "forecast": {
-    "month": 2990469.230769231,
-    "completion": 65.17691187435581,
-    "pace": 65.17691187435581,
-    "deviation": -34.82308812564419,
-    "gap": -1597764.769230769
+    "month": 2825456.25,
+    "completion": 61.5804740996209,
+    "pace": 61.5804740996209,
+    "deviation": -38.4195259003791,
+    "gap": -1762777.75
   },
-  "sourceRows": 170,
-  "sourceFile": "Исходник для дашборда(10).xlsx",
+  "sourceRows": 197,
+  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-13-170operations-169sales-comment-marker-clean-no-matches-oct-cpo-payroll-preserved-v11",
+  "logicVersion": "nov-16-197rows-comment-only-clean-no-matches-withdrawal-count-zero-v12",
   "classificationRules": {
     "baseline": "Полностью сохранить правила 01–15.10.2026; единственная замена в личных продажах с 01.11.2026: ответственный Еремин Валентин Андреевич → Кулемин Алексей Александрович.",
     "referencePeriod": "01.10.2026–15.10.2026",
@@ -606,18 +606,28 @@
     "matchMode": "contains"
   },
   "sourceReconciliation": {
-    "previousSourceFile": "Исходник для дашборда(9).xlsx",
-    "previousSourceRows": 162,
-    "unchangedPrefixRows": 162,
-    "newRows": 8,
-    "addedRevenue": 111850,
-    "addedMargin": 95849.98,
-    "addedCount": 8,
-    "newPersonalSales": 3,
-    "newPersonalRevenue": 7500,
-    "newCpoSales": 5,
-    "newCpoRevenue": 104350,
-    "newAppSales": 0,
+    "previousSourceRows": 170,
+    "unchangedPreviousRows": 170,
+    "newSourceRows": 197,
+    "addedRows": 27,
+    "addedRevenue": 211040,
+    "addedMargin": 179340.56,
+    "addedCount": 27,
+    "newPersonal": {
+      "sales": 122500,
+      "count": 14,
+      "margin": 109668.78
+    },
+    "newCpo": {
+      "sales": 20300,
+      "count": 5,
+      "margin": 16927.79
+    },
+    "newApp": {
+      "sales": 68240,
+      "count": 8,
+      "margin": 52743.99
+    },
     "ownNumberWithdrawal": {
       "excelRow": 162,
       "phone": "9680030666",
@@ -628,12 +638,15 @@
     "commentMarkerExcludedRecords": 0
   },
   "cleanSalesDerivation": {
-    "sourceFile": "Исходник для дашборда(10).xlsx",
-    "rowsChecked": 170,
+    "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+    "rowsChecked": 197,
     "rowsExcludedByCommentMarker": 0,
     "amountExcludedByCommentMarker": 0,
     "marginExcludedByCommentMarker": 0,
-    "commentMatching": "Только точная подстрока НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ в поле Комментарий, без учёта регистра и повторяющихся пробелов",
-    "note": "Маркерной фразы нет. Одна операция вывода собственного номера включена в выручку и маржу, но не в счётчик."
+    "previousSourceRows": 170,
+    "previousSourceSales": 1295870,
+    "previousSourceCount": 169,
+    "commentMatching": "Исключаем ТОЛЬКО если поле Комментарий содержит НЕ СЧИТАТЬ В ЧИСТЫЕ ПРОДАЖИ, независимо от регистра, при нормализации повторяющихся пробелов",
+    "note": "По 15 ноября включительно ни одна операция не содержит маркер; вывод собственного номера на 1 000 ₽ остаётся в выручке и марже, но не увеличивает количество продаж."
   }
 }
