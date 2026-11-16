@@ -1,8 +1,8 @@
 {
-  "updated": "13.11.2026",
+  "updated": "16.11.2026",
   "month": "2026-11",
-  "sourceRows": 170,
-  "sourceFile": "Исходник для дашборда(10).xlsx",
+  "sourceRows": 197,
+  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
   "partners": [
     {
       "name": "Осипян",
@@ -11,8 +11,13 @@
     },
     {
       "name": "ВипСторе",
-      "count": 1,
-      "sales": 80000
+      "count": 2,
+      "sales": 160000
+    },
+    {
+      "name": "Нерсисян",
+      "count": 2,
+      "sales": 78500
     },
     {
       "name": "Переверзев",
@@ -25,14 +30,9 @@
       "sales": 77600
     },
     {
-      "name": "Нерсисян",
-      "count": 1,
-      "sales": 76000
-    },
-    {
       "name": "Норайр",
-      "count": 13,
-      "sales": 54900
+      "count": 18,
+      "sales": 76300
     },
     {
       "name": "Амигос",
@@ -41,13 +41,13 @@
     },
     {
       "name": "Слава Блэк",
-      "count": 3,
-      "sales": 37400
+      "count": 6,
+      "sales": 41000
     },
     {
       "name": "Куветов",
-      "count": 4,
-      "sales": 23300
+      "count": 6,
+      "sales": 31800
     },
     {
       "name": "Исмаилов",
@@ -60,14 +60,14 @@
       "sales": 13000
     },
     {
+      "name": "Багиев",
+      "count": 4,
+      "sales": 10500
+    },
+    {
       "name": "Ахаминов",
       "count": 3,
       "sales": 7900
-    },
-    {
-      "name": "Багиев",
-      "count": 2,
-      "sales": 4000
     },
     {
       "name": "Випномер",
@@ -90,19 +90,17 @@
       "sales": 2000
     }
   ],
-  "logicVersion": "nov-13-170operations-17partner-groups-october-aliases-v11",
-  "elapsedDays": 13,
+  "logicVersion": "nov-16-197operations-17active-partner-groups-historical-aliases-v12",
+  "elapsedDays": 16,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "oldPartnerCount": 16,
-    "activePartnerCount": 17,
-    "newPartner": "Нурмагомед",
-    "newPartnerAmount": 2000,
-    "norairIncrement": 2000,
-    "kuvetovIncrement": 3500,
-    "personalsales": 774800,
-    "personalCount": 103,
-    "ownNumberWithdrawalRevenue": 1000,
-    "ownNumberWithdrawalSaleCount": 0
+    "previousSourceRows": 170,
+    "addedSourceRows": 27,
+    "addedPersonalCount": 14,
+    "addedPersonalRevenue": 122500,
+    "activePartnerGroups": 17,
+    "ownNumberWithdrawalAmount": 1000,
+    "ownNumberWithdrawalCountsAsSale": false,
+    "aliasesPreserved": true
   }
 }
