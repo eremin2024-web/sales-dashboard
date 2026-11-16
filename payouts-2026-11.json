@@ -1,30 +1,30 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "13.11.2026",
+  "updated": "16.11.2026",
   "summary": {
-    "count": 41,
-    "sales": 356350,
-    "payout": 29035
+    "count": 46,
+    "sales": 376650,
+    "payout": 31065
   },
   "managers": [
     {
       "name": "Хасянов Илсаф Ханнянович",
-      "count": 18,
-      "sales": 228350,
-      "payout": 17585
+      "count": 19,
+      "sales": 231350,
+      "payout": 17885
     },
     {
       "name": "Назаров Дмитрий Александрович",
-      "count": 16,
-      "sales": 93000,
-      "payout": 7950
+      "count": 19,
+      "sales": 107300,
+      "payout": 9380
     },
     {
       "name": "Бабич Александр Алексеевич",
-      "count": 4,
-      "sales": 26000,
-      "payout": 2600
+      "count": 5,
+      "sales": 29000,
+      "payout": 2900
     },
     {
       "name": "Кулемин Алексей Александрович",
@@ -363,11 +363,51 @@
       "sales": 3000,
       "rate": 10,
       "payout": 300
+    },
+    {
+      "date": "13.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9645299992",
+      "sales": 3400,
+      "rate": 10,
+      "payout": 340
+    },
+    {
+      "date": "13.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9012220522",
+      "sales": 2400,
+      "rate": 10,
+      "payout": 240
+    },
+    {
+      "date": "13.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9686338333",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "14.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9999993478",
+      "sales": 8500,
+      "rate": 10,
+      "payout": 850
+    },
+    {
+      "date": "15.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9614352323",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 170,
-  "sourceFile": "Исходник для дашборда(10).xlsx",
-  "logicVersion": "nov-13-170rows-cpo-payroll-unchanged-7pct-above10k-v11",
+  "sourceRows": 197,
+  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+  "logicVersion": "nov-16-197-rows-cpo-payroll-unmodified-rates-filimonova-babich-v12",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -414,11 +454,11 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 162,
-    "addedSourceRows": 8,
+    "previousSourceRows": 170,
+    "addedSourceRows": 27,
     "newCpoSales": 5,
-    "newCpoRevenue": 104350,
-    "newCpoPayout": 7585,
+    "newCpoRevenue": 20300,
+    "newCpoPayout": 2030,
     "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
