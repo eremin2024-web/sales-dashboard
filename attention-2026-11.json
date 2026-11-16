@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "13.11.2026",
-  "sourceRows": 170,
-  "sourceFile": "Исходник для дашборда(10).xlsx",
+  "updated": "16.11.2026",
+  "sourceRows": 197,
+  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 8,
-    "signals": 8,
+    "rowsWithAttention": 10,
+    "signals": 10,
     "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 6,
+      "count": 8,
       "state": "warning"
     },
     "comment_review": {
@@ -225,15 +225,54 @@
           "label": "Не указан номер телефона — проверить операцию аренды"
         }
       ]
+    },
+    {
+      "row": 184,
+      "date": "14.11.2026",
+      "phone": "9691550005",
+      "amount": 1200,
+      "cost": 1000,
+      "margin": 200,
+      "profitability": 16.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Слава Блэк Портация",
+      "partner": "Слава Блэк",
+      "comment": "Слава Блэк.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 16,7%"
+        }
+      ]
+    },
+    {
+      "row": 185,
+      "date": "14.11.2026",
+      "phone": "9691880008",
+      "amount": 1200,
+      "cost": 1000,
+      "margin": 200,
+      "profitability": 16.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Слава Блэк Портация",
+      "partner": "Слава Блэк",
+      "comment": "Слава Блэк.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 16,7%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-13-170rows-8historical-attention-alerts-no-new-v11",
+  "logicVersion": "nov-16-197rows-8-lowmargin-one-note-one-missing-phone-v12",
   "sourceReconciliation": {
-    "oldSourceRows": 162,
-    "newSourceRows": 170,
-    "addedSourceRows": 8,
-    "newLowMarginIssues": 0,
-    "newMissingPhoneIssues": 0,
-    "newCommentMarkerMatches": 0
+    "previousSourceRows": 170,
+    "newSourceRows": 197,
+    "addedSourceRows": 27,
+    "previousIssues": 8,
+    "addedIssues": 2,
+    "newLowMarginCount": 2,
+    "commentMarkerHits": 0
   }
 }
