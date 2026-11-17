@@ -1,18 +1,18 @@
 {
-  "updated": "16.11.2026",
+  "updated": "17.11.2026",
   "month": "2026-11",
-  "sourceRows": 197,
-  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+  "sourceRows": 204,
+  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
   "partners": [
     {
       "name": "Осипян",
-      "count": 44,
-      "sales": 248800
+      "count": 45,
+      "sales": 251000
     },
     {
       "name": "ВипСторе",
-      "count": 2,
-      "sales": 160000
+      "count": 3,
+      "sales": 230000
     },
     {
       "name": "Нерсисян",
@@ -46,8 +46,8 @@
     },
     {
       "name": "Куветов",
-      "count": 6,
-      "sales": 31800
+      "count": 7,
+      "sales": 38800
     },
     {
       "name": "Исмаилов",
@@ -90,17 +90,34 @@
       "sales": 2000
     }
   ],
-  "logicVersion": "nov-16-197operations-17active-partner-groups-historical-aliases-v12",
-  "elapsedDays": 16,
+  "logicVersion": "nov-17-204operations-17partner-groups-preserve-aliases-v13",
+  "elapsedDays": 17,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 170,
-    "addedSourceRows": 27,
-    "addedPersonalCount": 14,
-    "addedPersonalRevenue": 122500,
+    "previousSourceRows": 197,
+    "addedSourceRows": 7,
+    "addedPersonalCount": 3,
+    "addedPersonalRevenue": 79200,
+    "partnerChanges": [
+      {
+        "name": "ВипСторе",
+        "salesAdded": 70000,
+        "countAdded": 1
+      },
+      {
+        "name": "Куветов",
+        "salesAdded": 7000,
+        "countAdded": 1
+      },
+      {
+        "name": "Осипян",
+        "salesAdded": 2200,
+        "countAdded": 1
+      }
+    ],
     "activePartnerGroups": 17,
     "ownNumberWithdrawalAmount": 1000,
     "ownNumberWithdrawalCountsAsSale": false,
-    "aliasesPreserved": true
+    "historicalAliasesPreserved": true
   }
 }
