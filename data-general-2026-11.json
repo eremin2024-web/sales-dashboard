@@ -1,65 +1,65 @@
 {
   "month": "2026-11",
-  "updated": "16.11.2026",
-  "lastSale": "15.11.2026",
-  "sales": 1506910,
-  "margin": 1153880.85,
-  "profitability": 76.57264534710103,
-  "salesCount": 196,
-  "averageCheck": 7688.316326530612,
+  "updated": "17.11.2026",
+  "lastSale": "16.11.2026",
+  "sales": 1599750,
+  "margin": 1210544.78,
+  "profitability": 75.6708723238006,
+  "salesCount": 203,
+  "averageCheck": 7880.541871921182,
   "directions": [
     {
       "name": "Личные продажи",
       "plan": 3618274,
-      "fact": 897300,
-      "margin": 691589.07,
-      "count": 117,
-      "profitability": 77.07445336008024,
-      "averageCheck": 7669.2307692307695,
-      "share": 59.54569284164283,
-      "completion": 24.799116927021004,
-      "remaining": 2720974
+      "fact": 976500,
+      "margin": 735361.28,
+      "count": 120,
+      "profitability": 75.30581464413723,
+      "averageCheck": 8137.5,
+      "share": 61.0407876230661,
+      "completion": 26.988005883468194,
+      "remaining": 2641774
     },
     {
       "name": "ЦПО",
       "plan": 673234,
-      "fact": 376650,
-      "margin": 302443.3,
-      "count": 46,
-      "profitability": 80.298234435152,
-      "averageCheck": 8188.04347826087,
-      "share": 24.994857025303435,
-      "completion": 55.94637228660466,
-      "remaining": 296584
+      "fact": 387650,
+      "margin": 312796.02,
+      "count": 49,
+      "profitability": 80.69031858635367,
+      "averageCheck": 7911.224489795918,
+      "share": 24.231911236130646,
+      "completion": 57.5802766942846,
+      "remaining": 285584
     },
     {
       "name": "Приложение",
       "plan": 296726,
-      "fact": 232960,
-      "margin": 159848.48,
-      "count": 33,
-      "profitability": 68.61627747252749,
-      "averageCheck": 7059.393939393939,
-      "share": 15.459450133053732,
-      "completion": 78.51014066849551,
-      "remaining": 63766
+      "fact": 235600,
+      "margin": 162387.48,
+      "count": 34,
+      "profitability": 68.92507640067913,
+      "averageCheck": 6929.411764705882,
+      "share": 14.72730114080325,
+      "completion": 79.39985036700526,
+      "remaining": 61126
     }
   ],
   "bestPartner": {
     "name": "Осипян",
-    "count": 44,
-    "sales": 248800
+    "count": 45,
+    "sales": 251000
   },
   "topPartners": [
     {
       "name": "Осипян",
-      "count": 44,
-      "sales": 248800
+      "count": 45,
+      "sales": 251000
     },
     {
       "name": "ВипСторе",
-      "count": 2,
-      "sales": 160000
+      "count": 3,
+      "sales": 230000
     },
     {
       "name": "Нерсисян",
@@ -93,8 +93,8 @@
     },
     {
       "name": "Куветов",
-      "count": 6,
-      "sales": 31800
+      "count": 7,
+      "sales": 38800
     },
     {
       "name": "Исмаилов",
@@ -140,8 +140,8 @@
   "topMasks": [
     {
       "mask": "**********",
-      "count": 41,
-      "sales": 240340
+      "count": 44,
+      "sales": 249980
     },
     {
       "mask": "***AAA****",
@@ -160,8 +160,8 @@
     },
     {
       "mask": "***AAAA***",
-      "count": 9,
-      "sales": 21600
+      "count": 10,
+      "sales": 23800
     },
     {
       "mask": "*****ABABA",
@@ -191,11 +191,6 @@
   ],
   "topSubMasks": [
     {
-      "submask": "***9999249",
-      "count": 1,
-      "sales": 80000
-    },
-    {
       "submask": "***0007000",
       "count": 1,
       "sales": 80000
@@ -206,14 +201,14 @@
       "sales": 80000
     },
     {
-      "submask": "***9999885",
+      "submask": "***9999249",
       "count": 1,
       "sales": 80000
     },
     {
-      "submask": "***8008080",
+      "submask": "***9999885",
       "count": 1,
-      "sales": 78000
+      "sales": 80000
     },
     {
       "submask": "***7766666",
@@ -221,9 +216,19 @@
       "sales": 78000
     },
     {
+      "submask": "***8008080",
+      "count": 1,
+      "sales": 78000
+    },
+    {
       "submask": "***5277777",
       "count": 1,
       "sales": 76000
+    },
+    {
+      "submask": "***0188888",
+      "count": 1,
+      "sales": 70000
     },
     {
       "submask": "***8882288",
@@ -234,11 +239,6 @@
       "submask": "***0161616",
       "count": 1,
       "sales": 56000
-    },
-    {
-      "submask": "***1111177",
-      "count": 1,
-      "sales": 45000
     }
   ],
   "dailySales": [
@@ -364,19 +364,19 @@
     },
     {
       "date": "16.11.2026",
+      "personal": 79200,
+      "cpo": 11000,
+      "app": 2640,
+      "total": 92840,
+      "count": 7
+    },
+    {
+      "date": "17.11.2026",
       "personal": 0,
       "cpo": 0,
       "app": 0,
       "total": 0,
       "count": 0
-    },
-    {
-      "date": "17.11.2026",
-      "personal": null,
-      "cpo": null,
-      "app": null,
-      "total": null,
-      "count": null
     },
     {
       "date": "18.11.2026",
@@ -492,9 +492,9 @@
     },
     {
       "day": "Понедельник",
-      "sales": 263240,
-      "count": 63,
-      "averageCheck": 4178.412698412699
+      "sales": 356080,
+      "count": 70,
+      "averageCheck": 5086.857142857143
     },
     {
       "day": "Вторник",
@@ -529,27 +529,27 @@
   ],
   "daily": {
     "todaySales": 0,
-    "yesterdaySales": 47300,
+    "yesterdaySales": 92840,
     "change": -100,
-    "averageDaily": 94181.875,
+    "averageDaily": 94102.94117647059,
     "bestDaySales": 215400,
     "bestDayDate": "03.11.2026",
-    "neededPerDay": 220094.57142857142,
-    "daysLeft": 14,
-    "planCompletion": 32.84291951979781,
-    "remaining": 3081324
+    "neededPerDay": 229883.38461538462,
+    "daysLeft": 13,
+    "planCompletion": 34.86635598794656,
+    "remaining": 2988484
   },
   "forecast": {
-    "month": 2825456.25,
-    "completion": 61.5804740996209,
-    "pace": 61.5804740996209,
-    "deviation": -38.4195259003791,
-    "gap": -1762777.75
+    "month": 2823088.2352941176,
+    "completion": 61.52886350814098,
+    "pace": 61.52886350814098,
+    "deviation": -38.47113649185902,
+    "gap": -1765145.7647058824
   },
-  "sourceRows": 197,
-  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+  "sourceRows": 204,
+  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
   "planAllocation": "Предварительно: распределено пропорционально октябрьскому плану; общий план ноября 4588234 из существующего дашборда",
-  "logicVersion": "nov-16-197-operations-196sales-comment-only-oct-payroll-preserved-v12",
+  "logicVersion": "nov-17-source-204-operations-203-sales-comment-marker-only-oct-cpo-preserved-v13",
   "classificationRules": {
     "baseline": "Полностью сохранить правила 01–15.10.2026; единственная замена в личных продажах с 01.11.2026: ответственный Еремин Валентин Андреевич → Кулемин Алексей Александрович.",
     "referencePeriod": "01.10.2026–15.10.2026",
@@ -606,27 +606,27 @@
     "matchMode": "contains"
   },
   "sourceReconciliation": {
-    "previousSourceRows": 170,
-    "unchangedPreviousRows": 170,
-    "newSourceRows": 197,
-    "addedRows": 27,
-    "addedRevenue": 211040,
-    "addedMargin": 179340.56,
-    "addedCount": 27,
+    "previousSourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+    "previousSourceRows": 197,
+    "unchangedPreviousRows": 197,
+    "addedRows": 7,
+    "addedRevenue": 92840,
+    "addedMargin": 56663.93,
+    "addedCount": 7,
     "newPersonal": {
-      "sales": 122500,
-      "count": 14,
-      "margin": 109668.78
+      "sales": 79200,
+      "margin": 43772.21,
+      "count": 3
     },
     "newCpo": {
-      "sales": 20300,
-      "count": 5,
-      "margin": 16927.79
+      "sales": 11000,
+      "margin": 10352.72,
+      "count": 3
     },
     "newApp": {
-      "sales": 68240,
-      "count": 8,
-      "margin": 52743.99
+      "sales": 2640,
+      "margin": 2539,
+      "count": 1
     },
     "ownNumberWithdrawal": {
       "excelRow": 162,
