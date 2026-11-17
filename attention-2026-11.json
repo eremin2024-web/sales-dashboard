@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "16.11.2026",
-  "sourceRows": 197,
-  "sourceFile": "Исходник для дашборда(20261116-065256).xlsx",
+  "updated": "17.11.2026",
+  "sourceRows": 204,
+  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 10,
-    "signals": 10,
+    "rowsWithAttention": 11,
+    "signals": 11,
     "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 8,
+      "count": 9,
       "state": "warning"
     },
     "comment_review": {
@@ -263,16 +263,34 @@
           "label": "Низкая маржа 16,7%"
         }
       ]
+    },
+    {
+      "row": 202,
+      "date": "16.11.2026",
+      "phone": "9947776776",
+      "amount": 7000,
+      "cost": 5000,
+      "margin": 2000,
+      "profitability": 28.57,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "Куветов",
+      "comment": "Куветов.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 28,6%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-16-197rows-8-lowmargin-one-note-one-missing-phone-v12",
+  "logicVersion": "nov-17-204rows-9lowmargin-one-review-one-emptyphone-v13",
   "sourceReconciliation": {
-    "previousSourceRows": 170,
-    "newSourceRows": 197,
-    "addedSourceRows": 27,
-    "previousIssues": 8,
-    "addedIssues": 2,
-    "newLowMarginCount": 2,
+    "previousSourceRows": 197,
+    "newSourceRows": 204,
+    "addedSourceRows": 7,
+    "previousIssues": 10,
+    "newIssues": 1,
     "commentMarkerHits": 0
   }
 }
