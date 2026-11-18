@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "17.11.2026",
-  "sourceRows": 204,
-  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
+  "updated": "18.11.2026",
+  "sourceRows": 216,
+  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -284,13 +284,13 @@
       ]
     }
   ],
-  "logicVersion": "nov-17-204rows-9lowmargin-one-review-one-emptyphone-v13",
+  "logicVersion": "nov-18-216rows-9lowmargin-one-review-one-emptyphone-no-new-v14",
   "sourceReconciliation": {
-    "previousSourceRows": 197,
-    "newSourceRows": 204,
-    "addedSourceRows": 7,
-    "previousIssues": 10,
-    "newIssues": 1,
+    "previousSourceRows": 204,
+    "newSourceRows": 216,
+    "addedSourceRows": 12,
+    "previousIssues": 11,
+    "newIssues": 0,
     "commentMarkerHits": 0
   }
 }
