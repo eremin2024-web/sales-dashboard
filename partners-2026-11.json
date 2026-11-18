@@ -1,9 +1,14 @@
 {
-  "updated": "17.11.2026",
+  "updated": "18.11.2026",
   "month": "2026-11",
-  "sourceRows": 204,
-  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
+  "sourceRows": 216,
+  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
   "partners": [
+    {
+      "name": "Куветов",
+      "count": 10,
+      "sales": 261400
+    },
     {
       "name": "Осипян",
       "count": 45,
@@ -43,11 +48,6 @@
       "name": "Слава Блэк",
       "count": 6,
       "sales": 41000
-    },
-    {
-      "name": "Куветов",
-      "count": 7,
-      "sales": 38800
     },
     {
       "name": "Исмаилов",
@@ -90,29 +90,19 @@
       "sales": 2000
     }
   ],
-  "logicVersion": "nov-17-204operations-17partner-groups-preserve-aliases-v13",
-  "elapsedDays": 17,
+  "logicVersion": "nov-18-216operations-17partner-groups-kuvetov-200k-deal-v14",
+  "elapsedDays": 18,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 197,
-    "addedSourceRows": 7,
+    "previousSourceRows": 204,
+    "addedSourceRows": 12,
     "addedPersonalCount": 3,
-    "addedPersonalRevenue": 79200,
+    "addedPersonalRevenue": 222600,
     "partnerChanges": [
       {
-        "name": "ВипСторе",
-        "salesAdded": 70000,
-        "countAdded": 1
-      },
-      {
         "name": "Куветов",
-        "salesAdded": 7000,
-        "countAdded": 1
-      },
-      {
-        "name": "Осипян",
-        "salesAdded": 2200,
-        "countAdded": 1
+        "salesAdded": 222600,
+        "countAdded": 3
       }
     ],
     "activePartnerGroups": 17,
