@@ -1,11 +1,11 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "17.11.2026",
+  "updated": "18.11.2026",
   "summary": {
-    "count": 49,
-    "sales": 387650,
-    "payout": 32165
+    "count": 53,
+    "sales": 433000,
+    "payout": 35620
   },
   "managers": [
     {
@@ -16,15 +16,15 @@
     },
     {
       "name": "Назаров Дмитрий Александрович",
-      "count": 20,
-      "sales": 111300,
-      "payout": 9780
+      "count": 23,
+      "sales": 153650,
+      "payout": 12935
     },
     {
       "name": "Бабич Александр Алексеевич",
-      "count": 6,
-      "sales": 33000,
-      "payout": 3300
+      "count": 7,
+      "sales": 36000,
+      "payout": 3600
     },
     {
       "name": "Кулемин Алексей Александрович",
@@ -427,11 +427,43 @@
       "sales": 3000,
       "rate": 10,
       "payout": 300
+    },
+    {
+      "date": "17.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9632617777",
+      "sales": 36000,
+      "rate": 7,
+      "payout": 2520
+    },
+    {
+      "date": "17.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9954523232",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "17.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9399991020",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "17.11.2026",
+      "manager": "Назаров Дмитрий Александрович",
+      "phone": "9896726555",
+      "sales": 3350,
+      "rate": 10,
+      "payout": 335
     }
   ],
-  "sourceRows": 204,
-  "sourceFile": "Исходник для дашборда(20261117-062806).xlsx",
-  "logicVersion": "nov-17-204operations-49cpo-count-oct-payroll-rates-preserved-v13",
+  "sourceRows": 216,
+  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
+  "logicVersion": "nov-18-216ops-53cpo-original-oct-commission-rates-filimonova-babich-v14",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -478,12 +510,12 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 197,
-    "unchangedPreviousRows": 197,
-    "addedSourceRows": 7,
-    "newCpoSales": 3,
-    "newCpoRevenue": 11000,
-    "newCpoPayout": 1100,
+    "previousSourceRows": 204,
+    "unchangedPreviousRows": 204,
+    "addedSourceRows": 12,
+    "newCpoSales": 4,
+    "newCpoRevenue": 45350,
+    "newCpoPayout": 3455,
     "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
