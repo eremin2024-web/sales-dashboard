@@ -1,8 +1,8 @@
 {
-  "updated": "18.11.2026",
+  "updated": "19.11.2026",
   "month": "2026-11",
-  "sourceRows": 216,
-  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
+  "sourceRows": 222,
+  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
   "partners": [
     {
       "name": "Куветов",
@@ -21,8 +21,13 @@
     },
     {
       "name": "Нерсисян",
-      "count": 2,
-      "sales": 78500
+      "count": 3,
+      "sales": 80500
+    },
+    {
+      "name": "Норайр",
+      "count": 19,
+      "sales": 78700
     },
     {
       "name": "Переверзев",
@@ -35,19 +40,14 @@
       "sales": 77600
     },
     {
-      "name": "Норайр",
-      "count": 18,
-      "sales": 76300
-    },
-    {
       "name": "Амигос",
       "count": 14,
       "sales": 43000
     },
     {
       "name": "Слава Блэк",
-      "count": 6,
-      "sales": 41000
+      "count": 7,
+      "sales": 42200
     },
     {
       "name": "Исмаилов",
@@ -75,6 +75,16 @@
       "sales": 4000
     },
     {
+      "name": "Нурмагомед",
+      "count": 2,
+      "sales": 4000
+    },
+    {
+      "name": "Йося",
+      "count": 1,
+      "sales": 3000
+    },
+    {
       "name": "Сату",
       "count": 1,
       "sales": 2500
@@ -83,31 +93,26 @@
       "name": "Зиновкин",
       "count": 1,
       "sales": 2400
-    },
-    {
-      "name": "Нурмагомед",
-      "count": 1,
-      "sales": 2000
     }
   ],
-  "logicVersion": "nov-18-216operations-17partner-groups-kuvetov-200k-deal-v14",
-  "elapsedDays": 18,
+  "logicVersion": "nov-19-222records-18personal-partners-comment-only-clean-v15",
+  "elapsedDays": 19,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 204,
-    "addedSourceRows": 12,
-    "addedPersonalCount": 3,
-    "addedPersonalRevenue": 222600,
-    "partnerChanges": [
-      {
-        "name": "Куветов",
-        "salesAdded": 222600,
-        "countAdded": 3
-      }
-    ],
-    "activePartnerGroups": 17,
-    "ownNumberWithdrawalAmount": 1000,
-    "ownNumberWithdrawalCountsAsSale": false,
-    "historicalAliasesPreserved": true
+    "previousSourceRows": 216,
+    "addedRows": 6,
+    "addedPersonalSales": 5,
+    "addedPersonalRevenue": 10600,
+    "activePartnerGroups": 18,
+    "newPartner": "Йося",
+    "existingPartnerIncrements": {
+      "Норайр": 2400,
+      "Слава Блэк": 1200,
+      "Нерсисян": 2000,
+      "Нурмагомед": 2000
+    },
+    "ownNumberWithdrawalRevenue": 1000,
+    "ownNumberWithdrawalSaleCount": 0,
+    "historicalPartnerAliasesPreserved": true
   }
 }
