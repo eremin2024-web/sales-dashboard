@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "18.11.2026",
+  "updated": "19.11.2026",
   "summary": {
     "count": 53,
     "sales": 433000,
@@ -461,9 +461,9 @@
       "payout": 335
     }
   ],
-  "sourceRows": 216,
-  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
-  "logicVersion": "nov-18-216ops-53cpo-original-oct-commission-rates-filimonova-babich-v14",
+  "sourceRows": 222,
+  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
+  "logicVersion": "nov-19-222rows-zero-new-CPO-payout-unchanged-oct-commission-v15",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -510,12 +510,13 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 204,
-    "unchangedPreviousRows": 204,
-    "addedSourceRows": 12,
-    "newCpoSales": 4,
-    "newCpoRevenue": 45350,
-    "newCpoPayout": 3455,
+    "previousSourceRows": 216,
+    "unchangedPreviousRows": 216,
+    "addedSourceRows": 6,
+    "newCpoCount": 0,
+    "newCpoRevenue": 0,
+    "newCpoPayout": 0,
+    "novemberTotalCpoCount": 53,
     "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
