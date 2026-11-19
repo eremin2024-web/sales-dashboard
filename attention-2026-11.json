@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "18.11.2026",
-  "sourceRows": 216,
-  "sourceFile": "Исходник для дашборда(20261118-060837).xlsx",
+  "updated": "19.11.2026",
+  "sourceRows": 222,
+  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 11,
-    "signals": 11,
+    "rowsWithAttention": 12,
+    "signals": 12,
     "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 9,
+      "count": 10,
       "state": "warning"
     },
     "comment_review": {
@@ -282,15 +282,35 @@
           "label": "Низкая маржа 28,6%"
         }
       ]
+    },
+    {
+      "row": 219,
+      "date": "18.11.2026",
+      "phone": "9672280808",
+      "amount": 1200,
+      "cost": 1000,
+      "margin": 200,
+      "profitability": 16.67,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Слава Блэк Портация",
+      "partner": "Слава Блэк",
+      "comment": "Слава Блэк.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 16,7%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-18-216rows-9lowmargin-one-review-one-emptyphone-no-new-v14",
+  "logicVersion": "nov-19-222operations-10lowmargin-one-review-one-missing-phone-v15",
   "sourceReconciliation": {
-    "previousSourceRows": 204,
-    "newSourceRows": 216,
-    "addedSourceRows": 12,
-    "previousIssues": 11,
-    "newIssues": 0,
+    "previousSourceRows": 216,
+    "newSourceRows": 222,
+    "newRows": 6,
+    "oldAlerts": 11,
+    "newAlerts": 1,
+    "lowMarginNew": 1,
     "commentMarkerHits": 0
   }
 }
