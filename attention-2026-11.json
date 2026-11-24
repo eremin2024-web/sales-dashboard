@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "19.11.2026",
-  "sourceRows": 222,
-  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
+  "updated": "24.11.2026",
+  "sourceRows": 245,
+  "sourceFile": "Исходник для дашборда(20261124-062311).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 12,
-    "signals": 12,
+    "rowsWithAttention": 13,
+    "signals": 13,
     "checksOk": 5,
     "checksWarning": 3
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 10,
+      "count": 11,
       "state": "warning"
     },
     "comment_review": {
@@ -301,16 +301,35 @@
           "label": "Низкая маржа 16,7%"
         }
       ]
+    },
+    {
+      "row": 230,
+      "date": "19.11.2026",
+      "phone": "9959999595",
+      "amount": 105000,
+      "cost": 81395.35,
+      "margin": 23604.65,
+      "profitability": 22.48,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "ВипСторе",
+      "comment": "ВипСторе. 1063301-6673",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 22,5%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-19-222operations-10lowmargin-one-review-one-missing-phone-v15",
+  "logicVersion": "nov-24-245operations-11lowmargin-one-review-one-missingphone-v16",
   "sourceReconciliation": {
-    "previousSourceRows": 216,
-    "newSourceRows": 222,
-    "newRows": 6,
-    "oldAlerts": 11,
+    "previousSourceRows": 222,
+    "newSourceRows": 245,
+    "addedSourceRows": 23,
+    "oldAlerts": 12,
     "newAlerts": 1,
-    "lowMarginNew": 1,
+    "newLowMargin": 1,
     "commentMarkerHits": 0
   }
 }
