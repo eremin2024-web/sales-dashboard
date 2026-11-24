@@ -1,18 +1,18 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "19.11.2026",
+  "updated": "24.11.2026",
   "summary": {
-    "count": 53,
-    "sales": 433000,
-    "payout": 35620
+    "count": 58,
+    "sales": 481350,
+    "payout": 39555
   },
   "managers": [
     {
       "name": "Хасянов Илсаф Ханнянович",
-      "count": 20,
-      "sales": 234350,
-      "payout": 18185
+      "count": 23,
+      "sales": 270700,
+      "payout": 20920
     },
     {
       "name": "Назаров Дмитрий Александрович",
@@ -28,9 +28,9 @@
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 3,
-      "sales": 9000,
-      "payout": 900
+      "count": 5,
+      "sales": 21000,
+      "payout": 2100
     }
   ],
   "details": [
@@ -459,11 +459,53 @@
       "sales": 3350,
       "rate": 10,
       "payout": 335
+    },
+    {
+      "date": "20.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9399994994",
+      "sales": 9000,
+      "rate": 10,
+      "payout": 900
+    },
+    {
+      "date": "21.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9683571111",
+      "sales": 30000,
+      "rate": 7,
+      "payout": 2100
+    },
+    {
+      "date": "21.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9651111022",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "22.11.2026",
+      "manager": "Хасянов Илсаф Ханнянович",
+      "phone": "9150655454",
+      "sales": 3350,
+      "rate": 10,
+      "payout": 335
+    },
+    {
+      "date": "23.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9683910001",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
     }
   ],
-  "sourceRows": 222,
-  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
-  "logicVersion": "nov-19-222rows-zero-new-CPO-payout-unchanged-oct-commission-v15",
+  "sourceRows": 245,
+  "sourceFile": "Исходник для дашборда(20261124-062311).xlsx",
+  "logicVersion": "nov-24-245rows-58cpo-unchanged-commission-with-2-filimonova-to-kulemin-v16",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -510,13 +552,15 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 216,
-    "unchangedPreviousRows": 216,
-    "addedSourceRows": 6,
-    "newCpoCount": 0,
-    "newCpoRevenue": 0,
-    "newCpoPayout": 0,
-    "novemberTotalCpoCount": 53,
+    "previousSourceRows": 222,
+    "unchangedPreviousRows": 222,
+    "addedSourceRows": 23,
+    "newCpoSales": 5,
+    "newCpoRevenue": 48350,
+    "newCpoPayout": 3935,
+    "newFilimonovaDeals": 2,
+    "newFilimonovaRevenue": 12000,
+    "newFilimonovaPayoutCreditedToKulemin": 1200,
     "filimonovaCreditsRemainWithKulemin": true,
     "babichSpecialRulesUnchanged": true
   }
