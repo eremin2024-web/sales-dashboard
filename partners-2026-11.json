@@ -1,9 +1,14 @@
 {
-  "updated": "19.11.2026",
+  "updated": "24.11.2026",
   "month": "2026-11",
-  "sourceRows": 222,
-  "sourceFile": "Исходник для дашборда(20261119-072629).xlsx",
+  "sourceRows": 245,
+  "sourceFile": "Исходник для дашборда(20261124-062311).xlsx",
   "partners": [
+    {
+      "name": "ВипСторе",
+      "count": 10,
+      "sales": 435500
+    },
     {
       "name": "Куветов",
       "count": 10,
@@ -11,13 +16,13 @@
     },
     {
       "name": "Осипян",
-      "count": 45,
-      "sales": 251000
+      "count": 46,
+      "sales": 253000
     },
     {
-      "name": "ВипСторе",
-      "count": 3,
-      "sales": 230000
+      "name": "Норайр",
+      "count": 21,
+      "sales": 96200
     },
     {
       "name": "Нерсисян",
@@ -25,9 +30,9 @@
       "sales": 80500
     },
     {
-      "name": "Норайр",
-      "count": 19,
-      "sales": 78700
+      "name": "Асад",
+      "count": 7,
+      "sales": 79600
     },
     {
       "name": "Переверзев",
@@ -35,9 +40,14 @@
       "sales": 78000
     },
     {
-      "name": "Асад",
-      "count": 6,
-      "sales": 77600
+      "name": "Сабир",
+      "count": 2,
+      "sales": 75000
+    },
+    {
+      "name": "Рахим Салатаев",
+      "count": 1,
+      "sales": 67000
     },
     {
       "name": "Амигос",
@@ -65,6 +75,11 @@
       "sales": 10500
     },
     {
+      "name": "Йося",
+      "count": 2,
+      "sales": 10000
+    },
+    {
       "name": "Ахаминов",
       "count": 3,
       "sales": 7900
@@ -80,11 +95,6 @@
       "sales": 4000
     },
     {
-      "name": "Йося",
-      "count": 1,
-      "sales": 3000
-    },
-    {
       "name": "Сату",
       "count": 1,
       "sales": 2500
@@ -95,24 +105,31 @@
       "sales": 2400
     }
   ],
-  "logicVersion": "nov-19-222records-18personal-partners-comment-only-clean-v15",
-  "elapsedDays": 19,
+  "logicVersion": "nov-24-245operations-20activepartner-groups-history-preserved-v16",
+  "elapsedDays": 24,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 216,
-    "addedRows": 6,
-    "addedPersonalSales": 5,
-    "addedPersonalRevenue": 10600,
-    "activePartnerGroups": 18,
-    "newPartner": "Йося",
-    "existingPartnerIncrements": {
-      "Норайр": 2400,
-      "Слава Блэк": 1200,
-      "Нерсисян": 2000,
-      "Нурмагомед": 2000
+    "previousSourceRows": 222,
+    "newRows": 23,
+    "newPersonalSales": 15,
+    "newPersonalRevenue": 376000,
+    "partnerGroups": 20,
+    "addedActivePartnerGroups": [
+      "Сабир",
+      "Рахим Салатаев"
+    ],
+    "partnerIncrements": {
+      "ВипСторе": 205500,
+      "Осипян": 2000,
+      "Асад": 2000,
+      "Норайр": 17500,
+      "Йося": 7000
     },
-    "ownNumberWithdrawalRevenue": 1000,
-    "ownNumberWithdrawalSaleCount": 0,
-    "historicalPartnerAliasesPreserved": true
+    "sourceAliases": {
+      "Сабир Хирзиев": "Сабир",
+      "Жанара-Асад": "Асад"
+    },
+    "ownNumberWithdrawalCountZero": true,
+    "historicalAliasesPreserved": true
   }
 }
