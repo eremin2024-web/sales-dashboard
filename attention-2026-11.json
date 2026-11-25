@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "24.11.2026",
-  "sourceRows": 245,
-  "sourceFile": "Исходник для дашборда(20261124-062311).xlsx",
+  "updated": "25.11.2026",
+  "sourceRows": 256,
+  "sourceFile": "Исходник для дашборда(20261125-074401).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,10 +21,10 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 13,
-    "signals": 13,
-    "checksOk": 5,
-    "checksWarning": 3
+    "rowsWithAttention": 14,
+    "signals": 15,
+    "checksOk": 3,
+    "checksWarning": 5
   },
   "checks": {
     "low_margin": {
@@ -44,13 +44,13 @@
     },
     "unknown_responsible": {
       "label": "Неизвестный ответственный",
-      "count": 0,
-      "state": "ok"
+      "count": 1,
+      "state": "warning"
     },
     "new_manager": {
       "label": "Новый менеджер",
-      "count": 0,
-      "state": "ok"
+      "count": 1,
+      "state": "warning"
     },
     "duplicate": {
       "label": "Возможный дубль",
@@ -320,16 +320,41 @@
           "label": "Низкая маржа 22,5%"
         }
       ]
+    },
+    {
+      "row": 257,
+      "date": "24.11.2026",
+      "phone": "9936660003",
+      "amount": 4000,
+      "cost": 0.01,
+      "margin": 3999.99,
+      "profitability": 100,
+      "responsible": "Угаров Павел Михайлович",
+      "buyer": "ХАНЗАДЯН АРМАН АРСЕНОВИЧ RT100149874",
+      "partner": null,
+      "comment": null,
+      "issues": [
+        {
+          "type": "unknown_responsible",
+          "label": "Ответственный Угаров Павел Михайлович отсутствует в прежнем списке менеджеров; сверить направление ЦПО"
+        },
+        {
+          "type": "new_manager",
+          "label": "Новый ответственный; проверить право на начисление 400 ₽ по стандартной ставке ЦПО"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-24-245operations-11lowmargin-one-review-one-missingphone-v16",
+  "logicVersion": "nov-25-256operations-new-unknown-manager-alert-existing-low-margins-preserved-v17",
   "sourceReconciliation": {
-    "previousSourceRows": 222,
-    "newSourceRows": 245,
-    "addedSourceRows": 23,
-    "oldAlerts": 12,
+    "previousSourceRows": 245,
+    "newSourceRows": 256,
+    "newRows": 11,
+    "previousAlerts": 13,
     "newAlerts": 1,
-    "newLowMargin": 1,
-    "commentMarkerHits": 0
+    "newSignals": 2,
+    "lowMarginCountUnchanged": 11,
+    "unknownManager": "Угаров Павел Михайлович",
+    "commentsExclusionHits": 0
   }
 }

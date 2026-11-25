@@ -1,8 +1,8 @@
 {
-  "updated": "24.11.2026",
+  "updated": "25.11.2026",
   "month": "2026-11",
-  "sourceRows": 245,
-  "sourceFile": "Исходник для дашборда(20261124-062311).xlsx",
+  "sourceRows": 256,
+  "sourceFile": "Исходник для дашборда(20261125-074401).xlsx",
   "partners": [
     {
       "name": "ВипСторе",
@@ -16,8 +16,13 @@
     },
     {
       "name": "Осипян",
-      "count": 46,
-      "sales": 253000
+      "count": 47,
+      "sales": 255000
+    },
+    {
+      "name": "Переверзев",
+      "count": 2,
+      "sales": 194000
     },
     {
       "name": "Норайр",
@@ -25,19 +30,14 @@
       "sales": 96200
     },
     {
+      "name": "Асад",
+      "count": 8,
+      "sales": 81600
+    },
+    {
       "name": "Нерсисян",
       "count": 3,
       "sales": 80500
-    },
-    {
-      "name": "Асад",
-      "count": 7,
-      "sales": 79600
-    },
-    {
-      "name": "Переверзев",
-      "count": 1,
-      "sales": 78000
     },
     {
       "name": "Сабир",
@@ -71,8 +71,8 @@
     },
     {
       "name": "Багиев",
-      "count": 4,
-      "sales": 10500
+      "count": 5,
+      "sales": 12500
     },
     {
       "name": "Йося",
@@ -103,33 +103,43 @@
       "name": "Зиновкин",
       "count": 1,
       "sales": 2400
+    },
+    {
+      "name": "Салиман",
+      "count": 1,
+      "sales": 2200
+    },
+    {
+      "name": "Вася Царицыно",
+      "count": 0,
+      "sales": 1000
     }
   ],
-  "logicVersion": "nov-24-245operations-20activepartner-groups-history-preserved-v16",
-  "elapsedDays": 24,
+  "logicVersion": "nov-25-256rows-22-active-partner-groups-own-withdrawal-not-counted-v17",
+  "elapsedDays": 25,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 222,
-    "newRows": 23,
-    "newPersonalSales": 15,
-    "newPersonalRevenue": 376000,
-    "partnerGroups": 20,
-    "addedActivePartnerGroups": [
-      "Сабир",
-      "Рахим Салатаев"
-    ],
-    "partnerIncrements": {
-      "ВипСторе": 205500,
+    "previousSourceRows": 245,
+    "newRows": 11,
+    "addedPersonalRevenue": 125200,
+    "addedPersonalCount": 5,
+    "partnersByBuyerOrComment": {
+      "Салиман": 2200,
       "Осипян": 2000,
+      "Вася Царицыно": 1000,
       "Асад": 2000,
-      "Норайр": 17500,
-      "Йося": 7000
+      "Переверзев": 116000,
+      "Багиев": 2000
     },
-    "sourceAliases": {
-      "Сабир Хирзиев": "Сабир",
-      "Жанара-Асад": "Асад"
+    "newPartnerNames": [
+      "Салиман",
+      "Вася Царицыно"
+    ],
+    "secondOwnNumberWithdrawal": {
+      "partner": "Вася Царицыно",
+      "amount": 1000,
+      "count": 0
     },
-    "ownNumberWithdrawalCountZero": true,
-    "historicalAliasesPreserved": true
+    "OctoberAliasesPreserved": true
   }
 }
