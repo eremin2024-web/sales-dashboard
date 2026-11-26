@@ -1,11 +1,11 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "25.11.2026",
+  "updated": "26.11.2026",
   "summary": {
-    "count": 60,
-    "sales": 488700,
-    "payout": 40290
+    "count": 62,
+    "sales": 498700,
+    "payout": 41290
   },
   "managers": [
     {
@@ -28,9 +28,9 @@
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 6,
-      "sales": 24350,
-      "payout": 2435
+      "count": 8,
+      "sales": 34350,
+      "payout": 3435
     },
     {
       "name": "Угаров Павел Михайлович",
@@ -525,11 +525,29 @@
       "rate": 10,
       "payout": 400,
       "needsManagerReview": true
+    },
+    {
+      "date": "25.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9924443388",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
+    },
+    {
+      "date": "25.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9954443388",
+      "sales": 5000,
+      "rate": 10,
+      "payout": 500
     }
   ],
-  "sourceRows": 256,
-  "sourceFile": "Исходник для дашборда(20261125-074401).xlsx",
-  "logicVersion": "nov-25-256rows-60cpo-filimonova-and-new-ugarov-review-v17",
+  "sourceRows": 266,
+  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
+  "logicVersion": "nov-26-266rows-62cpo-fili-two-lines-kulemin-credited-v18",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -576,23 +594,21 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 245,
-    "unchangedPreviousRows": 245,
+    "previousSourceRows": 256,
+    "unchangedPreviousRows": 256,
     "newCpoDeals": 2,
-    "newCpoRevenue": 7350,
-    "newCpoPayout": 735,
-    "filimonovaCreditedToKulemin": {
-      "phone": "9898998884",
-      "sales": 3350,
-      "payout": 335
+    "newCpoRevenue": 10000,
+    "newCpoPayout": 1000,
+    "filimonovaCreditsToKulemin": {
+      "phones": [
+        "9924443388",
+        "9954443388"
+      ],
+      "revenue": 10000,
+      "payout": 1000
     },
-    "newResponsibleNeedsReview": {
-      "name": "Угаров Павел Михайлович",
-      "phone": "9936660003",
-      "sales": 4000,
-      "indicativePayout": 400,
-      "classification": "ЦПО по общему правилу, требует подтверждения ответственного"
-    },
+    "sameDocumentDifferentPhones": true,
+    "previousUgarovPreliminaryPayoutUnchanged": 400,
     "babichBonusRulesUnchanged": true,
     "OctoberDataUnchanged": true
   }

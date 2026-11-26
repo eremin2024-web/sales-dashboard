@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "25.11.2026",
-  "sourceRows": 256,
-  "sourceFile": "Исходник для дашборда(20261125-074401).xlsx",
+  "updated": "26.11.2026",
+  "sourceRows": 266,
+  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 14,
-    "signals": 15,
+    "rowsWithAttention": 15,
+    "signals": 16,
     "checksOk": 3,
     "checksWarning": 5
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 11,
+      "count": 12,
       "state": "warning"
     },
     "comment_review": {
@@ -343,18 +343,39 @@
           "label": "Новый ответственный; проверить право на начисление 400 ₽ по стандартной ставке ЦПО"
         }
       ]
+    },
+    {
+      "row": 261,
+      "date": "25.11.2026",
+      "phone": "9684477722",
+      "amount": 2000,
+      "cost": 1500,
+      "margin": 500,
+      "profitability": 25,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "Григорян",
+      "comment": "Ара Григорян. 1063301-6725",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 25%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-25-256operations-new-unknown-manager-alert-existing-low-margins-preserved-v17",
+  "logicVersion": "nov-26-266operations-12low-margin-one-review-one-missing-one-unknown-new-v18",
   "sourceReconciliation": {
-    "previousSourceRows": 245,
-    "newSourceRows": 256,
-    "newRows": 11,
-    "previousAlerts": 13,
+    "previousSourceRows": 256,
+    "newSourceRows": 266,
+    "newRows": 10,
+    "previousAlerts": 14,
     "newAlerts": 1,
-    "newSignals": 2,
-    "lowMarginCountUnchanged": 11,
-    "unknownManager": "Угаров Павел Михайлович",
-    "commentsExclusionHits": 0
+    "previousSignals": 15,
+    "newSignals": 1,
+    "lowMarginCount": 12,
+    "UgarovUnknownStillUnderReview": true,
+    "commentsExclusionHits": 0,
+    "sameDocumentDifferentPhonesNotDuplicate": true
   }
 }

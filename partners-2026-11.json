@@ -1,8 +1,8 @@
 {
-  "updated": "25.11.2026",
+  "updated": "26.11.2026",
   "month": "2026-11",
-  "sourceRows": 256,
-  "sourceFile": "Исходник для дашборда(20261125-074401).xlsx",
+  "sourceRows": 266,
+  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
   "partners": [
     {
       "name": "ВипСторе",
@@ -10,14 +10,14 @@
       "sales": 435500
     },
     {
-      "name": "Куветов",
-      "count": 10,
+      "name": "Осипян",
+      "count": 50,
       "sales": 261400
     },
     {
-      "name": "Осипян",
-      "count": 47,
-      "sales": 255000
+      "name": "Куветов",
+      "count": 10,
+      "sales": 261400
     },
     {
       "name": "Переверзев",
@@ -25,14 +25,14 @@
       "sales": 194000
     },
     {
+      "name": "Асад",
+      "count": 9,
+      "sales": 110600
+    },
+    {
       "name": "Норайр",
       "count": 21,
       "sales": 96200
-    },
-    {
-      "name": "Асад",
-      "count": 8,
-      "sales": 81600
     },
     {
       "name": "Нерсисян",
@@ -110,36 +110,44 @@
       "sales": 2200
     },
     {
+      "name": "Григорян",
+      "count": 1,
+      "sales": 2000
+    },
+    {
       "name": "Вася Царицыно",
       "count": 0,
       "sales": 1000
     }
   ],
-  "logicVersion": "nov-25-256rows-22-active-partner-groups-own-withdrawal-not-counted-v17",
-  "elapsedDays": 25,
+  "logicVersion": "nov-26-266records-23active-partners-preserve-history-v18",
+  "elapsedDays": 26,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 245,
-    "newRows": 11,
-    "addedPersonalRevenue": 125200,
+    "previousSourceRows": 256,
+    "addedRows": 10,
+    "addedPersonalRevenue": 37400,
     "addedPersonalCount": 5,
-    "partnersByBuyerOrComment": {
-      "Салиман": 2200,
-      "Осипян": 2000,
-      "Вася Царицыно": 1000,
-      "Асад": 2000,
-      "Переверзев": 116000,
-      "Багиев": 2000
+    "partnerChanges": {
+      "Осипян": {
+        "revenue": 6400,
+        "count": 3
+      },
+      "Асад": {
+        "revenue": 29000,
+        "count": 1
+      },
+      "Григорян": {
+        "revenue": 2000,
+        "count": 1
+      }
     },
-    "newPartnerNames": [
-      "Салиман",
-      "Вася Царицыно"
-    ],
-    "secondOwnNumberWithdrawal": {
-      "partner": "Вася Царицыно",
-      "amount": 1000,
-      "count": 0
+    "newActiveGroup": "Григорян",
+    "partnerAliases": {
+      "Ара Григорян": "Григорян",
+      "Асад Портация": "Асад"
     },
-    "OctoberAliasesPreserved": true
+    "ownNumberWithdrawalsAmount": 2000,
+    "ownNumberWithdrawalsSaleCount": 0
   }
 }
