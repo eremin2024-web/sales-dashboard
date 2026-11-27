@@ -1,8 +1,8 @@
 {
   "month": "2026-11",
-  "updated": "26.11.2026",
-  "sourceRows": 266,
-  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
+  "updated": "27.11.2026",
+  "sourceRows": 285,
+  "sourceFile": "Исходник для дашборда(20261127-063745).xlsx",
   "rules": {
     "lowMarginProfitabilityBelow": 40,
     "knownResponsibles": [
@@ -21,15 +21,15 @@
     "cleanExclusionColumn": "Комментарий"
   },
   "summary": {
-    "rowsWithAttention": 15,
-    "signals": 16,
+    "rowsWithAttention": 16,
+    "signals": 17,
     "checksOk": 3,
     "checksWarning": 5
   },
   "checks": {
     "low_margin": {
       "label": "Низкая маржа < 40%",
-      "count": 12,
+      "count": 13,
       "state": "warning"
     },
     "comment_review": {
@@ -362,20 +362,39 @@
           "label": "Низкая маржа 25%"
         }
       ]
+    },
+    {
+      "row": 276,
+      "date": "26.11.2026",
+      "phone": "9645556633",
+      "amount": 2500,
+      "cost": 2000,
+      "margin": 500,
+      "profitability": 20,
+      "responsible": "Кулемин Алексей Александрович",
+      "buyer": "Продажи айфон",
+      "partner": "Зиновкин",
+      "comment": "Зиновкин.",
+      "issues": [
+        {
+          "type": "low_margin",
+          "label": "Низкая маржа 20%"
+        }
+      ]
     }
   ],
-  "logicVersion": "nov-26-266operations-12low-margin-one-review-one-missing-one-unknown-new-v18",
+  "logicVersion": "nov-27-285operations-13lowmargin-ugarov-warning-retained-v19",
   "sourceReconciliation": {
-    "previousSourceRows": 256,
-    "newSourceRows": 266,
-    "newRows": 10,
-    "previousAlerts": 14,
+    "previousSourceRows": 266,
+    "newSourceRows": 285,
+    "newRows": 19,
+    "previousAlerts": 15,
     "newAlerts": 1,
-    "previousSignals": 15,
+    "previousSignals": 16,
     "newSignals": 1,
-    "lowMarginCount": 12,
-    "UgarovUnknownStillUnderReview": true,
-    "commentsExclusionHits": 0,
-    "sameDocumentDifferentPhonesNotDuplicate": true
+    "lowMarginCount": 13,
+    "existingUgarovReviewPreserved": true,
+    "commentMarkerHits": 0,
+    "sameDocumentMultiplePhonesAreDistinctSales": true
   }
 }

@@ -1,11 +1,11 @@
 {
   "month": "2026-11",
   "label": "Ноябрь 2026",
-  "updated": "26.11.2026",
+  "updated": "27.11.2026",
   "summary": {
-    "count": 62,
-    "sales": 498700,
-    "payout": 41290
+    "count": 64,
+    "sales": 505000,
+    "payout": 41920
   },
   "managers": [
     {
@@ -22,15 +22,15 @@
     },
     {
       "name": "Бабич Александр Алексеевич",
-      "count": 7,
-      "sales": 36000,
-      "payout": 3600
+      "count": 8,
+      "sales": 39000,
+      "payout": 3900
     },
     {
       "name": "Кулемин Алексей Александрович",
-      "count": 8,
-      "sales": 34350,
-      "payout": 3435
+      "count": 9,
+      "sales": 37650,
+      "payout": 3765
     },
     {
       "name": "Угаров Павел Михайлович",
@@ -543,11 +543,28 @@
       "sales": 5000,
       "rate": 10,
       "payout": 500
+    },
+    {
+      "date": "26.11.2026",
+      "manager": "Бабич Александр Алексеевич",
+      "phone": "9647638800",
+      "sales": 3000,
+      "rate": 10,
+      "payout": 300
+    },
+    {
+      "date": "26.11.2026",
+      "manager": "Кулемин Алексей Александрович",
+      "sourceManager": "Филимонова Анастасия Вячеславовна",
+      "phone": "9264484040",
+      "sales": 3300,
+      "rate": 10,
+      "payout": 330
     }
   ],
-  "sourceRows": 266,
-  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
-  "logicVersion": "nov-26-266rows-62cpo-fili-two-lines-kulemin-credited-v18",
+  "sourceRows": 285,
+  "sourceFile": "Исходник для дашборда(20261127-063745).xlsx",
+  "logicVersion": "nov-27-285operations-cpo-64-commission-unchanged-v19",
   "exclusions": [
     {
       "buyer": "Слава Блэк Портация",
@@ -594,22 +611,19 @@
     }
   ],
   "sourceReconciliation": {
-    "previousSourceRows": 256,
-    "unchangedPreviousRows": 256,
+    "previousSourceRows": 266,
+    "unchangedPreviousRows": 266,
     "newCpoDeals": 2,
-    "newCpoRevenue": 10000,
-    "newCpoPayout": 1000,
-    "filimonovaCreditsToKulemin": {
-      "phones": [
-        "9924443388",
-        "9954443388"
-      ],
-      "revenue": 10000,
-      "payout": 1000
+    "newCpoRevenue": 6300,
+    "newCpoPayout": 630,
+    "newBabichPayout": 300,
+    "newFilimonovaToKulemin": {
+      "phone": "9264484040",
+      "sales": 3300,
+      "payout": 330
     },
-    "sameDocumentDifferentPhones": true,
-    "previousUgarovPreliminaryPayoutUnchanged": 400,
+    "priorUgarovPayoutRemainsProvisional": 400,
     "babichBonusRulesUnchanged": true,
-    "OctoberDataUnchanged": true
+    "OctoberHistoryUnchanged": true
   }
 }

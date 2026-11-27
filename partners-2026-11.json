@@ -1,13 +1,13 @@
 {
-  "updated": "26.11.2026",
+  "updated": "27.11.2026",
   "month": "2026-11",
-  "sourceRows": 266,
-  "sourceFile": "Исходник для дашборда(20261126-053700).xlsx",
+  "sourceRows": 285,
+  "sourceFile": "Исходник для дашборда(20261127-063745).xlsx",
   "partners": [
     {
       "name": "ВипСторе",
-      "count": 10,
-      "sales": 435500
+      "count": 11,
+      "sales": 443500
     },
     {
       "name": "Осипян",
@@ -25,9 +25,14 @@
       "sales": 194000
     },
     {
+      "name": "Сабир",
+      "count": 3,
+      "sales": 157500
+    },
+    {
       "name": "Асад",
-      "count": 9,
-      "sales": 110600
+      "count": 10,
+      "sales": 112600
     },
     {
       "name": "Норайр",
@@ -40,14 +45,19 @@
       "sales": 80500
     },
     {
-      "name": "Сабир",
-      "count": 2,
-      "sales": 75000
+      "name": "Вася Царицыно",
+      "count": 6,
+      "sales": 79000
     },
     {
       "name": "Рахим Салатаев",
       "count": 1,
       "sales": 67000
+    },
+    {
+      "name": "Олеся Зюзина",
+      "count": 1,
+      "sales": 64000
     },
     {
       "name": "Амигос",
@@ -58,6 +68,11 @@
       "name": "Слава Блэк",
       "count": 7,
       "sales": 42200
+    },
+    {
+      "name": "Михаил Андреев",
+      "count": 1,
+      "sales": 24000
     },
     {
       "name": "Исмаилов",
@@ -85,6 +100,11 @@
       "sales": 7900
     },
     {
+      "name": "Зиновкин",
+      "count": 2,
+      "sales": 4900
+    },
+    {
       "name": "Випномер",
       "count": 2,
       "sales": 4000
@@ -100,11 +120,6 @@
       "sales": 2500
     },
     {
-      "name": "Зиновкин",
-      "count": 1,
-      "sales": 2400
-    },
-    {
       "name": "Салиман",
       "count": 1,
       "sales": 2200
@@ -113,41 +128,54 @@
       "name": "Григорян",
       "count": 1,
       "sales": 2000
-    },
-    {
-      "name": "Вася Царицыно",
-      "count": 0,
-      "sales": 1000
     }
   ],
-  "logicVersion": "nov-26-266records-23active-partners-preserve-history-v18",
-  "elapsedDays": 26,
+  "logicVersion": "nov-27-285operations-25partner-groups-v19",
+  "elapsedDays": 27,
   "daysInMonth": 30,
   "sourceReconciliation": {
-    "previousSourceRows": 256,
-    "addedRows": 10,
-    "addedPersonalRevenue": 37400,
-    "addedPersonalCount": 5,
-    "partnerChanges": {
-      "Осипян": {
-        "revenue": 6400,
-        "count": 3
+    "previousSourceRows": 266,
+    "addedRows": 19,
+    "addedPersonalRevenue": 261000,
+    "addedPersonalCount": 12,
+    "changes": {
+      "Вася Царицыно": {
+        "revenue": 78000,
+        "count": 6
       },
-      "Асад": {
-        "revenue": 29000,
+      "Зиновкин": {
+        "revenue": 2500,
         "count": 1
       },
-      "Григорян": {
+      "Олеся Зюзина": {
+        "revenue": 64000,
+        "count": 1
+      },
+      "Асад": {
         "revenue": 2000,
+        "count": 1
+      },
+      "ВипСторе": {
+        "revenue": 8000,
+        "count": 1
+      },
+      "Михаил Андреев": {
+        "revenue": 24000,
+        "count": 1
+      },
+      "Сабир": {
+        "revenue": 82500,
         "count": 1
       }
     },
-    "newActiveGroup": "Григорян",
-    "partnerAliases": {
-      "Ара Григорян": "Григорян",
-      "Асад Портация": "Асад"
-    },
-    "ownNumberWithdrawalsAmount": 2000,
-    "ownNumberWithdrawalsSaleCount": 0
+    "newPartnerNames": [
+      "Олеся Зюзина",
+      "Михаил Андреев"
+    ],
+    "existingAliasReuse": [
+      "Вася Ди-Трейд Царицыно → Вася Царицыно",
+      "Сабир Хизриев → Сабир"
+    ],
+    "withdrawalSalesCountZero": true
   }
 }
